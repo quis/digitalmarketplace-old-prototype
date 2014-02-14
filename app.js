@@ -27,7 +27,7 @@ app.get('/', function (req, res) {
   var head = commonHead;
 
   res.render('index', {
-            'pageTitle': 'index',
+            'pageTitle': 'Digital Marketplace',
             'head' : head 
             });
   
@@ -62,6 +62,31 @@ app.get('/listing.html', function (req, res) {
             'head' : head 
             });
 });
+
+
+app.get('/supplier.html', function (req, res) {
+  
+  var head = commonHead;
+
+  res.render('supplier.html', {
+            'pageTitle': 'Supplier',
+            'head' : head 
+            });
+});
+
+
+app.get('/profile.html', function (req, res) {
+  
+  var head = commonHead;
+
+  res.render('profile.html', {
+            'pageTitle': 'Profile page',
+            'head' : head 
+            });
+});
+
+
+
 
 // start the app
 

@@ -8,10 +8,18 @@ body {
 }
 
 
+
 h1 {
 @include heading-48;
 font-size: 300%;
 font-weight: bold;
+display: block;
+font-size: 2em;
+-webkit-margin-before: 0.67em;
+-webkit-margin-after: 0.67em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+vertical-align: baseline;
 }
 
 h2 {
@@ -20,16 +28,125 @@ font-weight: bold;
 }
 
 
-h3 {
+h4 {
+@include heading-24;
+font-weight: bold;
+margin-bottom: -20px;
 }
 
 p {
-@include copy-16;
+@include copy-19;
 }
 
 .intro {
 @include copy-19;
 }
+
+.copy-19 {
+@include copy-19;}
+
+.heading-24 {
+@include heading-24;
+}
+
+
+.heading-27 {
+@include heading-27;
+color: #6f777b;
+display: block;
+}
+
+
+.heading-36 {
+@include heading-36;
+font-weight: bold;
+}
+
+.heading-48 {
+@include heading-48;
+font-weight: bold;
+}
+
+.price {
+font-size: 48px;
+margin-top: -10px;
+}
+
+
+
+/*Buttons*/
+
+.button-secondary {
+background-color: #dee0e2;
+position: relative;
+display: -moz-inline-stack;
+display: inline-block;
+padding: 0.35em 0.5em 0.15em 0.5em;
+border: none;
+-webkit-border-radius: 0;
+-moz-border-radius: 0;
+border-radius: 0;
+-webkit-appearance: none;
+-webkit-box-shadow: 0 2px 0 #b5babe;
+-moz-box-shadow: 0 2px 0 #b5babe;
+box-shadow: 0 2px 0 #b5babe;
+font-size: 1em;
+line-height: 1.25;
+text-decoration: none;
+-webkit-font-smoothing: antialiased;
+cursor: pointer;
+color: #0b0c0c;
+}
+
+
+
+
+.del {
+float: right;
+color: grey;
+padding-right: 30px;
+font-size: 18px;
+margin-bottom: -10px;
+}
+
+
+/*Lists*/
+
+
+#list { 
+list-style-type: none;
+margin-left: -40px;
+}
+
+
+
+#savedsearches { 
+list-style-type: none;
+margin-left: -45px;
+}
+
+#savedsearches li { 
+
+padding: 10px;
+border-bottom: 1px solid #dee0e2;
+}
+
+
+
+/*Logo treatment*/
+
+
+#brand {
+width: 100%;
+text-align: center;
+padding: 20px 0 20px 0;
+
+}
+
+
+
+
+/*Input*/ 
 
 
 input  {
@@ -62,6 +179,7 @@ overflow: auto;
 }
 
 #inner-wrapper {
+margin: 0 3% 3% 3%;
 }
 
 #search {
@@ -93,7 +211,7 @@ float: right;
 /* Search */
 
 .searchterm {
-background: #f1f1f1;
+background: #dee0e2;
 padding: 2px;
 }
 
@@ -165,23 +283,20 @@ margin-bottom: -20px;
 #list-results {
 padding: 10px 0 0 0}
 
-#feedback {
-overflow: auto;
-margin-bottom: 30px;}
 
-.feedback { 
-font-size: 10px;}
-
-
-#feedbackbutton { 
+#feedback { 
 font-size: 19px;
-float: left;
-display: inline;
-background: #f1f1f1;
-border-bottom: 2px solid #ccc;
-padding: 1px 10px 1px 10px;
-margin: 7px 10px 0 0;
+margin-bottom: 10px;
 }
+
+
+#fdbutton { 
+background: green;
+color: white;
+padding: 5px;
+width: 150px;
+}
+
 
 
 #supplier-logo {
@@ -212,7 +327,6 @@ margin-bottom: -20px;
 
 .supplier {
 font-size: 14px;
-color: grey;
 }
 
 
@@ -231,32 +345,23 @@ float: left;
 }
 
 #infocol {
-margin-top: 3em;
+margin-top: 11.5em;
 width: 33.333333%;
 float: right;
-border-top: 10px solid #d53880;
 }
 
 
-#infocol p {
-margin-bottom: -17px;
-}
 
 #infocol h3 {
+margin-top: 20px;
 margin-bottom: 25px;
-font-size: 24px;}
-
-.listingh {
-font-size: 24px;
-margin-bottom: -10px;}
-
-
-#keyfeatures ul li {
-font-size: 19px;
 }
 
+
+
 ul li {
-@include copy-19;}
+@include copy-19;
+list-style-type: none;}
 
 .price {
 font-size: 38px;
@@ -271,6 +376,11 @@ background: #ccc;
 display: block;
 margin: 50px 0 20px 0;
 }
+
+
+
+
+
 
 /* Fake Accordion */
 
@@ -301,7 +411,7 @@ margin: -6px 5px 0 0;
 
 td { 
 width: 70%;
-padding: 10px;
+padding: 5px;
 }
 
 .tick {
@@ -324,34 +434,48 @@ height: 100px;
 
 
 
-
-
-
-
 /*Home placeholder*/
 
 
-#cloudstore {
-margin: 30px 0 0px 0;}
+#digitalmarketplace {
+margin: 40px 0 0 0;}
+
 
 #holder {
 overflow: auto;
-width: 1020px;
+width: 950px;
+}
+
+#holder h2 {
+font-size: 24px;
+margin: 4% 0 1% 0;}
+
+#holder h3 {
+margin-bottom: -10px;
+}
+
+#holder ul li {
+list-style-type: none;
+margin-left: -30px;}
+
+#category { 
+width: 380px;
+float: left;
+margin-right: 5%;
+margin-bottom: 1%;
 }
 
 
-#homeplaceholder {
-float: left;
-width: 40%;
-height: 250px;
-padding: 0px;
-margin: 20px 20px 5px 0;
-border: 2px solid #f1f1f1;
-background: #f1f1f1;}
+/*Supplier*/ 
 
+.subpage {
+font-size: 24px;
+color: grey;
+margin-bottom: -20px;
+}
 
-
-
+#inner {
+padding-right: 20px;}
 
 
 

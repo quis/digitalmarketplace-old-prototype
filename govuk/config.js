@@ -5,7 +5,7 @@ exports.govukConfig = {
                     '<div class="content">' +
                       '<a href="#proposition-links" class="js-header-toggle menu">Menu</a>' +
                       '<nav id="proposition-menu">' +
-                        '<a href="/" id="proposition-name">CloudStore <span class="alpha-tag">Alpha</span></a>' +
+                        '<a href="/" id="proposition-name">Digital Marketplace <span class="alpha-tag">Alpha</span></a>' +
                         '<ul id="proposition-links">' +
                           '<li><a href="url-to-page-1" class="active">Home</a></li>' +
                           '<li><a href="url-to-page-2">Login</a></li>' +
