@@ -168,6 +168,25 @@ line-height: 48px!important;
 }
 
 
+  
+#filter-inner input {
+height: 40px;
+text-indent: 10px;
+ display: inline-block; 
+font-family: "nta","GDS-Regular",sans-serif;
+font-size: 14px;
+line-height: 1;
+font-weight: 400;
+text-transform: none;
+border: 1px solid #bfc1c3;
+width: 100%;
+}
+
+#filter-inner input value {
+color: grey;
+}
+
+
 
 /* Search results layout */
 
