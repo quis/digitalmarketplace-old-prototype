@@ -271,6 +271,10 @@ p {
   list-style-type: none;
   margin-left: -40px; }
 
+#infocol ul li {
+  list-style-type: disc;
+  margin-left: 20px; }
+
 #savedsearches {
   list-style-type: none;
   margin-left: -45px; }
@@ -304,16 +308,31 @@ input {
   line-height: 48px !important; }
 
 #filter-inner input {
+  display: inline-block;
+  vertical-align: middle;
   height: 40px;
   text-indent: 10px;
-  display: inline-block;
   font-family: "nta", "GDS-Regular", sans-serif;
   font-size: 14px;
   line-height: 1;
   font-weight: 400;
   text-transform: none;
   border: 1px solid #bfc1c3;
-  width: 100%; }
+  width: auto; }
+
+#radio {
+  vertical-align: middle;
+  line-height: 1.31579;
+  height: 19px;
+  width: auto;
+  margin-bottom: 5px; }
+
+label {
+  font-size: 14px;
+  vertical-align: middle; }
+
+#radio label {
+  margin-left: 10px; }
 
 #filter-inner input value {
   color: grey; }
@@ -511,8 +530,7 @@ ul li {
   font-weight: 400;
   text-transform: none;
   padding-top: 2px;
-  padding-bottom: 8px;
-  list-style-type: none; }
+  padding-bottom: 8px; }
   @media (max-width: 640px) {
     ul li {
       font-size: 16px;
