@@ -91,7 +91,7 @@ h2 {
       padding-top: 6px;
       padding-bottom: 9px; } }
 
-h4 {
+h3 {
   font-family: "nta", Arial, sans-serif;
   font-size: 24px;
   line-height: 1.25;
@@ -99,16 +99,33 @@ h4 {
   text-transform: none;
   padding-top: 9px;
   padding-bottom: 6px;
-  font-weight: bold;
-  margin-bottom: -20px; }
+  font-weight: bold; }
   @media (max-width: 640px) {
-    h4 {
+    h3 {
       font-size: 20px;
       line-height: 1.2; } }
   @media (min-width: 641px) {
-    h4 {
+    h3 {
       padding-top: 6px;
       padding-bottom: 4px; } }
+
+h4 {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 2px;
+  padding-bottom: 8px;
+  font-weight: bold; }
+  @media (max-width: 640px) {
+    h4 {
+      font-size: 16px;
+      line-height: 1.25; } }
+  @media (min-width: 641px) {
+    h4 {
+      padding-top: 0;
+      padding-bottom: 5px; } }
 
 p {
   font-family: "nta", Arial, sans-serif;
@@ -124,23 +141,6 @@ p {
       line-height: 1.25; } }
   @media (min-width: 641px) {
     p {
-      padding-top: 0;
-      padding-bottom: 5px; } }
-
-.intro {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 19px;
-  line-height: 1.31579;
-  font-weight: 400;
-  text-transform: none;
-  padding-top: 2px;
-  padding-bottom: 8px; }
-  @media (max-width: 640px) {
-    .intro {
-      font-size: 16px;
-      line-height: 1.25; } }
-  @media (min-width: 641px) {
-    .intro {
       padding-top: 0;
       padding-bottom: 5px; } }
 
@@ -161,6 +161,23 @@ p {
       padding-top: 0;
       padding-bottom: 5px; } }
 
+.copy-16 {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+  padding-top: 8px;
+  padding-bottom: 7px; }
+  @media (max-width: 640px) {
+    .copy-16 {
+      font-size: 14px;
+      line-height: 1.14286; } }
+  @media (min-width: 641px) {
+    .copy-16 {
+      padding-top: 5px;
+      padding-bottom: 5px; } }
+
 .heading-24 {
   font-family: "nta", Arial, sans-serif;
   font-size: 24px;
@@ -168,7 +185,8 @@ p {
   font-weight: 400;
   text-transform: none;
   padding-top: 9px;
-  padding-bottom: 6px; }
+  padding-bottom: 6px;
+  font-weight: bold; }
   @media (max-width: 640px) {
     .heading-24 {
       font-size: 20px;
@@ -233,11 +251,55 @@ p {
       padding-top: 7px;
       padding-bottom: 13px; } }
 
+.text-secondary {
+  color: #6f777b; }
+
 .price {
   font-size: 48px;
   margin-top: -10px; }
 
+.price-unit {
+  font-size: 16px;
+  font-weight: bold;
+  color: grey;
+  vertical-align: middle;
+  margin-left: 5px; }
+
+/* Layout */
+#infocol {
+  width: 33.33333%;
+  float: right; }
+
+#mcontent {
+  width: 66.66667%;
+  float: left; }
+
+#bundle {
+  margin-bottom: 20px; }
+
 /*Buttons*/
+.button {
+  background-color: #006435;
+  color: white;
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  padding: 0.35em 0.5em 0.15em 0.5em;
+  margin: 0 0 1em 0;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 2px 0 #b5babe;
+  -moz-box-shadow: 0 2px 0 #b5babe;
+  box-shadow: 0 2px 0 #b5babe;
+  font-size: 1em;
+  line-height: 1.25;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer; }
+
 .button-secondary {
   background-color: #dee0e2;
   position: relative;
@@ -273,20 +335,19 @@ p {
 
 #infocol ul li {
   list-style-type: disc;
-  margin-left: 20px; }
+  margin-left: 40px; }
 
-#savedsearches {
+#profile-list {
   list-style-type: none;
-  margin-left: -45px; }
+  margin: 5px 0 20px -45px; }
 
-#savedsearches li {
+#profile-list li {
   padding: 10px;
   border-bottom: 1px solid #dee0e2; }
 
 /*Logo treatment*/
 #brand {
   width: 100%;
-  text-align: center;
   padding: 20px 0 20px 0; }
 
 /*Input*/
@@ -325,7 +386,7 @@ input {
   line-height: 1.31579;
   height: 19px;
   width: auto;
-  margin-bottom: 5px; }
+  margin-bottom: 10px; }
 
 label {
   font-size: 14px;
@@ -375,7 +436,6 @@ label {
   width: 930px; }
 
 #searchops {
-  overflow: auto;
   margin-top: -5px;
   border-bottom: 1px solid #bfc1c3; }
 
@@ -390,7 +450,7 @@ label {
   padding-bottom: 7px;
   font-weight: bold;
   margin-top: 15px;
-  margin-bottom: -3px; }
+  margin-bottom: 0px; }
   @media (max-width: 640px) {
     .cat {
       font-size: 12px;
@@ -506,22 +566,43 @@ label {
 .supplier {
   font-size: 14px; }
 
-/* Listing page layout */
-h1 {
-  font-size: 48px; }
+/* Listing page */
+#infosection {
+  margin: 20px 0 20px 0; }
 
-#mcontent {
-  width: 66.66667%;
-  float: left; }
+#pricing {
+  margin: 0 auto;
+  overflow: auto;
+  padding: 10px 0 10px 0; }
 
-#infocol {
-  margin-top: 11.5em;
-  width: 33.33333%;
-  float: right; }
+#rating {
+  margin: 10px 0 20px 0; }
 
-#infocol h3 {
-  margin-top: 20px;
-  margin-bottom: 25px; }
+#star {
+  background: url('../images/star-rating.png') no-repeat;
+  height: 20px;
+  width: 20px;
+  float: left;
+  margin: 0 2px 0 0; }
+
+#star-no {
+  background: url('../images/star-no.png') no-repeat;
+  height: 20px;
+  width: 20px;
+  float: left;
+  margin: 0 2px 0 0; }
+
+#stars {
+  margin: 0 auto;
+  overflow: auto; }
+
+#price {
+  float: left;
+  margin-right: 10px; }
+
+#price-unit {
+  float: left;
+  width: 100px; }
 
 ul li {
   font-family: "nta", Arial, sans-serif;
@@ -544,12 +625,34 @@ ul li {
   font-size: 38px;
   font-weight: bold; }
 
+#listing-sect {
+  margin: 50px 0 50px 0; }
+
+#question {
+  padding: 10px 0 10px 10px;
+  border-bottom: 1px solid #dee0e2; }
+
 #line {
   width: 60%;
   height: 1px;
   background: #ccc;
   display: block;
   margin: 50px 0 20px 0; }
+
+.form-label {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  display: block;
+  margin-bottom: 5px; }
+
+.form-group {
+  margin-bottom: 30px; }
+
+.form-control {
+  width: 50%; }
 
 /* Fake Accordion */
 #fakeaccordion {
@@ -558,6 +661,10 @@ ul li {
   overflow: auto;
   margin: 5px 5px 5px 0;
   padding: 5px; }
+
+.catname {
+  font-size: 24px;
+  font-weight: bold; }
 
 #catname {
   float: left; }
@@ -590,13 +697,7 @@ td {
 .alternate {
   background: #eaedef; }
 
-#spacer {
-  height: 100px; }
-
 /*Home placeholder*/
-#digitalmarketplace {
-  margin: 40px 0 0 0; }
-
 #holder {
   overflow: auto;
   width: 950px; }

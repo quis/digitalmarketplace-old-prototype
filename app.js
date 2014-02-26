@@ -89,6 +89,16 @@ app.get('/profile.html', function (req, res) {
 
 
 
+app.get('/add-project.html', function (req, res) {
+  
+  var head = commonHead;
+
+  res.render('add-project.html', {
+            'pageTitle': 'Add a new project',
+            'head' : head 
+            });
+});
+
 
 // start the app
 

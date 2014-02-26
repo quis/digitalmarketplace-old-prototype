@@ -27,27 +27,38 @@ h2 {
 font-weight: bold;
 }
 
-
-h4 {
+h3 {
 @include heading-24;
 font-weight: bold;
-margin-bottom: -20px;
+}
+
+
+h4 {
+@include copy-19;
+font-weight: bold;
 }
 
 p {
 @include copy-19;
 }
 
-.intro {
-@include copy-19;
-}
 
 .copy-19 {
 @include copy-19;}
 
+
+.copy-16 {
+@include copy-16;}
+
+
+
 .heading-24 {
 @include heading-24;
+font-weight: bold;
 }
+
+
+
 
 
 .heading-27 {
@@ -67,14 +78,65 @@ font-weight: bold;
 font-weight: bold;
 }
 
+.text-secondary { 
+color: #6f777b;
+}
+
 .price {
 font-size: 48px;
 margin-top: -10px;
 }
 
+.price-unit {
+font-size: 16px;
+font-weight: bold;
+color: grey;
+vertical-align: middle;
+margin-left: 5px;}
 
+
+/* Layout */
+
+
+#infocol {
+width: 33.333333%;
+float: right;
+}
+
+#mcontent { 
+width: 66.66666665%;
+float: left;
+}
+
+#bundle {
+margin-bottom: 20px;
+}
 
 /*Buttons*/
+
+.button {
+background-color: #006435;
+color: white;
+position: relative;
+display: -moz-inline-stack;
+display: inline-block;
+padding: 0.35em 0.5em 0.15em 0.5em;
+margin: 0 0 1em 0;
+border: none;
+-webkit-border-radius: 0;
+-moz-border-radius: 0;
+border-radius: 0;
+-webkit-appearance: none;
+-webkit-box-shadow: 0 2px 0 #b5babe;
+-moz-box-shadow: 0 2px 0 #b5babe;
+box-shadow: 0 2px 0 #b5babe;
+font-size: 1em;
+line-height: 1.25;
+text-decoration: none;
+-webkit-font-smoothing: antialiased;
+cursor: pointer;
+}
+
 
 .button-secondary {
 background-color: #dee0e2;
@@ -121,15 +183,15 @@ margin-left: -40px;
 #infocol ul li
 { 
 list-style-type: disc;
-margin-left: 20px;}
+margin-left: 40px;}
 
 
-#savedsearches { 
+#profile-list { 
 list-style-type: none;
-margin-left: -45px;
+margin: 5px 0 20px -45px;
 }
 
-#savedsearches li { 
+#profile-list li { 
 
 padding: 10px;
 border-bottom: 1px solid #dee0e2;
@@ -142,7 +204,6 @@ border-bottom: 1px solid #dee0e2;
 
 #brand {
 width: 100%;
-text-align: center;
 padding: 20px 0 20px 0;
 
 }
@@ -192,7 +253,7 @@ vertical-align: middle;
 line-height: 1.31579;
 height: 19px;
 width: auto;
-margin-bottom: 5px;
+margin-bottom: 10px;
 }
 
 
@@ -265,11 +326,9 @@ width: 930px;
 }
 
 #searchops {
-overflow: auto;
 margin-top: -5px;
 border-bottom: 1px solid #bfc1c3;
 }
-
 
 
 
@@ -279,7 +338,7 @@ border-bottom: 1px solid #bfc1c3;
 @include copy-14;
 font-weight: bold;
 margin-top: 15px;
-margin-bottom: -3px;
+margin-bottom: 0px;
 }
 
 /* Results */
@@ -322,6 +381,7 @@ font-size: 18px;
 font-weight: bold;
 margin-bottom: -20px;
 }
+
 
 #list-results {
 padding: 10px 0 0 0}
@@ -377,27 +437,51 @@ font-size: 14px;
 
 
 
-/* Listing page layout */
+/* Listing page */
 
-h1 {
-font-size: 48px;}
+#infosection {
+margin: 20px 0 20px 0;
+}
 
-#mcontent { 
-width: 66.66666665%;
+#pricing {
+margin: 0 auto;
+overflow: auto;
+padding: 10px 0 10px 0;
+}
+
+
+#rating {
+margin: 10px 0 20px 0;
+}
+
+#star {
+background: url('../images/star-rating.png') no-repeat;
+height: 20px; 
+width: 20px; 
+float: left; 
+margin: 0 2px 0 0;
+}
+
+#star-no {
+background: url('../images/star-no.png') no-repeat;
+height: 20px; 
+width: 20px; 
+float: left; 
+margin: 0 2px 0 0;
+}
+
+#stars {
+margin: 0 auto;
+overflow: auto;}
+
+#price {
 float: left;
+margin-right: 10px;
 }
 
-#infocol {
-margin-top: 11.5em;
-width: 33.333333%;
-float: right;
-}
-
-
-
-#infocol h3 {
-margin-top: 20px;
-margin-bottom: 25px;
+#price-unit {
+float: left;
+width: 100px;
 }
 
 
@@ -412,6 +496,14 @@ font-weight: bold;}
 
 
 
+#listing-sect {
+margin: 50px 0 50px 0;}
+
+#question {
+padding: 10px 0 10px 10px;
+border-bottom: 1px solid #dee0e2;
+}
+
 
 
 #line {
@@ -424,8 +516,22 @@ margin: 50px 0 20px 0;
 
 
 
+.form-label { font-family: "nta", Arial, sans-serif;
+font-size: 19px;
+line-height: 1.31579;
+font-weight: 400;
+text-transform: none;
+display: block;
+margin-bottom: 5px;}
 
 
+.form-group {
+margin-bottom: 30px; 
+}
+
+.form-control {
+width: 50%;
+}
 
 /* Fake Accordion */
 
@@ -436,6 +542,11 @@ border: 1px dotted #a1acb2;
 overflow: auto;
 margin: 5px 5px 5px 0;
 padding: 5px;
+}
+
+.catname {
+font-size: 24px;
+font-weight: bold; 
 }
 
 #catname {
@@ -473,17 +584,17 @@ margin-left: 10px;
 .alternate {
 background: #eaedef;}
 
-#spacer {
-height: 100px;
-}
+
+
+
+
+
+
+
 
 
 
 /*Home placeholder*/
-
-
-#digitalmarketplace {
-margin: 40px 0 0 0;}
 
 
 #holder {
@@ -519,8 +630,10 @@ color: grey;
 margin-bottom: -20px;
 }
 
+
 #inner {
-padding-right: 20px;}
+padding-right: 20px;
+}
 
 
 
