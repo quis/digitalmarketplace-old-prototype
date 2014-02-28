@@ -258,13 +258,6 @@ p {
   font-size: 48px;
   margin-top: -10px; }
 
-.price-unit {
-  font-size: 16px;
-  font-weight: bold;
-  color: grey;
-  vertical-align: middle;
-  margin-left: 5px; }
-
 /* Layout */
 #infocol {
   width: 33.33333%;
@@ -349,6 +342,9 @@ p {
 #brand {
   width: 100%;
   padding: 20px 0 20px 0; }
+
+.swrap {
+  margin: 20px 0 40px 0; }
 
 /*Input*/
 input {
@@ -568,7 +564,7 @@ label {
 
 /* Listing page */
 .screenshot {
-  border: 5px solid #f1f1f1; }
+  border: 5px solid #dee0e2; }
 
 #keywords {
   margin: 0 auto;
@@ -614,7 +610,8 @@ label {
   margin-right: 10px; }
 
 #price-unit {
-  float: left; }
+  float: left;
+  width: 80px; }
 
 ul li {
   font-family: "nta", Arial, sans-serif;
