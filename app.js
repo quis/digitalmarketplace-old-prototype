@@ -105,7 +105,7 @@ app.get('/listing-no-photo.html', function (req, res) {
   var head = commonHead;
 
   res.render('listing-no-photo.html', {
-            'pageTitle': 'Supplier',
+            'pageTitle': 'Listing',
             'head' : head 
             });
 });
