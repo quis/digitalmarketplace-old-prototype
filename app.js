@@ -100,6 +100,16 @@ app.get('/add-project.html', function (req, res) {
 });
 
 
+app.get('/listing-no-photo.html', function (req, res) {
+  
+  var head = commonHead;
+
+  res.render('listing-no-photo.html', {
+            'pageTitle': 'Supplier',
+            'head' : head 
+            });
+});
+
 // start the app
 
 app.listen(port);
