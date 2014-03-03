@@ -483,8 +483,13 @@ label {
   text-transform: none;
   float: left; }
 
-#rslt {
+#search-result {
   border-bottom: 1px solid #bfc1c3; }
+
+#help-search {
+  min-height: 60px;
+  border-bottom: 1px solid #bfc1c3;
+  padding: 10px 10px 10px 2px; }
 
 .supplier {
   font-size: 18px;
@@ -506,9 +511,9 @@ label {
 
 #supplier-logo {
   height: 50px;
-  width: 50px;
+  width: 100px;
   float: right;
-  margin: 20px 0 20px 20px; }
+  margin: 20px 0 20px 10px; }
 
 #phase-notice {
   padding: 8px 0;
@@ -553,7 +558,6 @@ label {
       font-size: 14px;
       line-height: 1.14286; } }
 
-/* Search result styling */
 .product {
   font-size: 20px;
   font-weight: bold;
