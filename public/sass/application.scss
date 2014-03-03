@@ -329,6 +329,10 @@ border-bottom: 1px solid #bfc1c3;
 
 /* Filter */
 
+.client-logo {
+margin-right: 20px;
+padding: 10px;}
+
 .cat {
 @include copy-14;
 font-weight: bold;
