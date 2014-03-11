@@ -110,6 +110,29 @@ app.get('/listing-no-photo.html', function (req, res) {
             });
 });
 
+
+app.get('/add-project-example.html', function (req, res) {
+  
+  var head = commonHead;
+
+  res.render('add-project-example.html', {
+            'pageTitle': 'Add project',
+            'head' : head 
+            });
+});
+
+app.get('/add-project-with-compare.html', function (req, res) {
+  
+  var head = commonHead;
+
+  res.render('add-project-with-compare.html', {
+            'pageTitle': 'Add project',
+            'head' : head 
+            });
+});
+
+
+
 // start the app
 
 app.listen(port);
