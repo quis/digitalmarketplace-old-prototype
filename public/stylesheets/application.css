@@ -483,25 +483,47 @@ label {
 
 /* Shortlist */
 #shortlist {
-  width: 950px;
+  width: 900px;
   margin-top: 50px; }
 
 #compare-table {
   overflow: auto;
   margin: 0 auto; }
 
+#compare-crit-titles {
+  margin: 0 0 10px 190px;
+  border-bottom: 2px solid #ccc;
+  height: 25px; }
+
+#compare-drag {
+  border: 1px dotted #cccccc;
+  padding: 2px;
+  margin-bottom: 5px; }
+
+#compare-drag-selected {
+  border: 2px solid #7BC26E;
+  padding: 2px;
+  margin-bottom: 5px; }
+
+#compare-crit-replies {
+  margin: 20px 0 0 190px;
+  height: 80px; }
+
 #compare-crit {
-  margin: 0 0 0 180px;
-  background: #cccccc;
-  width: 50px;
+  margin: 0 2% 0 0;
+  width: 18%;
   float: left; }
 
 #shortlist-summary {
-  width: 150px;
-  height: 120px;
-  margin: 5px;
-  padding: 5px;
-  border: 2px solid #f1f1f1; }
+  float: left;
+  width: 140px;
+  height: 80px;
+  margin: 3px;
+  padding: 7px;
+  text-align: center; }
+
+#delete-product {
+  text-align: center; }
 
 #shortlist-top-choice {
   background: #DEFFF4;
