@@ -482,6 +482,23 @@ label {
   -moz-appearance: none; }
 
 /* Shortlist */
+#project-desc {
+  padding: 25px;
+  margin: 20px 0 20px 0;
+  background: #f1f1f1; }
+
+#project-name {
+  padding: 25px;
+  margin: 20px 0 20px 0;
+  background: #f1f1f1; }
+
+#sub-links {
+  margin-bottom: 10px;
+  text-align: right; }
+
+#sub-links a {
+  margin-right: 15px; }
+
 #shortlist {
   width: 900px;
   margin-top: 50px; }
@@ -496,7 +513,7 @@ label {
   height: 25px; }
 
 #compare-drag {
-  border: 1px dotted #cccccc;
+  border: 1px solid #cccccc;
   padding: 2px;
   margin-bottom: 5px; }
 
@@ -507,17 +524,17 @@ label {
 
 #compare-crit-replies {
   margin: 20px 0 0 190px;
-  height: 80px; }
+  height: 70px; }
 
 #compare-crit {
   margin: 0 2% 0 0;
-  width: 18%;
+  width: 23%;
   float: left; }
 
 #shortlist-summary {
   float: left;
   width: 140px;
-  height: 80px;
+  height: 70px;
   margin: 3px;
   padding: 7px;
   text-align: center; }
