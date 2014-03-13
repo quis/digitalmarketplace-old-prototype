@@ -374,25 +374,29 @@ border-radius: 5px;
 padding: 25px; 
 margin: 20px 0 20px 0; 
 background: #f1f1f1;
+width: 75%;
 }
 
 #project-name {
+width: 75%;
 padding: 25px; 
 margin: 20px 0 20px 0; 
 background: #f1f1f1;
 }
 
 #sub-links {
-margin-bottom: 10px; 
+margin-bottom: 17px; 
 text-align: right;
 }
 
 #sub-links a {
-margin-right: 15px;}
+margin-right: 7px;
+font-size: 16px;
+}
 
 
 #shortlist {
-width: 900px;
+width: 80%;
 margin-top: 50px;
 }
 
@@ -402,20 +406,20 @@ margin: 0 auto;
 }
 
 #compare-crit-titles {
-margin: 0 0 10px 190px;
+margin: 0 0 10px 240px;
 border-bottom: 2px solid #ccc;
 height: 25px;
 }
 
 #compare-drag {
 border: 1px solid #cccccc;
-padding: 2px;
+padding: 5px;
 margin-bottom: 5px;
 }
 
 #compare-drag-selected {
-border: 2px solid #7BC26E;
-padding: 2px;
+border: 5px solid #7BC26E;
+padding: 5px;
 margin-bottom: 5px;
 }
 
@@ -425,19 +429,18 @@ height: 70px;
 }
 
 #compare-crit { 
-margin: 0 2% 0 0; 
-width: 23%;
+margin: 0 3% 0 0; 
+width: 20%;
 float: left;
 }
 
 
 #shortlist-summary {
 float: left;
-width: 140px;
+width: 200px;
 height: 70px;
-margin: 3px;
+margin: 4px 5px 0 10px;;
 padding: 7px;
-text-align: center;
 }
 
 
@@ -477,17 +480,6 @@ margin: 10px 0 20px 0;
 text-align: center;
 }
 
-
-#shortlist-item {
-float: left; 
-width: 150px; 
-height: 150px;
-border-bottom: 1px solid #cccccc;
-padding: 0px 0 6px 0;
-margin-top: 5px;
-min-height: 30px;
-vertical-align: middle;
-}
 
 #shortlist h3 {
 margin-top: 20px;
