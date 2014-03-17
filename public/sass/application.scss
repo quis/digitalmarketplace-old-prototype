@@ -275,7 +275,7 @@ color: grey;
 
 
 
-/* Search results layout */
+/* Layout */ 
 
 
 #outer-wrapper {
@@ -287,6 +287,11 @@ overflow: auto;
 #inner-wrapper {
 margin: 3% 3% 3% 3%;
 }
+
+
+/* Search results specific */
+
+
 
 #search {
 display: inline;
@@ -312,6 +317,18 @@ padding-right: 60px;
 #box-results {
 width: 66.6666665%;
 float: right;
+}
+
+#advancedsearch {
+background: #f1f1f1;
+border: 1px solid #cccccc;
+padding: 10px; 
+margin-top: 5px;
+width: 65%;
+}
+
+#searchcontainer {
+overflow: auto;
 }
 
 /* Search */
@@ -671,6 +688,50 @@ margin-bottom: 30px;
 .form-control {
 width: 50%;
 }
+
+
+/* advanced search form */
+
+#adv-wrapper {
+overflow: auto;}
+
+.adv-form-group {
+margin-bottom: 20px;
+width: 40%;
+}
+
+.adv-form-group-control {
+float: left;
+width: 40%;
+margin-bottom: 10px;
+}
+
+.adv-form-group-control {
+float: left;
+width: 30%;
+}
+
+
+
+.adv-form-group input {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0 0 0 10px;
+    border-color: #bfc1c3;
+    text-transform: none;
+    font-family: "nta",Arial,sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.31579;
+    line-height: 48px!important;
+}
+
+
 
 /* Fake Accordion */
 
