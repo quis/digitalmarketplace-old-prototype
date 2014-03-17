@@ -20,7 +20,7 @@ app.use(mustacheRender);
 
 //
 
-var commonHead = '<link href="/public/stylesheets/application.css" rel="stylesheet" type="text/css" />';
+var commonHead = '<link href="/public/stylesheets/application.css" rel="stylesheet" type="text/css" />'+'<script src="/public/javascripts/jquery-1.11.0.min.js" type="text/javascript"></script>';
 
 // routes
 
@@ -131,6 +131,25 @@ app.get('/add-project-with-compare.html', function (req, res) {
             });
 });
 
+app.get('/login.html', function (req, res) {
+  
+  var head = commonHead;
+
+  res.render('login.html', {
+            'pageTitle': 'Login to Digital Marketplace',
+            'head' : head 
+            });
+});
+
+app.get('/sign-up.html', function (req, res) {
+  
+  var head = commonHead;
+
+  res.render('sign-up.html', {
+            'pageTitle': 'Sign up to Digital Marketplace',
+            'head' : head 
+            });
+});
 
 
 // start the app

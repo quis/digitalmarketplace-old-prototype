@@ -7,13 +7,16 @@ exports.govukConfig = {
                       '<nav id="proposition-menu">' +
                         '<a href="/" id="proposition-name">Digital Marketplace <span class="alpha-tag">Alpha</span></a>' +
                         '<ul id="proposition-links">' +
-                          '<li><a href="url-to-page-1" class="active">Home</a></li>' +
-                          '<li><a href="url-to-page-2">Login</a></li>' +
+                          '<li><a href="/" class="active">Home</a></li>' +
+                          '<li><a href="login.html">Login</a></li>' +
+                          '<li><a href="/sign-up.html">Create Account</a></li>' +
+
                         '</ul>' +
                       '</nav>' +
                     '</div>' +
                   '</div>',
   'afterHeader': '<div id="phase-notice">' +
                     '<p><strong>Alpha:</strong> This is a new service - your <a href="">feedback</a> will help us to improve it</p>' +
-                  '</div>'
+                  '</div>',
+  'bodyEnd': '<script src="/public/javascripts/application.js" type="text/javascript"></script>'
 };
