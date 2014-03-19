@@ -74,7 +74,7 @@ $(function(){
 	
 
 $(function(){ 
-	var customwords = $(".customwords"); 
+	var customWords = $(".customwords"); 
 	var addanother =$("#addanother");
 	
 	
@@ -82,7 +82,7 @@ $(function(){
 	
 	console.log("hey")
 	
-	customwords.append("<input type='text' class='adv-form-group' />"); 
+	customWords.append(customWords.find(".adv-form-group").first().clone()); 
 
 	return false;
 		
