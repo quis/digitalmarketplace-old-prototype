@@ -385,17 +385,37 @@ input {
   line-height: 1.31579;
   height: 19px;
   width: auto;
-  margin-bottom: 10px; }
+  margin: 0 0 10px 8px; }
 
-label {
-  font-size: 14px;
+#filter-inner checkbox {
   vertical-align: middle; }
 
-#radio label {
+#filter-inner checkbox label {
+  font-size: 14px;
+  vertical-align: middle;
+  float: left; }
+
+.radio label {
   margin-left: 10px; }
 
 #filter-inner input value {
   color: grey; }
+
+.checkboxes {
+  overflow: auto; }
+
+.checkboxes label {
+  display: block;
+  float: left;
+  padding-right: 6px;
+  white-space: nowrap; }
+
+.checkboxes input {
+  vertical-align: middle;
+  width: 30px; }
+
+.checkboxes label span {
+  vertical-align: middle; }
 
 /* Layout */
 #outer-wrapper {
@@ -420,18 +440,24 @@ label {
   float: left; }
 
 #filter-inner {
-  padding-right: 60px; }
+  padding: 0 60px 0 5px; }
 
 #box-results {
   width: 66.66667%;
   float: right; }
 
-#advancedsearch {
+.advancedsearch {
   background: #f1f1f1;
   border: 1px solid #cccccc;
   padding: 10px;
   margin-top: 5px;
   width: 65%; }
+
+.questionform {
+  background: #f1f1f1;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  margin: 5px 0 20px 0; }
 
 #searchcontainer {
   overflow: auto; }
@@ -595,10 +621,17 @@ label {
 #search-result {
   border-bottom: 1px solid #bfc1c3; }
 
-#help-search {
+#help-search-1 {
+  display: none;
   min-height: 60px;
   border-bottom: 1px solid #bfc1c3;
-  padding: 10px 10px 10px 2px; }
+  padding: 10px 10px 10px 5px; }
+
+#help-search-2 {
+  border: 1px solid #bfc1c3;
+  padding: 10px 10px 10px 10px;
+  background: #f1f1f1;
+  text-align: center; }
 
 .supplier {
   font-size: 18px;
@@ -618,7 +651,7 @@ label {
   padding: 5px;
   width: 150px; }
 
-#supplier-logo {
+.supplier-logo {
   height: 50px;
   width: 100px;
   float: right;
@@ -751,7 +784,8 @@ ul li {
   margin: 50px 0 50px 0; }
 
 #question {
-  padding: 10px 0 10px 10px;
+  padding: 15px 0 15px 10px;
+  margin: 5px 0 5px 0;
   border-bottom: 1px solid #dee0e2; }
 
 #line {
@@ -778,20 +812,19 @@ ul li {
   overflow: auto; }
 
 .adv-form-group {
-  margin-bottom: 20px;
-  width: 40%; }
+  margin-bottom: 10px;
+  width: 60%; }
+
+.adv-form-group control {
+  float: left;
+  width: 50%;
+  margin-bottom: 4px; }
 
 .adv-form-group-control {
   float: left;
-  width: 40%;
-  margin-bottom: 10px; }
-
-.adv-form-group-control {
-  float: left;
-  width: 30%; }
+  width: 50%; }
 
 .adv-form-group input {
-  display: block;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -822,7 +855,7 @@ ul li {
 #catname {
   float: left; }
 
-#exp {
+.exp {
   float: right;
   font-size: 14px;
   margin: 3px 3px 0 0; }
@@ -900,7 +933,7 @@ main.search .search-header {
 @media (min-width: 641px) {
   main.search .search-header {
     width: 66.666%;
-    padding: 20px 30px 30px 0px; } }
+    padding: 20px 20px 10px 0px; } }
 
 main.search .search-header .searchfield {
   position: relative; }

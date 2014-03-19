@@ -10,6 +10,8 @@
      
 </div>
 
+
+
 <div id="search">
 <form action="https://www.gov.uk/search" method="get" accept-charset="utf-8" class="search-header search-header-2 js-search-hash" role="search">
   <div class="searchfield">
@@ -28,53 +30,66 @@
 </div>
     </div>
     
-     <a href="#">Advanced Search</a>
+     <a href="#" class="advsearch">Advanced search</a>
      
-<div id="advancedsearch"><h3>Advanced search</h3> <br>
+<div class="advancedsearch">
+<div class="exp"><a href="#" id="advclose">Close</a></div>
+<h3>Advanced search</h3> <br>
 
 <div class="adv-wrapper">
 <div class="adv-form-group">
+
 <select name="words" class="adv-form-control" id="words">
 	<option value="">Select</option>
 	<option value="AWAO">All words, any order</option>
-	<option selected="selected" value="EWAO">Exact words, any order</option>
-	<option value="EWEO">Exact words, exact order</option>
+	<option value="EWAO">Exact words, any order</option>
+	<option selected="selected" value="EWEO">Exact words, exact order</option>
+		<option value="EWEO">Exclude words</option>
+
 </select>
+</div>
+
+<div class="adv-form-group">
             <input type="text" class="adv-form-control" id="sort" value="cloud content management system">   
+            
+</div>            <button class="button">Add another</button>
+
+            <button class="button">Save</button> 
 
 </div>
 
    
-    </div>
 
 </div>
 
+
+ 
+ 
 <div id="sheader">
 
 
 <div id="box-filter">
 <div id="filter-inner">
+   <div id="help-search-2"><h3>Learn</h3><span class="copy-16"><a href="#">Learn more about content management systems</a></span>
+</div>
 
-<p>You can use the filters to show only results that match your interests</p>
 
 <p class="cat">Price per month</p>
-<input type="text" fname="Price" value="£" class="filter-inner">
+<input type="text" value="£" class="filter-inner">
 
 <p class="cat">Valid until at least</p>
-<input type="text" fname="Price" value="e.g. 01/01/2016" class="filter-inner">
+<input type="text" value="e.g. 01/01/2016" class="filter-inner">
 
 <p class="cat">Provides support </p>
 
 
-<div id="radio">
-
-<input type="radio" id="opt1"><label>Yes</label>
+<div class="radio"><input type="radio"><label>Yes</label>
 
 </div>
 
-<div id="radio">
+<div class="radio">
 
-<input type="radio" id="opt2"><label>No</label>
+<input type="radio"><label>No</label>
 </div>
 
 
@@ -95,24 +110,29 @@
 <div id="box-results">
 
  <div id="searchops">
-
-  <div id="results-summary">
-  <p><span class="count">42</span> <strong>results</strong></div></div>
-  
- <div id="help-search">
+  <div id="help-search-1">
   <p class="product"><a href="#">Learn more about content management systems</a></p>
  </div>
+
+  <div class="results-summary">
+  <p><span class="count">42</span> <strong>results</strong></div>
+  
+<span class="copy-16">Just show products in a category: <a href="#">content management system (30)</a>, <a href="#">Hosting (5)</a>, <a href="#">Antispam (4)</a>, <a href="#">show more</a></span>
+
+  </div>
+  
+
  
- <div id="search-result">
- <div id="supplier-logo"><img src="../public/images/firmsteplogo.png" alt="firmsteplogo" width="100"/></div>
+ <div class="search-result">
+ <div class="supplier-logo"><img src="../public/images/firmsteplogo.png" alt="firmsteplogo" width="100"/></div>
  <p class="product"><a href="#">Achieve CMS</a></p>
  <p class="supplier">by Business Web Software t/a Firmstep</p>
  <p>AchieveCMS: is a fully-featured <span class="searchterm">Content Management System</span> (CMS) for local government. It provides a whole range of functionality...</p>
  <p><a href="#">Add to shortlist</a></p>
 </div>
 
-<div id="search-result"> 
-<div id="supplier-logo"><img src="../public/images/contensis.jpg" alt="contensis" width="100" /></div>
+<div class="search-result"> 
+<div class="supplier-logo"><img src="../public/images/contensis.jpg" alt="contensis" width="100" /></div>
  <p class="product"><a href="#">Contensis - core Web CMS (Enterprise Licence)</a></p>
  <p class="supplier">by Zengenti Limited</p> 
  <p>Contensis is a fully-featured .NET Web <span class="searchterm">Content Management System</span> used by a large number of public service organisations, including...
@@ -120,8 +140,8 @@
  <p><a href="#">Add to shortlist</a></p>
 </div>
  
-  <div id="search-result"> 
-  <div id="supplier-logo"><img src="../public/images/umbraco.png" alt="umbraco" width="100" /></div>
+  <div class="search-result"> 
+  <div class="supplier-logo"><img src="../public/images/umbraco.png" alt="umbraco" width="100" /></div>
  <p class="product"><a href="listing.html">Umbraco</a></p>
   <p class="supplier">by Connect Internet Solutions Ltd</p>
  <p>Our Cloud Umbraco CMS service provides a flexible, end-to-end, access-from-anywhere solution for website content management...
@@ -129,8 +149,8 @@
  <p><a href="#">Add to shortlist</a></p>
 </div>
 
-<div id="search-result"> 
-  <div id="supplier-logo"><img src="../public/images/wp.png" alt="wp" width="100" /></div>
+<div class="search-result"> 
+  <div class="supplier-logo"><img src="../public/images/wp.png" alt="wp" width="100" /></div>
 <p class="product"><a href="#">Cloud Open Source CMS(Wordpress)</a></p>
 <p class="supplier">by Connect Internet Solutions Ltd</p>
 
@@ -139,13 +159,8 @@
  <p><a href="#">Add to shortlist</a></p>
 </div>
  
+ <p>1 <a href="#">2</a> <a href="#">3</a>  ... <a href="#">20</a> <a href="#">21</a> <a href="#">22</a> <a href="#">Next</a></p>
 
-</div>
-</div>
-</div>
-
-</div>
-</div>
 </div>
 </div>
 </div>
