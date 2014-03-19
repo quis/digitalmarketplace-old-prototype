@@ -71,3 +71,21 @@ $(function(){
 
 });
 	
+	
+
+$(function(){ 
+	var customwords = $(".customwords"); 
+	var addanother =$("#addanother");
+	
+	
+	$("#addanother").on("click", function() {
+	
+	console.log("hey")
+	
+	customwords.append("<input type='text' class='adv-form-group' />"); 
+
+	return false;
+		
+	});
+	
+});

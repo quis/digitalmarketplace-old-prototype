@@ -435,12 +435,9 @@ input {
   width: 33.3333%;
   float: left; }
 
-#box-filter {
-  width: 33.3333%;
-  float: left; }
-
 #filter-inner {
   padding: 0 60px 0 5px; }
+
 
 #box-results {
   width: 66.66667%;
