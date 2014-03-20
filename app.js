@@ -152,12 +152,14 @@ app.get('/sign-up.html', function (req, res) {
 });
 
 
-app.get('/search_results_test.html', function (req, res) {
+
+
+app.get('/supplier-profile.html', function (req, res) {
   
   var head = commonHead;
 
-  res.render('search_results_test.html', {
-            'pageTitle': 'Sign up to Digital Marketplace',
+  res.render('supplier-profile.html', {
+            'pageTitle': 'Supplier profile',
             'head' : head 
             });
 });
