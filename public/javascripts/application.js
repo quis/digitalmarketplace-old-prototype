@@ -89,3 +89,25 @@ $(function(){
 	});
 	
 });
+
+
+
+
+
+$(function(){ 
+	var answerlink = $("a.show-answer"); 
+	var answer = $("#answer1"); 
+
+	answer.hide(); 
+	answerlink.on("click", function() {
+	
+	answerlink.hide();
+	answer.show();	
+
+
+		
+	return false;
+
+	});
+
+});
