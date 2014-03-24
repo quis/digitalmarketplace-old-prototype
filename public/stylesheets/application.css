@@ -382,21 +382,19 @@ input {
 
 #radio {
   vertical-align: middle;
-  line-height: 1.31579;
-  height: 19px;
   width: auto;
-  margin: 0 0 10px 8px; }
+  margin: 0 0 0px 7px; }
 
 #filter-inner checkbox {
   vertical-align: middle; }
 
 #filter-inner checkbox label {
-  font-size: 14px;
   vertical-align: middle;
   float: left; }
 
 .radio label {
-  margin-left: 10px; }
+  margin-left: 10px;
+  margin-bottom: -5px; }
 
 #filter-inner input value {
   color: grey; }
@@ -487,7 +485,7 @@ input {
   padding-top: 8px;
   padding-bottom: 7px;
   font-weight: bold;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-bottom: 0px; }
   @media (max-width: 640px) {
     .cat {
@@ -495,6 +493,27 @@ input {
       line-height: 1.25; } }
   @media (min-width: 641px) {
     .cat {
+      padding-top: 5px;
+      padding-bottom: 5px; } }
+
+.cat-filter {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top: 1px solid #ccc; }
+  @media (max-width: 640px) {
+    .cat-filter {
+      font-size: 12px;
+      line-height: 1.25; } }
+  @media (min-width: 641px) {
+    .cat-filter {
       padding-top: 5px;
       padding-bottom: 5px; } }
 
@@ -906,6 +925,9 @@ td {
   float: left;
   margin-right: 5%;
   margin-bottom: 1%; }
+
+#category p {
+  font-size: 18px; }
 
 /*Supplier*/
 .subpage {

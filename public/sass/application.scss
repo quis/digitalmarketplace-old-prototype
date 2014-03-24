@@ -251,10 +251,8 @@ width: auto;
 
 #radio {
 vertical-align: middle;
-line-height: 1.31579;
-height: 19px;
 width: auto;
-margin: 0 0 10px 8px;
+margin: 0 0 0px 7px;
 }
 
 #filter-inner checkbox { 
@@ -263,13 +261,13 @@ vertical-align: middle;
 
 
 #filter-inner checkbox label {
-font-size: 14px;
 vertical-align: middle;
 float: left;
 }
 
 .radio label {
-margin-left: 10px;}
+margin-left: 10px;
+margin-bottom: -5px;}
 
 
 #filter-inner input value {
@@ -388,8 +386,16 @@ padding: 10px;}
 .cat {
 @include copy-14;
 font-weight: bold;
-margin-top: 15px;
+margin-top: 10px;
 margin-bottom: 0px;
+}
+
+.cat-filter {
+@include copy-14;
+font-weight: bold;
+margin-top: 10px;
+margin-bottom: 0px;
+border-top: 1px solid #f1f1f1;
 }
 
 /* Results */
@@ -857,12 +863,15 @@ margin-bottom: -5px;
 list-style-type: none;
 margin-left: -30px;}
 
-#category { 
+#	egory { 
 width: 380px;
 float: left;
 margin-right: 5%;
 margin-bottom: 1%;
 }
+
+#category p {
+font-size: 18px;}
 
 
 /*Supplier*/ 
