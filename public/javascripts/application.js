@@ -111,3 +111,30 @@ $(function(){
 	});
 
 });
+
+
+
+$(function(){ 
+	var shortlistadd = $("#shortlist-add");
+	var shortlistpicker = $(".shortlist-picker"); 
+	var shortlistclose = $("#shortlist-close");
+	var addtoproj = $(".add-to-proj");
+
+	shortlistpicker.hide(); 
+	shortlistadd.on("click", function() {
+	
+	shortlistpicker.show();	
+	addtoproj.hide();
+	
+	});
+	
+	shortlistclose.on("click", function() {
+	$(".shortlist-picker").hide();
+	$("#shortlist-add").show();
+	
+	return false;
+
+	});
+
+});
+
