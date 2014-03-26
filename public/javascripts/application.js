@@ -114,6 +114,8 @@ $(function(){
 
 
 
+
+
 $(function(){ 
 	var shortlistadd = $("#shortlist-add");
 	var shortlistpicker = $(".shortlist-picker"); 
@@ -130,11 +132,40 @@ $(function(){
 	
 	shortlistclose.on("click", function() {
 	$(".shortlist-picker").hide();
-	$("#shortlist-add").show();
+	$(".add-to-proj").show();
 	
 	return false;
 
 	});
 
 });
+
+
+
+$(function(){ 
+	var changeproj = $("#changeproj");
+	var projectpicker = $(".project-picker");
+	var projectclose = $("#project-close"); 
+	var addtoproj = $(".add-to-proj");
+
+
+	projectpicker.hide(); 
+	changeproj.on("click", function() {
+
+	projectpicker.show();
+	addtoproj.hide();	
+	
+	});
+	
+	projectclose.on("click", function() {
+	$(".project-picker").hide();
+	$(".add-to-proj").show();
+	
+	return false;
+
+	});
+
+});
+
+
 
