@@ -358,13 +358,13 @@ p {
   background: #f1f1f1;
   margin-top: -20px;
   padding: 3px;
-  border-top: 7px solid black; }
+  border-top: 4px solid black; }
 
 .pick-one-shortlist {
   background: #f1f1f1;
   margin-bottom: -20px;
   padding: 3px;
-  border-top: 7px solid black; }
+  border-top: 4px solid black; }
 
 .shortlist-item {
   background: #ffffff;
