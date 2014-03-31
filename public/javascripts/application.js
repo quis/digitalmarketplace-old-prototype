@@ -50,6 +50,9 @@ $(function(){
 
 
 
+// Hide q form, display when button is pressed // 
+
+
 $(function(){ 
 	var questionform = $(".questionform"); 
 
@@ -68,10 +71,44 @@ $(function(){
 
 	});
 	
+});
+
+
+// On pressing submit, give feedback the question is sent // 
+
+
+
+$(function(){ 
+	var questionform = $(".questionform"); 
+	var submitquestion = $("#submitquestion"); 
+	var qfeedback = $(".qfeedback"); 
+	var feedbackclose = $("#feedbackclose"); 
+	
+	qfeedback.hide(); 
+
+	$("#submitquestion").on("click", function() {
+		questionform.hide()
+		qfeedback.fadeIn(200);
+
+	});
+
+
+	$("#feedbackclose").on("click", function() {
+		$(".qfeedback").hide();
+
+		return false;
+
+	});
+	
 
 });
 
 
+
+
+
+
+// Show extra questions // 
 
 
 $(function(){ 
