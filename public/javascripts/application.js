@@ -70,6 +70,29 @@ $(function(){
 	
 
 });
+
+
+
+
+$(function(){ 
+	var extraquestions = $("#extraquestions"); 
+	var viewextraqs = $("#viewextraqs"); 
+
+	extraquestions.hide(); 
+
+
+	$("#viewextraqs").on("click", function() {
+		extraquestions.show()
+		viewextraqs.hide();
+
+		
+		return false;
+
+	});
+	
+
+});
+	
 	
 	
 
@@ -166,6 +189,4 @@ $(function(){
 	});
 
 });
-
-
 
