@@ -173,7 +173,7 @@ $(function(){
 });
 
 
-
+// Choose a shortlist // 
 
 
 $(function(){ 
@@ -181,8 +181,12 @@ $(function(){
 	var shortlistpicker = $(".shortlist-picker"); 
 	var shortlistclose = $("#shortlist-close");
 	var addtoproj = $(".add-to-proj");
+	var shortlistcms = $("#shortlist-cms");
+	var onshortlist = $(".on-shortlist");
 
 	shortlistpicker.hide(); 
+	onshortlist.hide(); 
+	
 	shortlistadd.on("click", function() {
 	
 	shortlistpicker.show();	
@@ -190,15 +194,51 @@ $(function(){
 	
 	});
 	
+	
 	shortlistclose.on("click", function() {
 	$(".shortlist-picker").hide();
 	$(".add-to-proj").show();
+	
+	
+	}); 
+	
+	shortlistcms.on("click", function() { 
+	$(".shortlist-picker").hide();
+	console.log('HEY');
+	$("btnon").show();
+
+	return false;
+
+	});
+
+});
+
+
+// Add to CMS // 
+
+
+/*
+$(function(){ 
+	var shortlistcms = $("#shortlist-cms");
+	var onshortlist = $(".on-shortlist");
+	var shortlistpicker = $(".shortlist-picker"); 
+
+	onshortlist.hide(); 
+	shortlistcms.on("click", function() {
+	
+	shortlistpicker.hide();	
+	onshortlist.show();
 	
 	return false;
 
 	});
 
 });
+
+*/
+
+
+// Change project // 
 
 
 
@@ -226,4 +266,3 @@ $(function(){
 	});
 
 });
-
