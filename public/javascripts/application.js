@@ -151,11 +151,11 @@ $(function(){
 });
 
 
-
+// Show answer 1 // 
 
 
 $(function(){ 
-	var answerlink = $("a.show-answer"); 
+	var answerlink = $("a.show-answer1"); 
 	var answer = $("#answer1"); 
 
 	answer.hide(); 
@@ -164,8 +164,25 @@ $(function(){
 	answerlink.hide();
 	answer.show();	
 
+	return false;
 
-		
+	});
+
+});
+
+
+// Show answer 2 // 
+
+$(function(){ 
+	var answerlink2 = $("a.show-answer2"); 
+	var answer2 = $("#answer2"); 
+
+	answer2.hide(); 
+	answerlink2.on("click", function() {
+	
+	answerlink2.hide();
+	answer2.show();	
+
 	return false;
 
 	});
