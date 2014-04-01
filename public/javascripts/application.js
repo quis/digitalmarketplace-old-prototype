@@ -216,7 +216,7 @@ $(function(){
 
 
 $(function(){ 
-	$("#btnon").on("click",function(){window.location="profile.html";});
+	$("#btnon").on("click",function(){window.location="add-project-with-compare.html";});
 	console.log('am i working');
 });
 
