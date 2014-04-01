@@ -205,38 +205,19 @@ $(function(){
 	shortlistcms.on("click", function() { 
 	$(".shortlist-picker").hide();
 	console.log('HEY');
-	$("btnon").show();
-
-	return false;
-
-	});
-
-});
-
-
-// Add to CMS // 
-
-
-/*
-$(function(){ 
-	var shortlistcms = $("#shortlist-cms");
-	var onshortlist = $(".on-shortlist");
-	var shortlistpicker = $(".shortlist-picker"); 
-
-	onshortlist.hide(); 
-	shortlistcms.on("click", function() {
-	
-	shortlistpicker.hide();	
+	addtoproj.hide();
 	onshortlist.show();
-	
+
 	return false;
 
 	});
 
 });
 
-*/
 
+$(function(){ 
+	$(".btnon").on("click",function(){window.location="profile.html";});
+});
 
 // Change project // 
 
