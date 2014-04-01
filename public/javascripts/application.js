@@ -216,7 +216,8 @@ $(function(){
 
 
 $(function(){ 
-	$(".btnon").on("click",function(){window.location="profile.html";});
+	$("#btnon").on("click",function(){window.location="profile.html";});
+	console.log('am i working');
 });
 
 // Change project // 
