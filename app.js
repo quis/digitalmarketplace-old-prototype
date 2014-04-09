@@ -165,6 +165,16 @@ app.get('/supplier-profile.html', function (req, res) {
 });
 
 
+app.get('/project.html', function (req, res) {
+  
+  var head = commonHead;
+
+  res.render('project.html', {
+            'pageTitle': 'Project',
+            'head' : head 
+            });
+});
+
 
 // start the app
 
