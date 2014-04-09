@@ -325,12 +325,12 @@ p {
   margin-bottom: -10px; }
 
 /*Lists*/
-#list {
+.list {
   list-style-type: none;
   margin-left: -40px; }
 
 #infocol ul li {
-  list-style-type: disc;
+  list-style-type: none;
   margin-left: 40px; }
 
 #profile-list {

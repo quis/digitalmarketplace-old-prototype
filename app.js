@@ -176,6 +176,17 @@ app.get('/project.html', function (req, res) {
 });
 
 
+app.get('/saas.html', function (req, res) {
+  
+  var head = commonHead;
+
+  res.render('saas.html', {
+            'pageTitle': 'Software as a service',
+            'head' : head 
+            });
+});
+
+
 // start the app
 
 app.listen(port);
