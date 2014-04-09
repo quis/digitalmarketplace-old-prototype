@@ -93,6 +93,22 @@ $(function(){
 
 
 
+// Saved search // 
+
+$(function(){ 
+	var savesearch = $("#savesearch"); 
+	var savedsearch = $(".savedsearch"); 
+
+	savedsearch.hide();
+
+	$("#savesearch").on("click", function() {
+		savedsearch.show()
+		savesearch.hide();
+	});
+	
+});
+
+
 
 // On pressing submit, give feedback the question is sent // 
 
