@@ -27,9 +27,6 @@ $("a.expander").on( "click", function() {
 // hide advanced searchbox 
 
 
-
-
-
 $(function(){ 
 	var advancedsearch = $(".advancedsearch"); 
 
@@ -72,6 +69,29 @@ $(function(){
 	});
 	
 });
+
+
+
+// Supplier answer form 
+
+
+
+
+$(function(){ 
+	var questionform2 = $(".questionform2"); 
+	var answerq = $("#answerq"); 
+	var submitans = $("#submitans"); 
+
+	questionform2.hide();
+
+	$("#answerq").on("click", function() {
+		questionform2.show()
+		answerq.hide();
+	});
+	
+});
+
+
 
 
 // On pressing submit, give feedback the question is sent // 

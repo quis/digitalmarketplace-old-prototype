@@ -450,7 +450,7 @@ input {
 .checkboxes input {
   margin-right: 5px;
   vertical-align: middle;
-  width: 30px; }
+  width: 14px; }
 
 .checkboxes label span {
   vertical-align: middle; }
@@ -849,15 +849,24 @@ ul li {
 #listing-sect {
   margin: 50px 0 50px 0; }
 
+#features {
+  margin-bottom: 50px; }
+
 #question {
-  padding: 15px 0 10px 10px;
-  margin: 5px 0 20px 0;
+  padding: 10px 20px 0px 10px;
+  margin: 2px 0 20px 0;
   border-bottom: 1px solid #dee0e2; }
+
+.qmd {
+  margin-top: 30px; }
 
 .answerposted {
   background: #fff2d3;
   padding: 10px;
   border: 1px solid #cccccc; }
+
+.questioncategory {
+  margin-top: 20px; }
 
 #line {
   margin: 50px 0 20px 0;
