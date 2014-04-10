@@ -104,9 +104,32 @@ $(function(){
 	$("#savesearch").on("click", function() {
 		savedsearch.show()
 		savesearch.hide();
+		
+		return false;
 	});
 	
 });
+
+
+
+
+// Add results to shortlist // 
+
+$(function(){ 
+	var addresults = $("#addresults"); 
+	var resultsadded = $("#resultsadded"); 
+
+	resultsadded.hide();
+
+	$("#addresults").on("click", function() {
+		resultsadded.show()
+		addresults.hide();
+		
+		return false;
+	});
+	
+});
+
 
 
 

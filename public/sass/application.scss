@@ -161,7 +161,8 @@ color: #0b0c0c;
 }
 
 
-
+.search-container { 
+margin-bottom: 50px;}
 
 .del {
 float: right;
@@ -673,7 +674,7 @@ margin: 50px 0 50px 0;}
 margin-bottom: 50px;}
 
 #question {
-padding: 10px  0px 10px;
+padding: 10px 0px 10px 5px;
 margin: 2px 0 20px 0;
 border-bottom: 1px solid #dee0e2;
 }
@@ -717,7 +718,18 @@ width: 50%;
 }
 
 
-/* advanced search form */
+/* Search results */ 
+
+.results-summary {
+height: 55px;}
+
+
+#resultsadded {
+margin-top: -30px;
+background: $yellow-25;
+padding: 5px;}
+
+/* Search form */
 
 #adv-wrapper {
 overflow: auto;}
