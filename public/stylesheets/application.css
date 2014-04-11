@@ -557,14 +557,12 @@ input {
 .project-desc {
   width: 60%;
   padding: 5px 0 15px 10px;
-  margin: 10px 0 10px 0;
-  background: #f1f1f1; }
+  margin: 10px 0 10px 0; }
 
 .project-name {
   width: 60%;
-  padding: 5px 0 15px 10px;
-  margin-bottom: 20px;
-  background: #f1f1f1; }
+  padding: 5px 0 5px 5px;
+  margin-bottom: 5px; }
 
 #sub-links {
   margin-bottom: 17px;
@@ -609,8 +607,29 @@ input {
   border-bottom: 1px solid #bfc1c3; }
 
 .shortlist-item {
-  padding: 7px;
-  border-bottom: 1px solid #BFC1C3; }
+  background: white;
+  border: 1px solid #85994b;
+  padding: 10px;
+  margin-top: 10px; }
+
+.shortlist-bin {
+  margin-top: 50px;
+  margin-top: 1px solid #dee0e2; }
+
+.shortlist-item-removed {
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid #dee0e2; }
+
+.shortlist-note {
+  background: white;
+  padding: 5px; }
+
+.remove-reason {
+  border: 4px dotted #bfc1c3;
+  margin-top: -7px;
+  padding: 20px 10px 0px 20px;
+  background: #f0e7d7; }
 
 #help-search-1 {
   display: none;
@@ -702,8 +721,19 @@ input {
   color: #6f777b;
   margin-bottom: -2px; }
 
-/* Listing page */
+/* Listing */
+.thumb {
+  border: 5px solid #dee0e2;
+  margin-bottom: 40px;
+  margin-right: 20px; }
+
+.thumb-active {
+  border: 5px solid #6f777b;
+  margin-bottom: 40px;
+  margin-right: 20px; }
+
 .screenshot {
+  margin-top: 20px;
   border: 5px solid #dee0e2; }
 
 #keywords {
@@ -771,7 +801,6 @@ ul li {
       padding-bottom: 5px; } }
 
 .price {
-  font-size: 38px;
   font-weight: bold; }
 
 #listing-sect {
