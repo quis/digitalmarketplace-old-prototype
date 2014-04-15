@@ -551,11 +551,15 @@ float: left;
 border-bottom: 1px solid #bfc1c3;
 }
 
+
+
+.active-shortlist {
+border: 2px solid $grey-3;}
+
 .shortlist-item {
 background: white;
-border: 1px solid $grass-green;
-padding: 10px;
-margin-top: 10px;
+padding: 15px;
+border-bottom: 2px solid $grey-3;
 }
 
 .shortlist-bin {
@@ -569,14 +573,19 @@ border: 1px solid $grey-3;
 }
 
 .shortlist-note { 
-background: white;
-padding: 5px;}
+background: $grey-4;
+padding: 10px;
+margin: 3px;
+border: 1px dotted $grey-2;}
 
+.shortlist-links {
+margin-right: 5px;}
 
-.remove-reason {
-border: 2px solid $grey-2;
-margin-top: 2px;
-padding: 20px 10px 0px 20px;
+#remove-reason {
+border: 3px solid $grey-2;
+background: $grey-4;
+margin-top: -5px;
+padding: 10px 10px 5px 20px;
 }
 
 

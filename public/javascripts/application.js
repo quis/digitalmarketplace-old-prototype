@@ -173,6 +173,29 @@ $(function(){
 
 
 
+// Show remove form // 
+
+$(function(){ 
+	var removefromshortlist = $("#remove-from-shortlist"); 
+	var removereason = $("#remove-reason"); 
+	var savereason = $("#save-reason"); 
+
+	removereason.hide();
+	removefromshortlist.on("click", function() {
+	removereason.show();		
+	
+	
+		return false;
+
+	});
+	
+});
+
+
+
+
+
+
 
 
 

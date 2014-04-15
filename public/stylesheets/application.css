@@ -646,11 +646,13 @@ input {
 #search-result {
   border-bottom: 1px solid #bfc1c3; }
 
+.active-shortlist {
+  border: 2px solid #dee0e2; }
+
 .shortlist-item {
   background: white;
-  border: 1px solid #85994b;
-  padding: 10px;
-  margin-top: 10px; }
+  padding: 15px;
+  border-bottom: 2px solid #dee0e2; }
 
 .shortlist-bin {
   margin-top: 50px;
@@ -662,13 +664,19 @@ input {
   border: 1px solid #dee0e2; }
 
 .shortlist-note {
-  background: white;
-  padding: 5px; }
+  background: #f8f8f8;
+  padding: 10px;
+  margin: 3px;
+  border: 1px dotted #bfc1c3; }
 
-.remove-reason {
-  border: 2px solid #bfc1c3;
-  margin-top: 2px;
-  padding: 20px 10px 0px 20px; }
+.shortlist-links {
+  margin-right: 5px; }
+
+#remove-reason {
+  border: 3px solid #bfc1c3;
+  background: #f8f8f8;
+  margin-top: -5px;
+  padding: 10px 10px 5px 20px; }
 
 #help-search-1 {
   display: none;
