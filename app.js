@@ -187,6 +187,29 @@ app.get('/saas.html', function (req, res) {
 });
 
 
+app.get('/watchlist.html', function (req, res) {
+  
+  var head = commonHead;
+
+  res.render('watchlist.html', {
+            'pageTitle': 'Watchlist',
+            'head' : head 
+            });
+});
+
+
+
+app.get('/share.html', function (req, res) {
+  
+  var head = commonHead;
+
+  res.render('share.html', {
+            'pageTitle': 'Share',
+            'head' : head 
+            });
+});
+
+
 // start the app
 
 app.listen(port);

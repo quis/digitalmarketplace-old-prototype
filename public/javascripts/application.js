@@ -131,6 +131,50 @@ $(function(){
 });
 
 
+// Pick a price unit // 
+
+$(function(){ 
+	var unitpickerbutton = $("#unitpickerbutton"); 
+	var unitpickerm = $("#unitpickerm"); 
+
+	unitpickerm.hide();
+
+	$("#unitpickerbutton").on("click", function() {
+	
+	$("#unitpickerm").show();		
+	
+		return false;
+	});
+	
+});
+
+
+
+
+
+
+// Watchlist feedback // 
+
+$(function(){ 
+	var addtowatchlist = $("#addtowatchlist"); 
+	var watchlist = $("#watchlist"); 
+
+	watchlist.hide();
+
+	$("#addtowatchlist").on("click", function() {
+	
+	$("#addtowatchlist").hide()
+	$("#watchlist").show();		
+	
+		return false;
+	});
+	
+});
+
+
+
+
+
 
 
 // On pressing submit, give feedback the question is sent // 
@@ -293,7 +337,6 @@ $(function(){
 
 $(function(){ 
 	$("#btnon").on("click",function(){window.location="add-project-with-compare.html";});
-	console.log('am i working');
 });
 
 // Change project // 
