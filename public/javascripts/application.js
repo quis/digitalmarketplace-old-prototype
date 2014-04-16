@@ -202,17 +202,29 @@ $(function(){
 	var savereason = $("save-reason");
 	var achievecms = $("#achieve-cms");
 	var dismissshortlistfeedback = $("#dismiss-shortlist-feedback");
-	
+	var numberonshortlist6 = $("#number-on-shortlist-6");
+	var numberonshortlist7 = $("#number-on-shortlist-7");
+	var cancelremove = $("#cancel-remove");
+	var removereason = $("#remove-reason");
+
+	numberonshortlist6.hide();
 	shortlistitemremoved.hide();
 	
 	$("#save-reason").on("click", function() {
 	shortlistitemremoved.show();
 	achievecms.hide();
+	numberonshortlist7.hide();
+	numberonshortlist6.show();	
 	
 	});
 	
 	$("#dismiss-shortlist-feedback").on("click", function() {
 	$("#shortlist-item-removed").hide();
+	
+	});
+	
+	$("#cancel-remove").on("click", function() {
+	removereason.hide();
 		
 		return false;
 
@@ -248,6 +260,12 @@ $(function(){
 	$("#project-name").hide();
 	defaultname.hide();
 	newprojectname.show();
+	
+	});
+	
+	$("#cancel-rename").on("click", function() {
+	projectname.hide();
+	
 	
 		return false;
 
