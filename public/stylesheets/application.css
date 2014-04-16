@@ -46,6 +46,99 @@
 
 */
 
+/* Cross-browser shims
+
+  Ways of normalising properties across browsers.
+ */
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+/* Usage:
+   @include inline-block
+
+   or
+
+   @include inline-block("250px")
+
+   which gives a min-height to the inline-block elements.
+*/
+/* Contain floats usage:
+
+   .this-has-floated-children {
+     @extend %contain-floats;
+   }
+
+*/
+
+/* CSS 3 Mixins
+
+  Add them as you need them. This should let us manage vendor prefixes in one place.
+ */
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+/*
+
+Mixin and defaults for making buttons on GOV.UK services.
+
+For guidance, see: https://www.gov.uk/service-manual/design-and-content/resources/buttons.html
+
+Example usage:
+
+.button{
+  @include button;
+}
+.button-secondary{
+  @include button($grey-3);
+}
+.button-warning{
+  @include button($red);
+}
+
+*/
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+/* Cross-browser shims
+
+  Ways of normalising properties across browsers.
+ */
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+/* Usage:
+   @include inline-block
+
+   or
+
+   @include inline-block("250px")
+
+   which gives a min-height to the inline-block elements.
+*/
+/* Contain floats usage:
+
+   .this-has-floated-children {
+     @extend %contain-floats;
+   }
+
+*/
+
 
 h1 {
   font-family: "nta", Arial, sans-serif;
@@ -297,6 +390,88 @@ p {
   -webkit-font-smoothing: antialiased;
   cursor: pointer; }
 
+.button-warning {
+  background-color: #b10e1e;
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  padding: 0.35em 0.5em 0.15em 0.5em;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 2px 0 #6a0812;
+  -moz-box-shadow: 0 2px 0 #6a0812;
+  box-shadow: 0 2px 0 #6a0812;
+  font-size: 1em;
+  line-height: 1.25;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  color: #fff; }
+  .button-warning:visited {
+    background-color: #b10e1e; }
+  .button-warning:hover, .button-warning:focus {
+    background-color: #990c1a; }
+  .button-warning:active {
+    top: 2px;
+    -webkit-box-shadow: 0 0 0 #b10e1e;
+    -moz-box-shadow: 0 0 0 #b10e1e;
+    box-shadow: 0 0 0 #b10e1e; }
+  .button-warning.disabled, .button-warning[disabled="disabled"], .button-warning[disabled] {
+    zoom: 1;
+    filter: alpha(opacity=#{$trans * 100});
+    opacity: 0.5; }
+    .button-warning.disabled:hover, .button-warning[disabled="disabled"]:hover, .button-warning[disabled]:hover {
+      cursor: default;
+      background-color: #b10e1e; }
+    .button-warning.disabled:active, .button-warning[disabled="disabled"]:active, .button-warning[disabled]:active {
+      top: 0;
+      -webkit-box-shadow: 0 2px 0 #6a0812;
+      -moz-box-shadow: 0 2px 0 #6a0812;
+      box-shadow: 0 2px 0 #6a0812; }
+  .button-warning:hover, .button-warning:focus, .button-warning:visited {
+    color: #fff; }
+  .button-warning:before {
+    content: "";
+    height: 110%;
+    width: 100%;
+    display: block;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .button-warning:active:before {
+    top: -10%;
+    height: 120%; }
+  .button-warning[rel="external"]:after {
+    display: none;
+    content: none;
+    margin-left: 0;
+    margin-right: 0; }
+
+/*
+background: $red;
+color: white;
+position: relative;
+display: -moz-inline-stack;
+display: inline-block;
+padding: 0.35em 0.5em 0.15em 0.5em;
+margin: 0 0 1em 0;
+border: none;
+-webkit-border-radius: 0;
+-moz-border-radius: 0;
+border-radius: 0;
+-webkit-appearance: none;
+-webkit-box-shadow: 0 2px 0 #b5babe;
+-moz-box-shadow: 0 2px 0 #b5babe;
+box-shadow: 0 2px 0 #b5babe;
+font-size: 1em;
+line-height: 1.25;
+text-decoration: none;
+-webkit-font-smoothing: antialiased;
+cursor: pointer;*/
 .button-secondary {
   background-color: #dee0e2;
   position: relative;
@@ -599,9 +774,12 @@ input {
   padding: 5px 0 15px 10px;
   margin: 10px 0 10px 0; }
 
-.project-name {
-  width: 60%;
-  padding: 5px 0 5px 5px;
+#project-name {
+  background: #f8f8f8;
+  border: 1px solid #dee0e2;
+  width: 80%;
+  padding: 10px 0 0 15px;
+  margin-top: -40px;
   margin-bottom: 5px; }
 
 #sub-links {
@@ -673,10 +851,16 @@ input {
   margin-right: 5px; }
 
 #remove-reason {
-  border: 3px solid #bfc1c3;
+  border: 2px solid #6f777b;
   background: #f8f8f8;
   margin-top: -5px;
+  margin: 10px;
   padding: 10px 10px 5px 20px; }
+
+#shortlist-item-removed {
+  background: #fff2d3;
+  padding: 5px;
+  text-align: center; }
 
 #help-search-1 {
   display: none;

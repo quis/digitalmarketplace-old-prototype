@@ -173,7 +173,7 @@ $(function(){
 
 
 
-// Show remove form // 
+// Show shortlist remove form // 
 
 $(function(){ 
 	var removefromshortlist = $("#remove-from-shortlist"); 
@@ -193,7 +193,67 @@ $(function(){
 
 
 
+// Shortlist extras // 
 
+
+
+$(function(){ 
+	var shortlistitemremoved = $("#shortlist-item-removed"); 
+	var savereason = $("save-reason");
+	var achievecms = $("#achieve-cms");
+	var dismissshortlistfeedback = $("#dismiss-shortlist-feedback");
+	
+	shortlistitemremoved.hide();
+	
+	$("#save-reason").on("click", function() {
+	shortlistitemremoved.show();
+	achievecms.hide();
+	
+	});
+	
+	$("#dismiss-shortlist-feedback").on("click", function() {
+	$("#shortlist-item-removed").hide();
+		
+		return false;
+
+	});
+	
+});
+
+
+
+
+
+// Rename project// 
+
+$(function(){ 
+	var renameproject = $("#rename-project"); 
+	var projectname = $("#project-name"); 
+	var saveproject = $("#save-project");
+	var cancelrename = $("#cancel-rename");
+	var defaultname = $("#default-name");
+	var newprojectname = $("#new-project-name");
+
+
+	newprojectname.hide();
+	projectname.hide();
+	
+	$("#rename-project").on("click", function() {
+	projectname.show();		
+
+	}); 
+	
+	$("#save-project").on("click", function() {
+	
+	$("#project-name").hide();
+	defaultname.hide();
+	newprojectname.show();
+	
+		return false;
+
+	});
+	
+});
 
 
 

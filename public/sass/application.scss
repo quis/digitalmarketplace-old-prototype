@@ -2,6 +2,8 @@
 @import '_colours';
 @import '_typography';
 @import 'design-patterns/_alpha-beta';
+@import 'design-patterns/buttons';
+@import "design-patterns/alpha-beta";
 
 
 body {
@@ -137,6 +139,32 @@ text-decoration: none;
 -webkit-font-smoothing: antialiased;
 cursor: pointer;
 }
+
+.button-warning { 
+@include button($red);
+}
+/*
+background: $red;
+color: white;
+position: relative;
+display: -moz-inline-stack;
+display: inline-block;
+padding: 0.35em 0.5em 0.15em 0.5em;
+margin: 0 0 1em 0;
+border: none;
+-webkit-border-radius: 0;
+-moz-border-radius: 0;
+border-radius: 0;
+-webkit-appearance: none;
+-webkit-box-shadow: 0 2px 0 #b5babe;
+-moz-box-shadow: 0 2px 0 #b5babe;
+box-shadow: 0 2px 0 #b5babe;
+font-size: 1em;
+line-height: 1.25;
+text-decoration: none;
+-webkit-font-smoothing: antialiased;
+cursor: pointer;*/
+
 
 
 .button-secondary {
@@ -492,9 +520,12 @@ padding: 5px 0 15px 10px;
 margin: 10px 0 10px 0; 
 }
 
-.project-name {
-width: 60%;
-padding: 5px 0 5px 5px;
+#project-name {
+background: $grey-4;
+border: 1px solid $grey-3;
+width: 80%;
+padding: 10px 0 0 15px;
+margin-top: -40px;
 margin-bottom: 5px; 
 }
 
@@ -582,10 +613,18 @@ border: 1px dotted $grey-2;}
 margin-right: 5px;}
 
 #remove-reason {
-border: 3px solid $grey-2;
+border: 2px solid $grey-1;
 background: $grey-4;
 margin-top: -5px;
+margin: 10px;
 padding: 10px 10px 5px 20px;
+}
+
+
+#shortlist-item-removed {
+background: $yellow-25;
+padding: 5px;
+text-align: center;
 }
 
 
