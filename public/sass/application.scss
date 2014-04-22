@@ -83,6 +83,15 @@ font-weight: bold;
 color: #6f777b;
 }
 
+
+
+
+#phase-notice {
+width: 1020px;
+margin-left: auto;
+margin-right: auto;
+}
+
 .price {
 font-size: 48px;
 margin-top: -10px;
@@ -441,6 +450,15 @@ border: 1px solid #cccccc;
 padding: 10px; 
 margin: 5px 0 20px 0;
 }
+
+.loginwide {
+width: 660px;
+background: #f1f1f1;
+border: 1px solid #cccccc;
+padding: 10px 10px 0 10px; 
+margin: 5px 0 5px 0;
+}
+
 
 
 .questionform {
@@ -854,11 +872,16 @@ margin-bottom: 5px;}
 
 
 .form-group {
-margin-bottom: 30px; 
+margin-bottom: 30px;
+margin-top: -20px;
 }
 
 .form-control {
 width: 50%;
+}
+
+.login-group {
+margin-top: 30px;
 }
 
 

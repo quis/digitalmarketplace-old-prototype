@@ -72,9 +72,28 @@ $(function(){
 
 
 
+// show inline login form 
+
+
+$(function(){ 
+	var showlogin = $("#showlogin"); 
+	var loginform1 = $("#loginform1"); 
+
+	loginform1.hide();
+
+	$("#showlogin").on("click", function() {
+		loginform1.show()
+		
+	return false;
+	
+	});
+	
+});
+
+
+
+
 // Supplier answer form 
-
-
 
 
 $(function(){ 
@@ -99,16 +118,38 @@ $(function(){
 	var savesearch = $("#savesearch"); 
 	var savedsearch = $(".savedsearch"); 
 
+
 	savedsearch.hide();
 
 	$("#savesearch").on("click", function() {
 		savedsearch.show()
 		savesearch.hide();
+
+
 		
 		return false;
 	});
 	
 });
+
+
+// Saved search not logged in // 
+
+$(function(){ 
+	var savesearch1 = $("#savesearch1"); 
+	var savedsearchlogin = $("#savedsearchlogin"); 
+
+	savedsearchlogin.hide();
+
+	savesearch1.on("click", function() {
+	savedsearchlogin.show()
+		
+		return false;
+	});
+	
+});
+
+
 
 
 
