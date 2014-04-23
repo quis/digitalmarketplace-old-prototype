@@ -92,20 +92,6 @@ margin-left: auto;
 margin-right: auto;
 }
 
-
-.strapline {
-margin-bottom: 20px;
-margin-top: -10px;
-}
-
-.makeshortlist {
-background: $grey-4;
-padding: 20px;
-}
-
-
-
-
 .price {
 font-size: 48px;
 margin-top: -10px;
@@ -556,6 +542,29 @@ border-radius: 5px;
 
 
 
+#makeshortlist {
+line-height: 150%;
+background: $grey-4;
+padding: 20px;
+border: 1px solid $grey-3;
+}
+
+.lot-selected {
+margin: 0 10px 10px 0;
+background: $grey-1;
+color: white;
+padding: 5px;
+}
+
+.lot-unselected {
+background: white;
+border-bottom: 1px solid $grey-3;
+padding: 5px;
+}
+
+
+
+
 /* Shortlist */ 
 
 .project-desc {
@@ -798,29 +807,6 @@ padding:  0 10px 0px 10px;}
 line-height: 40%;
 font-size: 16px;}
 
-#rating {
-margin: 10px 0 20px 0;
-}
-
-#star {
-background: url('../images/star-rating.png') no-repeat;
-height: 20px; 
-width: 20px; 
-float: left; 
-margin: 0 2px 0 0;
-}
-
-#star-no {
-background: url('../images/star-no.png') no-repeat;
-height: 20px; 
-width: 20px; 
-float: left; 
-margin: 0 2px 0 0;
-}
-
-#stars {
-margin: 0 auto;
-overflow: auto;}
 
 #price {
 float: left;
@@ -1165,6 +1151,5 @@ main.search .search-header button {
 main.search .search-header button:hover {
     background-color: #267daf;
 }
-
 
 

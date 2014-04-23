@@ -337,14 +337,6 @@ p {
   margin-left: auto;
   margin-right: auto; }
 
-.strapline {
-  margin-bottom: 20px;
-  margin-top: -10px; }
-
-.makeshortlist {
-  background: #f8f8f8;
-  padding: 20px; }
-
 .price {
   font-size: 48px;
   margin-top: -10px; }
@@ -780,6 +772,23 @@ input {
   -webkit-appearance: none;
   -moz-appearance: none; }
 
+#makeshortlist {
+  line-height: 150%;
+  background: #f8f8f8;
+  padding: 20px;
+  border: 1px solid #dee0e2; }
+
+.lot-selected {
+  margin: 0 10px 10px 0;
+  background: #6f777b;
+  color: white;
+  padding: 5px; }
+
+.lot-unselected {
+  background: white;
+  border-bottom: 1px solid #dee0e2;
+  padding: 5px; }
+
 /* Shortlist */
 .project-desc {
   width: 60%;
@@ -1008,27 +1017,6 @@ input {
 #unitpickerm p {
   line-height: 40%;
   font-size: 16px; }
-
-#rating {
-  margin: 10px 0 20px 0; }
-
-#star {
-  background: url('../images/star-rating.png') no-repeat;
-  height: 20px;
-  width: 20px;
-  float: left;
-  margin: 0 2px 0 0; }
-
-#star-no {
-  background: url('../images/star-no.png') no-repeat;
-  height: 20px;
-  width: 20px;
-  float: left;
-  margin: 0 2px 0 0; }
-
-#stars {
-  margin: 0 auto;
-  overflow: auto; }
 
 #price {
   float: left;
