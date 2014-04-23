@@ -337,6 +337,14 @@ p {
   margin-left: auto;
   margin-right: auto; }
 
+.strapline {
+  margin-bottom: 20px;
+  margin-top: -10px; }
+
+.makeshortlist {
+  background: #f8f8f8;
+  padding: 20px; }
+
 .price {
   font-size: 48px;
   margin-top: -10px; }

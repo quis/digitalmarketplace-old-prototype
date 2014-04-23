@@ -77,12 +77,12 @@ app.get('/supplier.html', function (req, res) {
 });
 
 
-app.get('/profile.html', function (req, res) {
+app.get('/dashboard.html', function (req, res) {
   
   var head = commonHead;
 
-  res.render('profile.html', {
-            'pageTitle': 'Profile page',
+  res.render('dashboard.html', {
+            'pageTitle': 'Dashboard',
             'head' : head 
             });
 });
@@ -205,6 +205,17 @@ app.get('/share.html', function (req, res) {
 
   res.render('share.html', {
             'pageTitle': 'Share',
+            'head' : head 
+            });
+});
+
+
+app.get('/reset.html', function (req, res) {
+  
+  var head = commonHead;
+
+  res.render('reset.html', {
+            'pageTitle': 'Reset password',
             'head' : head 
             });
 });
