@@ -773,21 +773,59 @@ input {
   -moz-appearance: none; }
 
 #makeshortlist {
+  overflow: hidden;
   line-height: 150%;
   background: #f8f8f8;
   padding: 20px;
   border: 1px solid #dee0e2; }
 
-.lot-selected {
-  margin: 0 10px 10px 0;
-  background: #6f777b;
-  color: white;
-  padding: 5px; }
+.search-counter {
+  text-align: right;
+  float: right; }
 
-.lot-unselected {
+.services {
+  width: 80%;
+  float: left; }
+
+#makeshortlist p {
+  font-size: 19px; }
+
+#lot-saas {
+  float: left; }
+
+.lot {
+  display: inline-block;
   background: white;
   border-bottom: 1px solid #dee0e2;
-  padding: 5px; }
+  padding: 5px 2px 0 5px;
+  margin-bottom: 11px;
+  margin-right: 10px; }
+
+.lot-selected {
+  display: inline-block;
+  background: #bfc1c3;
+  color: black;
+  padding: 5px 2px 0 5px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-bottom: 2px solid #6f777b; }
+
+/* Shortlist picker */
+#shortlist-holder {
+  background: #f8f8f8;
+  border: 1px solid #bfc1c3;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: -1px;
+  display: inline block;
+  width: 70%;
+  margin-left: 180px; }
+
+#shortlist-holder p {
+  font-size: 16px; }
+
+.shortlist-line {
+  border-bottom: 1px solid #dee0e2; }
 
 /* Shortlist */
 .project-desc {
@@ -1114,6 +1152,11 @@ ul li {
 .adv-form-group-control {
   float: left;
   width: 50%; }
+
+.shortlist-input {
+  width: 200px;
+  margin-left: 10px;
+  margin-right: 10px; }
 
 .adv-form-group input {
   -webkit-box-sizing: border-box;

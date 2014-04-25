@@ -24,26 +24,73 @@ $("a.expander").on( "click", function() {
 });
 
 
-// hide advanced searchbox 
+
+// New search builder // 
 
 
 $(function(){ 
-	var advancedsearch = $(".advancedsearch"); 
+	var lotsaas = $("#lot-saas"); 
+	var lotcategories = $("#lot-categories"); 
+	
+	lotcategories.hide(); 
+	
+	lotsaas.on("click", function() {
+		
+	$(this).find(".lot").addClass("lot-selected");
+	$("#lot-categories").show()
+	
 
-	advancedsearch.hide(); 
-
-
-	$("a.advsearch").on("click", function() {
-		advancedsearch.show()
+	return false; 
+	
 	});
-
-
-	$("#advclose").on("click", function() {
-		advancedsearch.hide();
-		console.log('hide meeee');
-	});
-
+	
 });
+
+
+// selecting stuff // 
+
+
+$(function(){ 
+	var lot = $("#lot-categories .lot"); 
+
+
+	
+});
+
+
+// reducing number //
+$(function(){ 
+
+	$(".lot")
+	 .on("click", function(event){
+	 
+		 event.preventDefault();
+	
+	   var selectedLots = $(".lot-selected").length;
+	   
+		if ($(this).parents("#lot-categories").length) {
+	
+			$(this).toggleClass("lot-selected");
+	
+		   $("#counter").text(
+		     parseInt(
+			     ((Math.random() * 50) + 150) * (selectedLots + 1)
+		     )
+		   );
+	   
+	   } else {
+	console.log(selectedLots)
+		   $("#counter").text(
+		     1830
+		   );
+	   
+	   }
+	   
+	   
+	
+	 });
+});	 
+
 
 
 
@@ -154,21 +201,33 @@ $(function(){
 
 
 
-// Add results to shortlist // 
+// show shortlist menu // 
 
 $(function(){ 
 	var addresults = $("#addresults"); 
-	var resultsadded = $("#resultsadded"); 
+	var shortlistholder = $("#shortlist-holder"); 
+	var cancelshortlist = $("#cancelshortlist"); 
 
-	resultsadded.hide();
+
+	shortlistholder.hide();
 
 	$("#addresults").on("click", function() {
-		resultsadded.show()
-		addresults.hide();
+		shortlistholder.show()
 		
 		return false;
+		
+	});
+
+
+	$("#cancelshortlist").on("click", function() {
+	$("#shortlist-holder").hide();
+		
+		return false;
+
+
 	});
 	
+
 });
 
 

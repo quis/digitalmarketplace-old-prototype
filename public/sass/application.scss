@@ -543,27 +543,71 @@ border-radius: 5px;
 
 
 #makeshortlist {
+overflow: hidden;
 line-height: 150%;
 background: $grey-4;
 padding: 20px;
 border: 1px solid $grey-3;
 }
 
-.lot-selected {
-margin: 0 10px 10px 0;
-background: $grey-1;
-color: white;
-padding: 5px;
+.search-counter {
+text-align: right;
+float: right;
 }
 
-.lot-unselected {
+.services {
+width: 80%;
+float: left;
+}
+
+
+#makeshortlist p {
+font-size: 19px;}
+
+
+#lot-saas {
+float: left;}
+
+.lot {
+display: inline-block;
 background: white;
 border-bottom: 1px solid $grey-3;
-padding: 5px;
+padding: 5px 2px 0 5px;
+margin-bottom: 11px;
+margin-right: 10px;
+}
+
+
+.lot-selected {
+display: inline-block;
+background: $grey-2;
+color: black;
+padding: 5px 2px 0 5px;
+margin-bottom: 10px;
+margin-right: 10px;
+border-bottom: 2px solid $grey-1;
 }
 
 
 
+/* Shortlist picker */ 
+
+#shortlist-holder {
+background: $grey-4;
+border: 1px solid $grey-2;
+padding-left: 10px;
+padding-right: 10px;
+margin-top: -1px;
+display: inline block;
+width: 70%;
+margin-left: 180px;
+}
+
+#shortlist-holder p {
+font-size: 16px;}
+
+.shortlist-line {
+border-bottom: 1px solid $grey-3;}
 
 /* Shortlist */ 
 
@@ -915,6 +959,12 @@ float: left;
 width: 50%;
 }
 
+
+.shortlist-input {
+width: 200px;
+margin-left: 10px;
+margin-right: 10px;
+}
 
 
 .adv-form-group input {
