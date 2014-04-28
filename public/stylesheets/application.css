@@ -780,6 +780,9 @@ input {
   border: 1px solid #dee0e2; }
 
 .search-counter {
+  background: white;
+  padding: 5px;
+  border: 1px solid #dee0e2;
   text-align: right;
   float: right; }
 
@@ -803,8 +806,8 @@ input {
 
 .lot-selected {
   display: inline-block;
-  background: #bfc1c3;
-  color: black;
+  background: #006435;
+  color: white;
   padding: 5px 2px 0 5px;
   margin-bottom: 10px;
   margin-right: 10px;

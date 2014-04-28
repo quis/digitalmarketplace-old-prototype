@@ -28,32 +28,25 @@ $("a.expander").on( "click", function() {
 // New search builder // 
 
 
-$(function(){ 
-	var lotsaas = $("#lot-saas"); 
-	var lotcategories = $("#lot-categories"); 
-	
-	lotcategories.hide(); 
-	
-	lotsaas.on("click", function() {
-		
-	$(this).find(".lot").addClass("lot-selected");
-	$("#lot-categories").show()
-	
+$(function(){ 	
 
-	return false; 
+	 $(".lot-group")
+		 .hide();
+
+	$(".lot-button").on("click", function() {
+
+					 // link // href=""
+		var target = $(this).attr("href"),
+			$saasDiv = $(target);					 
+					 
+		 $(".lot-group")
+			 .hide();
+		
+		$saasDiv.show();
+
+		return false; 
 	
 	});
-	
-});
-
-
-// selecting stuff // 
-
-
-$(function(){ 
-	var lot = $("#lot-categories .lot"); 
-
-
 	
 });
 
@@ -68,7 +61,7 @@ $(function(){
 	
 	   var selectedLots = $(".lot-selected").length;
 	   
-		if ($(this).parents("#lot-categories").length) {
+		if ($(this).parents(".lot-group").length) {
 	
 			$(this).toggleClass("lot-selected");
 	
@@ -79,9 +72,16 @@ $(function(){
 		   );
 	   
 	   } else {
-	console.log(selectedLots)
+
+
+			$(".lot-button .lot")
+				.removeClass("lot-selected")
+
+			$(this)
+				.toggleClass("lot-selected")				
+
 		   $("#counter").text(
-		     1830
+		     $(this).parent("a").data("total")
 		   );
 	   
 	   }
