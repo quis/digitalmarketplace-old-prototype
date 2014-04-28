@@ -25,6 +25,20 @@ $("a.expander").on( "click", function() {
 
 
 
+// Search button links to search results //
+
+$(function(){ 	
+
+	var $searchbutton = $("#home-search"); 
+
+	$searchbutton.on("click", function() {
+	window.location.href="search_results.html";
+	
+	});
+
+});
+	
+	
 // New search builder // 
 
 
