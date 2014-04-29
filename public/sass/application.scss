@@ -238,6 +238,12 @@ border-bottom: 1px solid #dee0e2;
 
 /*shortlists*/
 
+.addimg {
+margin-top: -2px;
+margin-right: 7px; }
+
+
+
 
 /*shortlists*/
 
@@ -602,8 +608,6 @@ padding-left: 10px;
 padding-right: 10px;
 margin-top: -1px;
 display: inline block;
-width: 70%;
-margin-left: 180px;
 }
 
 #shortlist-holder p {
@@ -964,10 +968,39 @@ width: 50%;
 
 
 .shortlist-input {
-width: 200px;
+width: 300px;
 margin-left: 10px;
 margin-right: 10px;
 }
+
+
+#active-filters {
+overflow: auto;
+}
+
+#active-filters p {
+font-size: 16px;}
+
+.active-filter {
+background: $grey-4; 
+color: black;
+padding: 5px;
+font-size: 16px;
+border: 1px solid $grey-3;
+}
+
+.remove {
+float: right;
+margin: 10px 10px 0 0;
+}
+
+.filterimg {
+margin-top: 2px;
+margin-left: 5px; }
+
+
+
+
 
 
 .adv-form-group input {
