@@ -776,6 +776,11 @@ input {
   -webkit-appearance: none;
   -moz-appearance: none; }
 
+.makeshortlist {
+  background: #f8f8f8;
+  padding: 20px;
+  margin-top: 20px; }
+
 #makeshortlist {
   overflow: hidden;
   line-height: 150%;
