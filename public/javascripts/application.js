@@ -24,26 +24,87 @@ $("a.expander").on( "click", function() {
 });
 
 
-// hide advanced searchbox 
 
+// Search button links to search results //
 
-$(function(){ 
-	var advancedsearch = $(".advancedsearch"); 
+$(function(){ 	
 
-	advancedsearch.hide(); 
+	var $searchbutton = $("#home-search"); 
 
-
-	$("a.advsearch").on("click", function() {
-		advancedsearch.show()
-	});
-
-
-	$("#advclose").on("click", function() {
-		advancedsearch.hide();
-		console.log('hide meeee');
+	$searchbutton.on("click", function() {
+	window.location.href="search_results.html";
+	
 	});
 
 });
+	
+	
+// New search builder // 
+
+
+$(function(){ 	
+
+	 $(".lot-group")
+		 .hide();
+
+	$(".lot-button").on("click", function() {
+
+					 // link // href=""
+		var target = $(this).attr("href"),
+			$saasDiv = $(target);					 
+					 
+		 $(".lot-group")
+			 .hide();
+		
+		$saasDiv.show();
+
+		return false; 
+	
+	});
+	
+});
+
+
+// reducing number //
+$(function(){ 
+
+	$(".lot")
+	 .on("click", function(event){
+	 
+		 event.preventDefault();
+	
+	   var selectedLots = $(".lot-selected").length;
+	   
+		if ($(this).parents(".lot-group").length) {
+	
+			$(this).toggleClass("lot-selected");
+	
+		   $("#counter").text(
+		     parseInt(
+			     ((Math.random() * 50) + 150) * (selectedLots + 1)
+		     )
+		   );
+	   
+	   } else {
+
+
+			$(".lot-button .lot")
+				.removeClass("lot-selected")
+
+			$(this)
+				.toggleClass("lot-selected")				
+
+		   $("#counter").text(
+		     $(this).parent("a").data("total")
+		   );
+	   
+	   }
+	   
+	   
+	
+	 });
+});	 
+
 
 
 
@@ -154,21 +215,33 @@ $(function(){
 
 
 
-// Add results to shortlist // 
+// show shortlist menu // 
 
 $(function(){ 
 	var addresults = $("#addresults"); 
-	var resultsadded = $("#resultsadded"); 
+	var shortlistholder = $("#shortlist-holder"); 
+	var cancelshortlist = $("#cancelshortlist"); 
 
-	resultsadded.hide();
+
+	shortlistholder.hide();
 
 	$("#addresults").on("click", function() {
-		resultsadded.show()
-		addresults.hide();
+		shortlistholder.show()
 		
 		return false;
+		
+	});
+
+
+	$("#cancelshortlist").on("click", function() {
+	$("#shortlist-holder").hide();
+		
+		return false;
+
+
 	});
 	
+
 });
 
 
