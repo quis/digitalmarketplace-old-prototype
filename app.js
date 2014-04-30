@@ -77,12 +77,12 @@ app.get('/supplier.html', function (req, res) {
 });
 
 
-app.get('/dashboard.html', function (req, res) {
+app.get('/buyer-dashboard.html', function (req, res) {
   
   var head = commonHead;
 
-  res.render('dashboard.html', {
-            'pageTitle': 'Dashboard',
+  res.render('buyer-dashboard.html', {
+            'pageTitle': 'Buyer dashboard',
             'head' : head 
             });
 });
@@ -154,12 +154,12 @@ app.get('/sign-up.html', function (req, res) {
 
 
 
-app.get('/supplier-profile.html', function (req, res) {
+app.get('/supplier-dashboard.html', function (req, res) {
   
   var head = commonHead;
 
-  res.render('supplier-profile.html', {
-            'pageTitle': 'Supplier profile',
+  res.render('supplier-dashboard.html', {
+            'pageTitle': 'Supplier dashboard',
             'head' : head 
             });
 });
