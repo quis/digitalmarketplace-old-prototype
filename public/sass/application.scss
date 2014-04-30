@@ -427,6 +427,10 @@ float: left;
 padding: 0 60px 0 5px;
 }
 
+#filter-inner p {
+font-size: 16px;
+margin: 0;}
+
 #customwords {
 }
 
@@ -977,33 +981,45 @@ margin-right: 10px;
 }
 
 
-#active-filters {
-overflow: auto;
-}
 
-#active-filters p {
-font-size: 16px;}
+/*New filters and categories*/
 
-.active-filter {
+.filter-applied {
 background: $grey-4; 
 color: black;
-padding: 5px;
-font-size: 16px;
-border: 1px solid $grey-3;
+padding: 7px 7px 7px 7px;
+margin-bottom: 7px;
+overflow: auto;
+border-bottom: 1px solid $grey-3;
 }
 
-.remove {
-float: right;
-margin: 10px 10px 0 0;
+.filter-applied p {
+letter-spacing: 0.009em;
+font-size: 14px;
+margin:0;}
+
+.filter-remove {
+float: left;
+margin-right: 10px;
+margin-left: 10px;
+display: block;
+height: 50px;
 }
 
-.filterimg {
-margin-top: 2px;
-margin-left: 5px; }
+.lev-1 {
+}
+
+.lev-1 p {
+color: $grey-1;
+}
+
+.lev-2 {
+margin-left: 10px;
+}
 
 
-
-
+.category-browse {
+margin-bottom: 20px;}
 
 
 .adv-form-group input {
