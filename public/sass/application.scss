@@ -427,6 +427,10 @@ float: left;
 padding: 0 60px 0 5px;
 }
 
+#filter-inner p {
+font-size: 16px;
+margin: 0;}
+
 #customwords {
 }
 
@@ -545,6 +549,61 @@ border-radius: 5px;
 -moz-appearance: none;
 
 }
+
+.makeshortlist {
+background: #f8f8f8;
+padding: 20px; 
+margin-top: 20px;}
+
+#makeshortlist {
+overflow: hidden;
+line-height: 150%;
+background: $grey-4;
+padding: 20px;
+border: 1px solid $grey-3;
+}
+
+.search-counter {
+background: white;
+padding: 5px;
+border: 1px solid $grey-3;
+text-align: right;
+float: right;
+}
+
+.services {
+width: 80%;
+float: left;
+}
+
+
+#makeshortlist p {
+font-size: 19px;}
+
+
+#lot-saas {
+float: left;}
+
+.lot {
+display: inline-block;
+background: white;
+border-bottom: 1px solid $grey-3;
+padding: 5px 2px 0 5px;
+margin-bottom: 11px;
+margin-right: 10px;
+}
+
+
+.lot-selected {
+display: inline-block;
+background: $green;
+color: white;
+padding: 5px 2px 0 5px;
+margin-bottom: 10px;
+margin-right: 10px;
+border-bottom: 2px solid $grey-1;
+}
+
 
 
 
@@ -1001,6 +1060,46 @@ margin-left: 5px; }
 
 
 
+
+/*New filters and categories*/
+
+.filter-applied {
+background: $grey-4; 
+color: black;
+padding: 7px 7px 7px 7px;
+margin-bottom: 7px;
+overflow: auto;
+border-bottom: 1px solid $grey-3;
+}
+
+.filter-applied p {
+letter-spacing: 0.009em;
+font-size: 14px;
+margin:0;}
+
+.filter-remove {
+float: left;
+margin-right: 10px;
+margin-left: 10px;
+display: block;
+height: 50px;
+}
+
+.lev-1 {
+}
+
+.lev-1 p {
+color: $grey-1;
+}
+
+.lev-2 {
+margin-left: 10px;
+}
+
+
+.category-browse {
+margin-bottom: 20px;}
+>>>>>>> searchresults
 
 
 .adv-form-group input {
