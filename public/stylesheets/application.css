@@ -826,6 +826,47 @@ input {
   margin-right: 10px;
   border-bottom: 2px solid #6f777b; }
 
+#makeshortlist {
+  overflow: hidden;
+  line-height: 150%;
+  background: #f8f8f8;
+  padding: 20px;
+  border: 1px solid #dee0e2; }
+
+.search-counter {
+  background: white;
+  padding: 5px;
+  border: 1px solid #dee0e2;
+  text-align: right;
+  float: right; }
+
+.services {
+  width: 80%;
+  float: left; }
+
+#makeshortlist p {
+  font-size: 19px; }
+
+#lot-saas {
+  float: left; }
+
+.lot {
+  display: inline-block;
+  background: white;
+  border-bottom: 1px solid #dee0e2;
+  padding: 5px 2px 0 5px;
+  margin-bottom: 11px;
+  margin-right: 10px; }
+
+.lot-selected {
+  display: inline-block;
+  background: #006435;
+  color: white;
+  padding: 5px 2px 0 5px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-bottom: 2px solid #6f777b; }
+
 /* Shortlist picker */
 #shortlist-holder {
   background: #f8f8f8;
@@ -1172,6 +1213,27 @@ ul li {
   margin-left: 10px;
   margin-right: 10px; }
 
+#active-filters {
+  overflow: auto; }
+
+#active-filters p {
+  font-size: 16px; }
+
+.active-filter {
+  background: #f8f8f8;
+  color: black;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #dee0e2; }
+
+.remove {
+  float: right;
+  margin: 10px 10px 0 0; }
+
+.filterimg {
+  margin-top: 2px;
+  margin-left: 5px; }
+
 /*New filters and categories*/
 .filter-applied {
   background: #f8f8f8;
@@ -1203,7 +1265,7 @@ ul li {
 .category-browse {
   margin-bottom: 20px; }
 
-.adv-form-group input {
+> > > > > > > searchresults .adv-form-group input {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
