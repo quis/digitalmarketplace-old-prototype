@@ -25,6 +25,33 @@ $("a.expander").on( "click", function() {
 
 
 
+
+// hide a filter on search results
+
+$(function(){ 
+	var closefilter1 = $("#close-filter-1"); 
+	var filter1 = $("#filter-1"); 
+	var closefilter2 = $("#close-filter-2"); 
+	var filter2 = $("#filter-2"); 
+
+
+	$("#close-filter-1").on("click", function() {
+		filter1.fadeOut(200);
+
+		return false;
+
+	});
+
+	$("#close-filter-2").on("click", function() {
+		filter2.fadeOut(200);
+		return false;
+
+	});
+	
+});
+
+
+
 // Search button links to search results //
 
 $(function(){ 	
