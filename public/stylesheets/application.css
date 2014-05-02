@@ -1234,6 +1234,16 @@ ul li {
   margin-top: 2px;
   margin-left: 5px; }
 
+/* Password reset feedback */
+.pw-saved {
+  color: #006435; }
+
+.email-sent {
+  color: #006435; }
+
+.pw-failed {
+  color: #b10e1e; }
+
 /*New filters and categories*/
 .filter-applied {
   background: #f8f8f8;
@@ -1272,7 +1282,7 @@ ul li {
 .category-browse {
   margin-bottom: 20px; }
 
-> > > > > > > searchresults .adv-form-group input {
+.adv-form-group input {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;

@@ -995,6 +995,7 @@ margin-top: 30px;
 }
 
 
+
 /* Search results */ 
 
 .results-summary {
@@ -1058,7 +1059,16 @@ margin-top: 2px;
 margin-left: 5px; }
 
 
+/* Password reset feedback */ 
 
+.pw-saved {
+color: $green;}
+
+.email-sent {
+color: $green;}
+
+.pw-failed {
+color: $red;}
 
 
 /*New filters and categories*/
@@ -1108,7 +1118,6 @@ margin-left: 10px;
 
 .category-browse {
 margin-bottom: 20px;}
->>>>>>> searchresults
 
 
 .adv-form-group input {

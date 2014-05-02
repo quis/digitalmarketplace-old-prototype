@@ -220,6 +220,17 @@ app.get('/reset.html', function (req, res) {
             });
 });
 
+app.get('/successfully-reset.html', function (req, res) {
+  
+  var head = commonHead;
+
+  res.render('successfully-reset.html', {
+            'pageTitle': 'Your password has been reset',
+            'head' : head 
+            });
+});
+
+
 
 // start the app
 
