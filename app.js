@@ -231,6 +231,17 @@ app.get('/successfully-reset.html', function (req, res) {
 });
 
 
+app.get('/buyer-dashboard-pw-changed.html', function (req, res) {
+  
+  var head = commonHead;
+
+  res.render('buyer-dashboard-pw-changed.html', {
+            'pageTitle': 'Buyer dashboard',
+            'head' : head 
+            });
+});
+
+
 
 // start the app
 

@@ -1235,14 +1235,19 @@ ul li {
   margin-left: 5px; }
 
 /* Password reset feedback */
-.pw-saved {
-  color: #006435; }
+.pw-changed {
+  color: #006435;
+  background: #f8f8f8;
+  padding: 20px;
+  border-left: 5px solid #006435; }
 
 .email-sent {
   color: #006435; }
 
 .pw-failed {
-  color: #b10e1e; }
+  color: #b10e1e;
+  padding: 10px;
+  border-left: 5px solid #b10e1e; }
 
 /*New filters and categories*/
 .filter-applied {

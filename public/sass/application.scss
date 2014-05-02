@@ -1061,14 +1061,21 @@ margin-left: 5px; }
 
 /* Password reset feedback */ 
 
-.pw-saved {
-color: $green;}
+.pw-changed {
+color: $green;
+background: $grey-4;
+padding: 20px;
+border-left: 5px solid $green;
+}
+
 
 .email-sent {
 color: $green;}
 
 .pw-failed {
-color: $red;}
+color: $red;
+padding: 10px;
+border-left: 5px solid $red;}
 
 
 /*New filters and categories*/
