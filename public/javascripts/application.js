@@ -24,6 +24,21 @@ $("a.expander").on( "click", function() {
 });
 
 
+// clear all filters 
+
+$(function(){ 
+	var clearallfilters = $("#clear-all-filters"); 
+	var allfilters = $("#all-filters"); 
+
+
+	$("#clear-all-filters").on("click", function() {
+		allfilters.hide();
+		clearallfilters.hide();
+		return false;
+
+	});	
+});
+
 
 
 // hide a filter on search results
