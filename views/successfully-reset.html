@@ -11,7 +11,10 @@
 
 <p>Please choose a new password</p>
 
+
+<div id="pw">
 <div class="login-group">
+<div id="pw-feedback"><p><span class="pw-failed"><strong>Your password must be a minimum of 8 characters</strong></span></p></div>
 
 <div class="form-group">
             <label class="form-label" for="password">New password:</label>
@@ -22,17 +25,17 @@
             <label class="form-label" for="password">New password again:</label>
             <input type="password" name="password" class="form-control" id="password">   
 </div>
-
+</div>
+</div>
 
 
 <p><button class="button">Save new password</button></p>
 
-(If password doesn't meet the validation criteria:)
-
-<p><span class="pw-failed"><strong>Your password must be a minimum of 8 characters</strong></span></p>
+<p><a href="#" id="pw-bad">(If pw is bad)</a></p>
 
 
-(On successful save: <a href="buyer-dashboard-pw-changed.html">redirect to dashboard with feedback banner</a>)
+
+<p>(On successful save: <a href="buyer-dashboard-pw-changed.html">redirect to dashboard with feedback banner</a>)</p>
 
 
 </div>

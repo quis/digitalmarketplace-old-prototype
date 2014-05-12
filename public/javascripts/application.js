@@ -24,6 +24,57 @@ $("a.expander").on( "click", function() {
 });
 
 
+
+
+
+
+
+
+
+// pw validation 
+
+$(function(){ 
+	var pwfeedback = $("#pw-feedback"); 
+	var validationerror = $(".validation-error"); 
+	var pwbad = $("#pw-bad"); 
+	var pw = $("#pw");
+	
+	
+	pwfeedback.hide();
+	pwbad.on("click", function () { 
+	pwfeedback.show();
+	
+	
+	// add the class to show red line
+	
+	pw.addClass("validation-error");
+
+	
+	});
+	
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // clear all filters 
 
 $(function(){ 

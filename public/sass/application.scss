@@ -667,6 +667,8 @@ padding-left: 10px;
 padding-right: 10px;
 margin-top: -1px;
 display: inline block;
+width: 70%;
+margin-left: 180px;
 }
 
 #shortlist-holder p {
@@ -1074,8 +1076,14 @@ color: $green;}
 
 .pw-failed {
 color: $red;
-padding: 10px;
-border-left: 5px solid $red;}
+padding-bottom: 20px;
+}
+
+.validation-error {
+padding-left: 10px;
+border-left: 5px solid $red;
+}
+
 
 
 /*New filters and categories*/
