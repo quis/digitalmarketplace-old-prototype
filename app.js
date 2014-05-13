@@ -55,6 +55,20 @@ app.get('/search_results.html', function (req, res) {
             });
 });
 
+
+app.get('/search_results_2.html', function (req, res) {
+  
+  var head = commonHead;
+
+  res.render('search_results_2.html', {
+            'pageTitle': 'Search results',
+            'head' : head 
+            });
+});
+
+
+
+
 app.get('/listing.html', function (req, res) {
   
   var head = commonHead;
@@ -165,12 +179,12 @@ app.get('/supplier-dashboard.html', function (req, res) {
 });
 
 
-app.get('/project.html', function (req, res) {
+app.get('/shortlist.html', function (req, res) {
   
   var head = commonHead;
 
-  res.render('project.html', {
-            'pageTitle': 'Project',
+  res.render('shortlist.html', {
+            'pageTitle': 'Shortlist',
             'head' : head 
             });
 });

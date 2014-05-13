@@ -27,6 +27,47 @@ $("a.expander").on( "click", function() {
 
 
 
+// Inline login - saved search // 
+
+$(function(){ 
+	var savesearch1 = $("#savesearch1"); 
+	var savedsearchlogin = $("#savedsearchlogin"); 
+	var savedsearchsignup = $("#savedsearchsignup");
+	var signuptrigger = $("#signuptrigger");
+	var logintrigger = $("#logintrigger");
+
+	savedsearchlogin.hide();
+	savedsearchsignup.hide();
+
+	savesearch1.on("click", function() {
+	savedsearchlogin.show();
+	
+	return false;
+
+	});
+	
+	signuptrigger.on("click", function() {
+	savedsearchlogin.hide();
+	savedsearchsignup.show();
+	
+	return false;
+	
+	});
+	
+	
+	logintrigger.on("click", function() {
+	savedsearchsignup.hide();
+	savedsearchlogin.show();
+	
+	return false;
+	
+	});
+	
+});
+
+
+
+
 
 
 
@@ -89,6 +130,10 @@ $(function(){
 
 	});	
 });
+
+
+
+
 
 
 
@@ -226,7 +271,7 @@ $(function(){
 
 
 
-// show inline login form 
+// show inline login form on questions
 
 
 $(function(){ 
@@ -277,9 +322,6 @@ $(function(){
 
 	$("#savesearch").on("click", function() {
 		savedsearch.show()
-		savesearch.hide();
-
-
 		
 		return false;
 	});
@@ -287,21 +329,8 @@ $(function(){
 });
 
 
-// Saved search not logged in // 
 
-$(function(){ 
-	var savesearch1 = $("#savesearch1"); 
-	var savedsearchlogin = $("#savedsearchlogin"); 
 
-	savedsearchlogin.hide();
-
-	savesearch1.on("click", function() {
-	savedsearchlogin.show()
-		
-		return false;
-	});
-	
-});
 
 
 

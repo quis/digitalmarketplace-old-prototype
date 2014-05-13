@@ -19,7 +19,7 @@
 <label for="search-main">
           <span class="visuallyhidden">Search</span>
       </label>
-      <input type="search" name="q" value="" id="search-main">
+      <input type="search" name="q" value="content management systems" id="search-main">
 </fieldset>
 <fieldset>
 <button type="submit" class="button">Search</button> 
@@ -27,19 +27,24 @@
     </fieldset>
     
    
+ 
 </div>
     </div>
          <a href="#" id="savesearch">Save search (1)</a>         
          &ensp; <a href="#" id="savesearch1">Save search (2)</a>
 
          
-         <div class="savedsearch"><span class="saved">Search saved</span> <a href="profile.html">Manage your saved searches</a></div>
+         <div class="savedsearch">
+         <span class="saved">Search saved</span> 
+         <a href="buyer-dashboard.html">Manage your saved searches</a></div>
+
+
 
 <div class="loginwide" id="savedsearchlogin">
-
 <div class="exp"><a href="#" id="closeform">Close</a></div>
 
-<h3>Login to save your search <br><span class="copy-19">(<a href="#">I don't have an account</a>)
+<h3>Login to save your search <br>
+<span class="copy-19"><a href="#" id="signuptrigger">I don't have an account</a>
 </span></h3>
 
 <div class="login-group">
@@ -58,24 +63,99 @@
 <p><button class="button">Login</button> &ensp;<a href="reset.html">Forgotten password</a>
 </p>
 
+</div>
+
+
+
+
+<div class="loginwide" id="savedsearchsignup">
+<div class="exp"><a href="#" id="closeform">Close</a></div>
+
+<h3>Create an account to save your search <br>
+<span class="copy-19"><a href="#" id="logintrigger">I have an account</a>
+</span></h3>
+
+
+<div class="login-group">
+<div class="form-group">
+            <label class="form-label" for="username">Full name:</label>
+            <input type="text" class="form-control" id="fullname">   
+</div>
+
+<div class="form-group">
+            <label class="form-label" for="email">Email address:</label>
+            <input type="text" class="form-control" id="emailaddress">   
+</div>
+
+<div class="form-group">
+            <label class="form-label" for="password">Password:</label>
+            <input type="text" class="form-control" id="password">   
+</div>
+
+
+<div class="form-group">
+            <label class="form-label" for="password">Password again:</label>
+            <input type="text" class="form-control" id="password">   
+</div>
+</div>
+
+
+<p><button class="button">Create an account</button></p>
+
 
 </div>
+
+<!--
+<div class="nav-breadcrumb">
+<ul class="breadcrumb">
+	<li><a href="#"><span class="remove-filt"><strong>&times;</strong></span>SaaS</a></li>
+	<li><a href="#"><span class="remove-filt"><strong>&times;</strong></span>Content management systems</a></li>
+</ul>
+</div>
+-->
+
+<!--
+<div class="breadcrumb-breakdown">
+<div class="breadcrumb-filter"><a href="#"><span class="remove-filt"><strong>&times;</strong></span></a> SaaS </div>
+<div class="breadcrumb-filter"><a href="#"><span class="remove-filt"><strong>&times;</strong></span></a> Content management systems</div>
+</div>
+-->
+
 
  
  
 <div id="sheader">
 
-
 <div id="box-filter">
 <div id="filter-inner">
 
 
+
+
 <div class="category-browse">
 <p><strong>Categories</strong></p>
+
 <div class="lev-1">
-<p><strong><a href="#">Software as a service (4052)</a></strong></p>
-</div>
-<div class="lev-2"><p><a href="#">Content management systems (583)</a></p></div>
+<p><strong><a href="#">Software as a service (4052)</a></strong></p></div>
+<div class="lev-2"><p><a href="search_results_2.html">Content management systems (583)</a></p></div>
+<div class="lev-2"><p><a href="#">Analytics 204</a></p></div>
+<div class="lev-2"><p><a href="#">Agile tools (204)</a></p></div>
+<div class="lev-2"><p><a href="#">Show more</a></p></div>
+
+
+<div class="lev-1">
+<p><strong><a href="#">Platform as a service (32)</a></strong></p></div>
+<div class="lev-2"><p><a href="#">Application deployment (24)</a></p></div>
+<div class="lev-2"><p><a href="#">Components (17)</a></p></div>
+
+
+<div class="lev-1">
+<p><strong><a href="#">Infrastructure as a service (27)</a></strong></p></div>
+<div class="lev-2"><p><a href="#">Compute (23)</a></p></div>
+<div class="lev-2"><p><a href="#">Storage (23)</a></p></div>
+<div class="lev-2"><p><a href="#">Content delivery network (20)</a></p></div>
+<div class="lev-2"><p><a href="#">Other (17)</a></p></div>
+
 </div>
 
 <div class="category-browse">
@@ -86,14 +166,14 @@
 <div class="filter-applied" id="filter-1">
 <div class="filter-remove"><p><a href="#" id="close-filter-1"><strong>&times;</strong></p></a></div>
 <p><strong>Payment option</strong></p>
-<p>BACs, Credit Card</p>
+<p>BACs, Credit Card <span class="copy-16">(312)</span></p>
 </div>
 
 
 <div class="filter-applied" id="filter-2">
 <div class="filter-remove"><p><a href="#" id="close-filter-2"><strong>&times;</strong></p></a></div>
 <p><strong>Minimum contract period</strong></p>
-<p>Year</p>
+<p>Year <span class="copy-16">(102)</span</p>
 </div>
 </div>
 </div>
