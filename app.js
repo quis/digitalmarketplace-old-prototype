@@ -67,6 +67,17 @@ app.get('/search_results_2.html', function (req, res) {
 });
 
 
+app.get('/supplier.html', function (req, res) {
+  
+  var head = commonHead;
+
+  res.render('supplier.html', {
+            'pageTitle': 'Supplier',
+            'head' : head 
+            });
+});
+
+
 
 
 app.get('/listing.html', function (req, res) {
@@ -251,6 +262,16 @@ app.get('/buyer-dashboard-pw-changed.html', function (req, res) {
 
   res.render('buyer-dashboard-pw-changed.html', {
             'pageTitle': 'Buyer dashboard',
+            'head' : head 
+            });
+});
+
+app.get('/all-services.html', function (req, res) {
+  
+  var head = commonHead;
+
+  res.render('all-services.html', {
+            'pageTitle': 'All services',
             'head' : head 
             });
 });

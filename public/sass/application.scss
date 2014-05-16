@@ -112,6 +112,8 @@ width: 33.333333%;
 float: right;
 }
 
+
+
 #mcontent { 
 width: 66.66666665%;
 float: left;
@@ -586,6 +588,83 @@ border-bottom: 1px solid #bfc1c3;
 
 
 
+/* supplier dashboard */ 
+
+.service-item {
+border-bottom: 1px solid $grey-3;}
+
+.service-item-see-all {
+border-bottom: 1px solid $grey-3;
+background: $grey-3;
+text-align: center;
+padding: 3px;
+margin-top: -40px;
+margin-bottom: 40px;
+}
+
+.service-item-see-all a {
+color: black;}
+
+
+.supplier-notification {
+background: $yellow-25;
+padding: 10px;
+width: 90%;
+border: 1px solid $grey-3;}
+
+.supplier-notification p {
+margin: 0;}
+
+
+
+/* all services */ 
+
+.all-services {
+}
+
+
+.service-list-item {
+border-bottom: 1px solid $grey-3;
+margin: 0 auto;
+height: 70px;
+margin-top: 20px;
+margin-bottom: 40px;
+}
+
+
+.service-question {
+border: 1px solid $grey-3;
+padding: 10px;
+margin-bottom: 20px;
+}
+
+
+
+.service-list-item p {
+margin: 0;
+}
+
+
+.analytics {
+float: left;
+width: 29%;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.arrow {
+float: right;
+width: 10%;
+}
+
+
+.analytics p {
+font-size: 16px;
+color: $grey-1;}
+
+
+
+
 /* Filter */
 
 .client-logo {
@@ -1023,15 +1102,22 @@ margin: 50px 0 50px 0;}
 #features {
 margin-bottom: 50px;}
 
-#question {
-padding: 10px 0px 10px 5px;
-margin: 2px 0 20px 0;
-border-bottom: 1px solid #dee0e2;
+.question {
+padding: 10px;
+margin: 2px 0 10px 0;
+border-bottom: 1px solid $grey-2;
+background: $grey-4;
 }
 
+.question p {
+margin: 0;}
+
 .qmd {
-margin-top: 30px;
 }
+
+.open-questions { 
+margin-bottom:10px;
+padding: 1px dashed $grey-3;}
 
 .answerposted {
 background: $yellow-25;
@@ -1167,8 +1253,8 @@ border-left: 5px solid $red;
 .filter-applied {
 background: $grey-4; 
 color: black;
-padding: 7px 7px 7px 7px;
-margin-bottom: 7px;
+padding: 3px 3px 3px 3px;
+margin-bottom: px;
 overflow: auto;
 border-bottom: 1px solid $grey-3;
 }
@@ -1286,7 +1372,7 @@ margin-left: 10px;
 }
 
 .alternate {
-background: #eaedef;}
+background: $grey-4;}
 
 
 
