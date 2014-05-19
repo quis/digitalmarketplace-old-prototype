@@ -67,6 +67,17 @@ app.get('/search_results_2.html', function (req, res) {
 });
 
 
+app.get('/bad-link.html', function (req, res) {
+  
+  var head = commonHead;
+
+  res.render('bad-link.html', {
+            'pageTitle': 'Invalid link',
+            'head' : head 
+            });
+});
+
+
 app.get('/supplier.html', function (req, res) {
   
   var head = commonHead;

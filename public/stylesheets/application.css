@@ -516,6 +516,12 @@ cursor: pointer;*/
   margin-right: 7px; }
 
 /*shortlists*/
+.success-feedback {
+  color: #006435; }
+
+.fail-feedback {
+  color: #b10e1e; }
+
 .shortlist-picker {
   margin-top: -20px;
   width: 90%;
