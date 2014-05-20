@@ -600,17 +600,17 @@ border-bottom: 1px solid #bfc1c3;
 .service-item {
 border-bottom: 1px solid $grey-3;}
 
-.service-item-see-all {
+.see-all {
 border-bottom: 1px solid $grey-3;
 background: $grey-3;
 text-align: center;
 padding: 3px;
-margin-top: -40px;
+margin-top: -20px;
 margin-bottom: 40px;
 }
 
-.service-item-see-all a {
-color: black;}
+
+
 
 
 .supplier-notification {
@@ -1433,6 +1433,28 @@ margin-bottom: -20px;
 padding-right: 20px;
 }
 
+
+
+
+/* GOVUK Landing specific */ 
+
+
+.procurement-services {
+margin: 0 auto;
+overflow: auto;
+}
+
+.category-description {
+width: 65.5%;
+font-size: 160%;}
+
+.category-description p {
+font-size: 24px;}
+
+.subcategory-group {
+float: left;
+width: 33.3333336%;
+}
 
 
 /* Search revised */

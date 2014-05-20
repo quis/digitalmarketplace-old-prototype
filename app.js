@@ -289,6 +289,19 @@ app.get('/all-services.html', function (req, res) {
 
 
 
+app.get('/govuk_landing.html', function (req, res) {
+  
+  var head = commonHead;
+
+  res.render('govuk_landing.html', {
+            'pageTitle': 'Procurement',
+            'head' : head 
+            });
+});
+
+
+
+
 // start the app
 
 app.listen(port);
