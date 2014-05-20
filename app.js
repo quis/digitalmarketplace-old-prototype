@@ -294,7 +294,7 @@ app.get('/govuk_landing.html', function (req, res) {
   var head = commonHead;
 
   res.render('govuk_landing.html', {
-            'pageTitle': 'Procurement',
+            'pageTitle': 'Buy and supply digital services',
             'head' : head 
             });
 });
