@@ -1535,7 +1535,8 @@ td {
 
 .subcategory-group {
   float: left;
-  width: 33.33333%; }
+  width: 29%;
+  margin-right: 4%; }
 
 /* Search revised */
 @media (max-width: 640px) {
