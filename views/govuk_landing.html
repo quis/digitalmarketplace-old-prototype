@@ -1,71 +1,135 @@
-<html>
-<main id="content" role="main" class="group search ancillary">
-<body>
-<div id="outer-wrapper">
-<div id="inner-wrapper">
+<div id="wrapper" class="transaction service">
+<main id="content" role="main" class="tax-disc-start group start-page">
 
-    <a href="index.html">Home</a>
+  <header class="page-header group start-header full-width">
+    <div class="title">
+      <h1>Title</h1>
+    </div>
 
-<h1 class="heading-48">Buy and supply digital services</h1>
+    <nav class="popular-needs">
+      <ul class="top-tasks">
+        <li><a href="/register-sorn-statutory-off-road-notification">Make a <abbr title="Statutory off road notice">SORN</abbr> declaration</a></li>
+        <li><a href="/apply-hgv-vehicle-licence-tax-disc-form-v85">Apply for an <abbr title="Heavy goods vehicle">HGV</abbr> vehicle tax disc</a></li>
+        <li><a href="/calculate-vehicle-tax-rates">Calculate vehicle tax rates</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<div class="category-description"><p>Access a quick and easy way to buy and supply technology services in the public sector.</p></div>
+  <div class="start-container full-width start-page">
 
-<div class="procurement-services">
+    <section class="primary-apply" aria-labelledby="primary-apply-label">
+      <div class="eligibility-check">
 
+        <h1 id="primary-apply-label">Before you start</h1>
+        <p>To apply online you'll need either:</p>
+        <ul>
+          <li>the 16 digit reference number from your tax disc renewal letter (V11)</li>
+          <li>the 11 digit reference number from your log book (V5C)</li>
+        </ul>
 
-<div class="subcategory-group">
-<h3>CloudStore</h3>
-
-<p><strong><a href="#">Go to CloudStore</a></strong></p>
-
-<p>Public-sector organisations can use the CloudStore (G-Cloud) to review and buy cloud-based technology services from infrastructure to support. </p>
-
-
-
-<ul>
-<li>Information on buying and selling</li>
-<li>Read the buyers guide</li>
-<li>Read the suppliers guide</li>
-<li>Edit supplier information</li>
-</ul>
-
-</div>
-<div class="subcategory-group"><h3>Digital Services Store</h3>
-
-<p><strong><a href="#">Go to Digital Services Store</a></strong></p>
-
-<p>Public-sector organisations can use the Digital Services Store to commission approved suppliers to help with their next technology project.</p>
+        <span class="destination">Apply on the DVLA website:</span>
+        <form class="get-started" action="<%= @publication.link %>" method="POST">
+          <input type="submit" value="Apply now" class="button medium" />
+        </form>
 
 
-<ul>
-<li>Information on buying and selling</li>
-<li>Read the buyers guide</li>
-<li>Edit supplier information</li>
-</ul>
+      </div>
 
-</div>
-
-
-<div class="subcategory-group"><h3>Digital Marketplace <span class="alpha-tag">Alpha</span></h3><p>
-<p><strong><a href="#">Try out Digital Marketplace Alpha</a></strong></p>
-
-<p>Now in development, the Digital Marketplace Alpha will be the new home for buying and selling services. Please take a look and give us your feedback.
-</p>
-
-</div>
-</div>
-
-<p>
-Read the <a href="#">Digital Marketplace blog</a> to get updates on the G-Cloud framework, the Digital Services framework, the Digital Services Store, the CloudStore and future developments on the Digital Marketplace.
-</p>
-</div>
+      <div class="you-will-need">
+        <h2>You will need</h2>
+        <p>Tax disc renewal letter (V11)</p>
+        <%= image_tag 'start-pages/tax-disc/v11-diagram.png', alt: 'Tax disc renewal letter (V11)', width: '220' %>
+      </div>
+    </section>
 
 
-</div>
+    <section class="secondary-apply" aria-labelledby="secondary-apply-label">
+      <h1 id="secondary-apply-label">Apply using the new service <span class="beta">beta</span></h1>
+      <p class="this-is-a-beta">This is a 'beta' service - find out <a href="/help/beta">what this means for you</a>.</p>
+
+      <div class="application-details">
+        <p class="opening">You'll need either:</p>
+        <ul>
+          <li>the 16 digit reference number from your tax disc renewal letter (V11)</li>
+          <li>the 11 digit reference number from your log book (V5C)</li>
+        </ul>
+
+        <form action="https://www.taxdisc.service.gov.uk" method="POST">
+          <input type="submit" value="Apply now" class="button button-secondary" />
+        </form>
+
+      </div>
+    </section>
 
 
+    <section class="offline-apply" aria-labelledby="offline-apply-label">
+      <h1 id="offline-apply-label">Other ways to apply</h1>
+      <div class="contacts">
+
+        <div class="by-phone">
+          <h2>By phone</h2>
+          <ul class="contact-numbers">
+            <li><span class="contact-type">Telephone:</span> 0300 123 4321</li>
+            <li><span class="contact-type">Textphone:</span> 0300 790 6201</li>
+          </ul>
+
+          <div class="call-charges">
+            <p>Calls to 03 numbers cost approximately:</p>
+            <ul class="charges">
+              <li>2p to 10p from landlines</li>
+              <li>10p to 40p from mobile phones</li>
+            </ul>
+            <p>
+              <a href="/call-charges">Find out more about call charges</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="at-post-office">
+          <h2>At the Post Office</h2>
+
+          <p>Go to your local <a href="http://www.postoffice.co.uk/branch-finder">Post Office</a>. You'll need to take:
+          </p>
+          <ul>
+            <li>completed V11 reminder</li>
+            <li>MOT test certificate if required (must be valid when the tax disc starts)</li>
+            <li>the payment shown on the reminder</li>
+          </ul>
+          <div class="application-notice info-notice">
+            <p>In <a href="http://www.nidirect.gov.uk/insurance-and-mot-needed-to-tax-your-vehicle">Northern Ireland</a> you'll also need an insurance certificate or cover note.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
+    <section class="help-and-related-links">
+      <section class="help" aria-labelledby="help-label">
+        <h1 id="help-label">Help with tax discs</h1>
+        <ul>
+          <li>
+            <a href="/contact-the-dvla">Contact DVLA for questions about car tax</a>
+          </li>
+        </ul>
+      </section>
+
+
+      <section class="related-links" aria-labelledby="related-links-label">
+        <h1 id="related-links-label">Tax discs and car tax</h1>
+        <ul>
+          <li><a href="/register-sorn-statutory-off-road-notification">Make a SORN (Statutory Off Road Notification)</a></li>
+          <li><a href="/calculate-vehicle-tax-rates">Calculate vehicle tax rates</a></li>
+          <li><a href="/apply-duplicate-tax-disc">Apply for a duplicate tax disc</a></li>
+          <li><a href="/apply-hgv-vehicle-licence-tax-disc-form-v85">Apply for an HGV vehicle licence (tax disc) - form V85</a></li>
+        </ul>
+      </section>
+    </section>
+
+    <p id="tax-disc-perfomance-platform">
+      Find out <a href="/performance/tax-disc">how this service is performing</a>
+    </p>
+  </div>
+
+  <div id="report-a-problem"></div>
 </main>
-</body>
-</html>
+<div>

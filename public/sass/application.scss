@@ -3,7 +3,7 @@
 @import 'design-patterns/_alpha-beta';
 @import 'design-patterns/buttons';
 @import "design-patterns/alpha-beta";
-
+@import 'homepage.scss';
 
 body {
 }
@@ -1120,6 +1120,7 @@ background: $grey-4;
 margin: 0;}
 
 .qmd {
+margin-top: 5px;
 }
 
 .open-questions { 
@@ -1457,6 +1458,9 @@ width: 32%;
 margin-right: 1%;
 }
 
+
+.subcategory-group {
+}
 
 /* Search revised */
 
