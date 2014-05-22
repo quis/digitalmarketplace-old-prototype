@@ -742,8 +742,6 @@ float: left;
 font-size: 19px;}
 
 
-#lot-saas {
-float: left;}
 
 .lot {
 display: inline-block;
@@ -793,9 +791,15 @@ float: left;
 #makeshortlist p {
 font-size: 19px;}
 
+.top-cat-holder {
+overflow: auto;
+}
 
-#lot-saas {
+
+.top-cat {
 float: left;}
+
+
 
 .lot {
 display: inline-block;
@@ -805,6 +809,7 @@ padding: 5px 2px 0 5px;
 margin-bottom: 11px;
 margin-right: 10px;
 }
+
 
 
 .lot-selected {
@@ -1408,7 +1413,8 @@ list-style-type: none;
 margin-left: -30px;}
 
 #category { 
-width: 380px;
+width: 43%;
+height: 320px;
 float: left;
 margin-right: 5%;
 margin-bottom: 1%;
