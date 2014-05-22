@@ -3,12 +3,9 @@
 @import 'design-patterns/_alpha-beta';
 @import 'design-patterns/buttons';
 @import "design-patterns/alpha-beta";
-@import 'homepage.scss';
 
 body {
 }
-
-
 
 h1 {
 @include heading-48;
