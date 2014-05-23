@@ -3,7 +3,21 @@ var express = require('express'),
    app = express(),
    mustacheRender = require("./lib/mustacheRender").mustacheRender,
    port = (process.env.PORT || 3000);
-   
+   var username = process.env.USERNAME;
+var password = process.env.PASSWORD;
+var env = process.env.NODE_ENV || 'production';
+
+console.log(username + ', ' + password);
+
+// Application settings
+ 
+if (env == 'production'){
+	if (!username || !password){
+		console.log('Username or password is not set, exiting.');
+		process.exit(1);
+	}
+	app.use(express.basicAuth(username, password));
+}
   
 // Application settings
 app.engine('html', cons.mustache);
