@@ -5,7 +5,7 @@ var express = require('express'),
    port = (process.env.PORT || 3000);
    var username = process.env.USERNAME;
 var password = process.env.PASSWORD;
-var env = process.env.NODE_ENV || 'production';
+var env = process.env.NODE_ENV || 'development';
 
 console.log(username + ', ' + password);
 
