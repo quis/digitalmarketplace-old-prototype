@@ -170,7 +170,23 @@ $(function(){
 	var $searchbutton = $("#home-search"); 
 
 	$searchbutton.on("click", function() {
-	window.location.href="search_results.html";
+	window.location.href="search_results_2.html";
+	
+	});
+
+});
+
+// Save shortlist links to shortlist //
+
+$(function(){ 	
+
+	var $savenewlist = $("#save-new-list"); 
+
+	$savenewlist.on("click", function(event) {
+
+		event.preventDefault();
+	
+		window.location.href="shortlist.html";
 	
 	});
 
