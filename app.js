@@ -80,6 +80,16 @@ app.get('/search_results_2.html', function (req, res) {
             });
 });
 
+app.get('/search_results_3.html', function (req, res) {
+  
+  var head = commonHead;
+
+  res.render('search_results_3.html', {
+            'pageTitle': 'Search results',
+            'head' : head 
+            });
+});
+
 
 app.get('/bad-link.html', function (req, res) {
   
