@@ -162,7 +162,6 @@ $(function(){
 });
 
 
-
 // Search button links to search results //
 
 $(function(){ 	
@@ -171,6 +170,20 @@ $(function(){
 
 	$searchbutton.on("click", function() {
 	window.location.href="search_results_2.html";
+	
+	});
+
+});
+
+
+// Admin console button link to make account //
+
+$(function(){ 	
+
+	var $admincreateuser = $("#admin-create-user"); 
+
+	$admincreateuser.on("click", function() {
+	window.location.href="admin-create-user.html";
 	
 	});
 

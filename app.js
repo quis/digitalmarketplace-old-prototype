@@ -101,6 +101,27 @@ app.get('/bad-link.html', function (req, res) {
             });
 });
 
+app.get('/admin-console.html', function (req, res) {
+  
+  var head = commonHead;
+
+  res.render('admin-console.html', {
+            'pageTitle': 'Admin console',
+            'head' : head 
+            });
+});
+
+
+app.get('/admin-create-user.html', function (req, res) {
+  
+  var head = commonHead;
+
+  res.render('admin-create-user.html', {
+            'pageTitle': 'Create user',
+            'head' : head 
+            });
+});
+
 
 app.get('/supplier.html', function (req, res) {
   

@@ -347,7 +347,8 @@ p {
 /* Layout */
 #infocol {
   width: 33.33333%;
-  float: right; }
+  float: right;
+  margin-bottom: 30px; }
 
 #mcontent {
   width: 66.66667%;
@@ -1482,13 +1483,12 @@ ul li {
   background: #f8f8f8;
   color: black;
   padding: 3px 3px 3px 3px;
-  margin-bottom: px;
+  margin-bottom: 4px;
   overflow: auto;
   border-bottom: 1px solid #dee0e2; }
 
 .filter-applied p {
-  letter-spacing: 0.009em;
-  font-size: 14px;
+  font-size: 11px;
   margin: 0; }
 
 .filter-remove {

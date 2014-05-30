@@ -107,6 +107,7 @@ color: #888888;
 #infocol {
 width: 33.333333%;
 float: right;
+margin-bottom: 30px;
 }
 
 
@@ -1382,14 +1383,13 @@ border-left: 5px solid $red;
 background: $grey-4; 
 color: black;
 padding: 3px 3px 3px 3px;
-margin-bottom: px;
+margin-bottom: 4px;
 overflow: auto;
 border-bottom: 1px solid $grey-3;
 }
 
 .filter-applied p {
-letter-spacing: 0.009em;
-font-size: 14px;
+font-size: 11px;
 margin:0;}
 
 .filter-remove {
