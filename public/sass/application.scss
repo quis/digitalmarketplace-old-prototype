@@ -684,8 +684,8 @@ overflow: auto;
 /* Search */
 
 .searchterm {
-background: #dee0e2;
 padding: 2px;
+border-bottom: 2px solid grey;
 }
 
 
@@ -1030,7 +1030,8 @@ float: left;
 border-bottom: 1px solid #bfc1c3;
 }
 
-
+#search-result p {
+margin: 0;}
 
 .active-shortlist {
 border: 2px solid $grey-3;}
@@ -1380,24 +1381,38 @@ border-left: 5px solid $red;
 /*New filters and categories*/
 
 .filter-applied {
-background: $grey-4; 
-color: black;
-padding: 3px 3px 3px 3px;
-margin-bottom: 4px;
-overflow: auto;
-border-bottom: 1px solid $grey-3;
+	font-size: 11px;
+	color: black;
+	padding: 3px 3px 3px 3px;
+	margin-bottom: 4px;
+	overflow: auto;
+	border-bottom: 1px solid $grey-3;
+	background: $grey-4;
+	cursor: pointer;
+
+	&:hover {
+		a {
+			border: 1px dotted grey;
+		}	
+	}
+
 }
 
-.filter-applied p {
-font-size: 11px;
-margin:0;}
+
+.filter-applied a {
+border: 1px solid white;
+padding: 5px;
+}
+
+
 
 .filter-remove {
 float: left;
 margin-right: 10px;
 margin-left: 10px;
+margin-top: 10px;
 display: block;
-height: 50px;
+height: 20px;
 }
 
 .filter-remove p {

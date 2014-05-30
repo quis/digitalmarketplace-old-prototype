@@ -864,8 +864,8 @@ input {
 
 /* Search */
 .searchterm {
-  background: #dee0e2;
-  padding: 2px; }
+  padding: 2px;
+  border-bottom: 2px solid grey; }
 
 #sheader {
   margin: 20px 0 0 0;
@@ -1157,6 +1157,9 @@ input {
 
 #search-result {
   border-bottom: 1px solid #bfc1c3; }
+
+#search-result p {
+  margin: 0; }
 
 .active-shortlist {
   border: 2px solid #dee0e2; }
@@ -1480,23 +1483,28 @@ ul li {
 
 /*New filters and categories*/
 .filter-applied {
-  background: #f8f8f8;
+  font-size: 11px;
   color: black;
   padding: 3px 3px 3px 3px;
   margin-bottom: 4px;
   overflow: auto;
-  border-bottom: 1px solid #dee0e2; }
+  border-bottom: 1px solid #dee0e2;
+  background: #f8f8f8;
+  cursor: pointer; }
+  .filter-applied:hover a {
+    border: 1px dotted grey; }
 
-.filter-applied p {
-  font-size: 11px;
-  margin: 0; }
+.filter-applied a {
+  border: 1px solid white;
+  padding: 5px; }
 
 .filter-remove {
   float: left;
   margin-right: 10px;
   margin-left: 10px;
+  margin-top: 10px;
   display: block;
-  height: 50px; }
+  height: 20px; }
 
 .filter-remove p {
   font-size: 24px; }
