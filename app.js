@@ -91,6 +91,18 @@ app.get('/search_results_3.html', function (req, res) {
 });
 
 
+
+app.get('/user-account-confirmation.html', function (req, res) {
+  
+  var head = commonHead;
+
+  res.render('user-account-confirmation.html', {
+            'pageTitle': 'User account confirmation',
+            'head' : head 
+            });
+});
+
+
 app.get('/bad-link.html', function (req, res) {
   
   var head = commonHead;
