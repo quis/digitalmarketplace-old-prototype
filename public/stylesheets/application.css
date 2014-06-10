@@ -866,7 +866,7 @@ input {
 .searchterm {
   margin: 0;
   padding: 2px;
-  border-bottom: 2px dotted grey; }
+  background: #fff2d3; }
 
 #sheader {
   margin: 20px 0 0 0;
@@ -874,6 +874,7 @@ input {
 
 #searchops {
   margin-top: -5px;
+  height: 40px;
   border-bottom: 1px solid #bfc1c3; }
 
 /* supplier dashboard */
@@ -1562,6 +1563,10 @@ ul li {
 .exp {
   float: right;
   margin: 3px 3px 0 0; }
+
+.addbtn {
+  float: right;
+  margin: -20px 3px -10px 0; }
 
 #drag {
   float: left;
