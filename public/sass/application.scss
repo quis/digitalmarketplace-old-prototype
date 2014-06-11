@@ -351,6 +351,18 @@ margin: 0 0 0px 7px;
 vertical-align: middle;
 }
 
+input[type=checkbox] {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+label {
+  display: inline-block;
+  width: auto;
+}
+
 
 #filter-inner checkbox label {
 vertical-align: middle;
