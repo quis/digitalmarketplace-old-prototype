@@ -824,9 +824,19 @@ border-radius: 5px;
 /* search builder */
 
 
+.strapline { 
+margin-top: -25px;}
+
+.set-service-reqs { 
+margin-top: 20px;}
+
+.set-service-reqs h3 {
+}
 
 #searchbuilder {
-  width: 100%;
+width: 90%;
+  background: $grey-4;
+  padding: 10px;
 }
 
 #searchbuilderbutton {
@@ -838,31 +848,37 @@ margin-top: 10px;
 
 .searchbuilder-container {
 overflow: auto;
-width: 90%;
+width: 100%;
 }
 
 .searchbuilder-container-add {
-
-  background: $grey-4;
+  background: white;
   border: 1px solid $grey-3;
   padding: 8px;
   margin-top: 5px;
-  display: block;
+  }
+  
+  .searchbuilder-container-add p {
+  margin: 0;
+}
+  
+  .searchbuilder-container-add-button {
+  padding: 15px;
+  border: 1px solid $grey-3;
+  margin: 5px; 
+  display: inline-block;
+  background: $grey-3;
   }
   
   
-  
- .searchbuilder-container-add p {
- margin:0;}
- 
- .searchbuilder-container-box p {
- background: $grey-4;
- padding: 10px;}
+ .searchbuilder-container-add-button p {
+ margin: 0;
+}
 
 .searchbuilder-container-bit {
 
   background: $grey-4;
-  border: 1px solid $grey-3;
+  border: 1px solid $grey-2;
   padding: 8px;
   margin-top: 5px;
   display: block;
@@ -875,7 +891,7 @@ width: 90%;
   h3 {
   display: inline-block;
   }
-  .chunk, input, legend, .exp {
+  .chunk, input, legend, .exp, .searchbuilder-container-add-button {
     display: none;
   }
 
@@ -891,7 +907,7 @@ display: inline-block;}
       display: block;
     }
 
-  .chunk, input, legend, .exp {
+  .chunk, input, legend, .exp, .searchbuilder-container-add-button {
     margin-left: 5px;
     display: inline-block;
 
@@ -905,9 +921,9 @@ display: inline-block;}
 }
 
 .count-results {
-  font-size: 60px;
+  font-size: 40px;
   float: right;
-}
+  }
 
 
 

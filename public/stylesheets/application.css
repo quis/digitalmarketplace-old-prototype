@@ -991,8 +991,17 @@ input {
   -moz-appearance: none; }
 
 /* search builder */
+.strapline {
+  margin-top: -25px; }
+
+.set-service-reqs {
+  margin-top: 20px; }
+
+
 #searchbuilder {
-  width: 100%; }
+  width: 90%;
+  background: #f8f8f8;
+  padding: 10px; }
 
 #searchbuilderbutton {
   padding: 12px;
@@ -1001,25 +1010,30 @@ input {
 
 .searchbuilder-container {
   overflow: auto;
-  width: 90%; }
+  width: 100%; }
 
 .searchbuilder-container-add {
-  background: #f8f8f8;
+  background: white;
   border: 1px solid #dee0e2;
   padding: 8px;
-  margin-top: 5px;
-  display: block; }
+  margin-top: 5px; }
 
 .searchbuilder-container-add p {
   margin: 0; }
 
-.searchbuilder-container-box p {
-  background: #f8f8f8;
-  padding: 10px; }
+.searchbuilder-container-add-button {
+  padding: 15px;
+  border: 1px solid #dee0e2;
+  margin: 5px;
+  display: inline-block;
+  background: #dee0e2; }
+
+.searchbuilder-container-add-button p {
+  margin: 0; }
 
 .searchbuilder-container-bit {
   background: #f8f8f8;
-  border: 1px solid #dee0e2;
+  border: 1px solid #bfc1c3;
   padding: 8px;
   margin-top: 5px;
   display: block; }
@@ -1028,7 +1042,7 @@ input {
     cursor: pointer; }
   .searchbuilder-container-bit h3 {
     display: inline-block; }
-  .searchbuilder-container-bit .chunk, .searchbuilder-container-bit input, .searchbuilder-container-bit legend, .searchbuilder-container-bit .exp {
+  .searchbuilder-container-bit .chunk, .searchbuilder-container-bit input, .searchbuilder-container-bit legend, .searchbuilder-container-bit .exp, .searchbuilder-container-bit .searchbuilder-container-add-button {
     display: none; }
   .searchbuilder-container-bit .optionSelected {
     display: inline-block; }
@@ -1037,13 +1051,13 @@ input {
     border: 1px solid #bfc1c3; }
     .searchbuilder-container-bit.open h3 {
       display: block; }
-    .searchbuilder-container-bit.open .chunk, .searchbuilder-container-bit.open input, .searchbuilder-container-bit.open legend, .searchbuilder-container-bit.open .exp {
+    .searchbuilder-container-bit.open .chunk, .searchbuilder-container-bit.open input, .searchbuilder-container-bit.open legend, .searchbuilder-container-bit.open .exp, .searchbuilder-container-bit.open .searchbuilder-container-add-button {
       margin-left: 5px;
       display: inline-block; }
 
 
 .count-results {
-  font-size: 60px;
+  font-size: 40px;
   float: right; }
 
 .makeshortlist {

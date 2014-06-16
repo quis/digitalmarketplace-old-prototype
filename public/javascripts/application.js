@@ -714,7 +714,6 @@ $(function(){
 $(function() {
 
 	$(".searchbuilder-container-bit p").on("click", function () {
-		console.log('cleek');
 		$(this).parents(".searchbuilder-container-bit").toggleClass("open");
 	});
 
