@@ -9,7 +9,7 @@ $("a.expander").text("Expand");
 $("a.expander").on( "click", function() {
 	var expander = $(this);
 	var table = expander.closest('.fakeaccordion').next('.features');
-	
+
 	if (expander.text() == 'Close') {
 		// table is showing
 		expander.text("Expand");
@@ -27,11 +27,11 @@ $("a.expander").on( "click", function() {
 
 
 
-// Inline login - saved search // 
+// Inline login - saved search //
 
-$(function(){ 
-	var savesearch1 = $("#savesearch1"); 
-	var savedsearchlogin = $("#savedsearchlogin"); 
+$(function(){
+	var savesearch1 = $("#savesearch1");
+	var savedsearchlogin = $("#savedsearchlogin");
 	var savedsearchsignup = $("#savedsearchsignup");
 	var signuptrigger = $("#signuptrigger");
 	var logintrigger = $("#logintrigger");
@@ -41,28 +41,28 @@ $(function(){
 
 	savesearch1.on("click", function() {
 	savedsearchlogin.show();
-	
+
 	return false;
 
 	});
-	
+
 	signuptrigger.on("click", function() {
 	savedsearchlogin.hide();
 	savedsearchsignup.show();
-	
+
 	return false;
-	
+
 	});
-	
-	
+
+
 	logintrigger.on("click", function() {
 	savedsearchsignup.hide();
 	savedsearchlogin.show();
-	
+
 	return false;
-	
+
 	});
-	
+
 });
 
 
@@ -72,27 +72,27 @@ $(function(){
 
 
 
-// pw validation 
+// pw validation
 
-$(function(){ 
-	var pwfeedback = $("#pw-feedback"); 
-	var validationerror = $(".validation-error"); 
-	var pwbad = $("#pw-bad"); 
+$(function(){
+	var pwfeedback = $("#pw-feedback");
+	var validationerror = $(".validation-error");
+	var pwbad = $("#pw-bad");
 	var pw = $("#pw");
-	
-	
+
+
 	pwfeedback.hide();
-	pwbad.on("click", function () { 
+	pwbad.on("click", function () {
 	pwfeedback.show();
-	
-	
+
+
 	// add the class to show red line
-	
+
 	pw.addClass("validation-error");
 
-	
+
 	});
-	
+
 });
 
 
@@ -116,11 +116,11 @@ $(function(){
 
 
 
-// clear all filters 
+// clear all filters
 
-$(function(){ 
-	var clearallfilters = $("#clear-all-filters"); 
-	var allfilters = $("#all-filters"); 
+$(function(){
+	var clearallfilters = $("#clear-all-filters");
+	var allfilters = $("#all-filters");
 
 
 	$("#clear-all-filters").on("click", function() {
@@ -128,7 +128,7 @@ $(function(){
 		clearallfilters.hide();
 		return false;
 
-	});	
+	});
 });
 
 
@@ -139,11 +139,11 @@ $(function(){
 
 // hide a filter on search results
 
-$(function(){ 
-	var closefilter1 = $("#close-filter-1"); 
-	var filter1 = $("#filter-1"); 
-	var closefilter2 = $("#close-filter-2"); 
-	var filter2 = $("#filter-2"); 
+$(function(){
+	var closefilter1 = $("#close-filter-1");
+	var filter1 = $("#filter-1");
+	var closefilter2 = $("#close-filter-2");
+	var filter2 = $("#filter-2");
 
 
 	$("#close-filter-1").on("click", function() {
@@ -158,58 +158,29 @@ $(function(){
 		return false;
 
 	});
-	
+
 });
+
 
 
 // Search button links to search results //
 
-$(function(){ 	
+$(function(){
 
-	var $searchbutton = $("#home-search"); 
+	var $searchbutton = $("#home-search");
 
 	$searchbutton.on("click", function() {
-	window.location.href="search_results_2.html";
-	
+	window.location.href="search_results.html";
+
 	});
 
 });
 
 
-// Admin console button link to make account //
-
-$(function(){ 	
-
-	var $admincreateuser = $("#admin-create-user"); 
-
-	$admincreateuser.on("click", function() {
-	window.location.href="admin-create-user.html";
-	
-	});
-
-});
-
-// Save shortlist links to shortlist //
-
-$(function(){ 	
-
-	var $savenewlist = $("#save-new-list"); 
-
-	$savenewlist.on("click", function(event) {
-
-		event.preventDefault();
-	
-		window.location.href="shortlist.html";
-	
-	});
-
-});
-	
-	
-// New search builder // 
+// New search builder //
 
 
-$(function(){ 	
+$(function(){
 
 	 $(".lot-group")
 		 .hide();
@@ -218,40 +189,40 @@ $(function(){
 
 					 // link // href=""
 		var target = $(this).attr("href"),
-			$saasDiv = $(target);					 
-					 
+			$saasDiv = $(target);
+
 		 $(".lot-group")
 			 .hide();
-		
+
 		$saasDiv.show();
 
-		return false; 
-	
+		return false;
+
 	});
-	
+
 });
 
 
 // reducing number //
-$(function(){ 
+$(function(){
 
 	$(".lot")
 	 .on("click", function(event){
-	 
+
 		 event.preventDefault();
-	
+
 	   var selectedLots = $(".lot-selected").length;
-	   
+
 		if ($(this).parents(".lot-group").length) {
-	
+
 			$(this).toggleClass("lot-selected");
-	
+
 		   $("#counter").text(
 		     parseInt(
 			     ((Math.random() * 50) + 150) * (selectedLots + 1)
 		     )
 		   );
-	   
+
 	   } else {
 
 
@@ -259,29 +230,29 @@ $(function(){
 				.removeClass("lot-selected")
 
 			$(this)
-				.toggleClass("lot-selected")				
+				.toggleClass("lot-selected")
 
 		   $("#counter").text(
 		     $(this).parent("a").data("total")
 		   );
-	   
+
 	   }
-	   
-	   
-	
+
+
+
 	 });
-});	 
+});
 
 
 
 
-// Hide q form, display when button is pressed // 
+// Hide q form, display when button is pressed //
 
 
-$(function(){ 
-	var questionform = $(".questionform"); 
+$(function(){
+	var questionform = $(".questionform");
 
-	questionform.hide(); 
+	questionform.hide();
 
 
 	$("#askquestion").on("click", function() {
@@ -291,11 +262,11 @@ $(function(){
 
 	$("#questionclose").on("click", function() {
 		questionform.hide();
-		
+
 		return false;
 
 	});
-	
+
 });
 
 
@@ -303,31 +274,31 @@ $(function(){
 // show inline login form on questions
 
 
-$(function(){ 
-	var showlogin = $("#showlogin"); 
-	var loginform1 = $("#loginform1"); 
+$(function(){
+	var showlogin = $("#showlogin");
+	var loginform1 = $("#loginform1");
 
 	loginform1.hide();
 
 	$("#showlogin").on("click", function() {
 		loginform1.show()
-		
+
 	return false;
-	
+
 	});
-	
+
 });
 
 
 
 
-// Supplier answer form 
+// Supplier answer form
 
 
-$(function(){ 
-	var questionform2 = $(".questionform2"); 
-	var answerq = $("#answerq"); 
-	var submitans = $("#submitans"); 
+$(function(){
+	var questionform2 = $(".questionform2");
+	var answerq = $("#answerq");
+	var submitans = $("#submitans");
 
 	questionform2.hide();
 
@@ -335,26 +306,26 @@ $(function(){
 		questionform2.show()
 		answerq.hide();
 	});
-	
+
 });
 
 
 
-// Saved search // 
+// Saved search //
 
-$(function(){ 
-	var savesearch = $("#savesearch"); 
-	var savedsearch = $(".savedsearch"); 
+$(function(){
+	var savesearch = $("#savesearch");
+	var savedsearch = $(".savedsearch");
 
 
 	savedsearch.hide();
 
 	$("#savesearch").on("click", function() {
 		savedsearch.show()
-		
+
 		return false;
 	});
-	
+
 });
 
 
@@ -366,51 +337,51 @@ $(function(){
 
 
 
-// show shortlist menu // 
+// show shortlist menu //
 
-$(function(){ 
-	var addresults = $("#addresults"); 
-	var shortlistholder = $("#shortlist-holder"); 
-	var cancelshortlist = $("#cancelshortlist"); 
+$(function(){
+	var addresults = $("#addresults");
+	var shortlistholder = $("#shortlist-holder");
+	var cancelshortlist = $("#cancelshortlist");
 
 
 	shortlistholder.hide();
 
 	$("#addresults").on("click", function() {
 		shortlistholder.show()
-		
+
 		return false;
-		
+
 	});
 
 
 	$("#cancelshortlist").on("click", function() {
 	$("#shortlist-holder").hide();
-		
+
 		return false;
 
 
 	});
-	
+
 
 });
 
 
-// Pick a price unit // 
+// Pick a price unit //
 
-$(function(){ 
-	var unitpickerbutton = $("#unitpickerbutton"); 
-	var unitpickerm = $("#unitpickerm"); 
+$(function(){
+	var unitpickerbutton = $("#unitpickerbutton");
+	var unitpickerm = $("#unitpickerm");
 
 	unitpickerm.hide();
 
 	$("#unitpickerbutton").on("click", function() {
-	
-	$("#unitpickerm").show();		
-	
+
+	$("#unitpickerm").show();
+
 		return false;
 	});
-	
+
 });
 
 
@@ -418,52 +389,52 @@ $(function(){
 
 
 
-// Watchlist feedback // 
+// Watchlist feedback //
 
-$(function(){ 
-	var addtowatchlist = $("#addtowatchlist"); 
-	var watchlist = $("#watchlist"); 
+$(function(){
+	var addtowatchlist = $("#addtowatchlist");
+	var watchlist = $("#watchlist");
 
 	watchlist.hide();
 
 	$("#addtowatchlist").on("click", function() {
-	
+
 	$("#addtowatchlist").hide()
-	$("#watchlist").show();		
-	
+	$("#watchlist").show();
+
 		return false;
 	});
-	
+
 });
 
 
 
-// Show shortlist remove form // 
+// Show shortlist remove form //
 
-$(function(){ 
-	var removefromshortlist = $("#remove-from-shortlist"); 
-	var removereason = $("#remove-reason"); 
-	var savereason = $("#save-reason"); 
+$(function(){
+	var removefromshortlist = $("#remove-from-shortlist");
+	var removereason = $("#remove-reason");
+	var savereason = $("#save-reason");
 
 	removereason.hide();
 	removefromshortlist.on("click", function() {
-	removereason.show();		
-	
-	
+	removereason.show();
+
+
 		return false;
 
 	});
-	
+
 });
 
 
 
-// Shortlist extras // 
+// Shortlist extras //
 
 
 
-$(function(){ 
-	var shortlistitemremoved = $("#shortlist-item-removed"); 
+$(function(){
+	var shortlistitemremoved = $("#shortlist-item-removed");
 	var savereason = $("save-reason");
 	var achievecms = $("#achieve-cms");
 	var dismissshortlistfeedback = $("#dismiss-shortlist-feedback");
@@ -474,38 +445,38 @@ $(function(){
 
 	numberonshortlist6.hide();
 	shortlistitemremoved.hide();
-	
+
 	$("#save-reason").on("click", function() {
 	shortlistitemremoved.show();
 	achievecms.hide();
 	numberonshortlist7.hide();
-	numberonshortlist6.show();	
-	
+	numberonshortlist6.show();
+
 	});
-	
+
 	$("#dismiss-shortlist-feedback").on("click", function() {
 	$("#shortlist-item-removed").hide();
-	
+
 	});
-	
+
 	$("#cancel-remove").on("click", function() {
 	removereason.hide();
-		
+
 		return false;
 
 	});
-	
+
 });
 
 
 
 
 
-// Rename project// 
+// Rename project//
 
-$(function(){ 
-	var renameproject = $("#rename-project"); 
-	var projectname = $("#project-name"); 
+$(function(){
+	var renameproject = $("#rename-project");
+	var projectname = $("#project-name");
 	var saveproject = $("#save-project");
 	var cancelrename = $("#cancel-rename");
 	var defaultname = $("#default-name");
@@ -514,28 +485,28 @@ $(function(){
 
 	newprojectname.hide();
 	projectname.hide();
-	
-	$("#rename-project").on("click", function() {
-	projectname.show();		
 
-	}); 
-	
+	$("#rename-project").on("click", function() {
+	projectname.show();
+
+	});
+
 	$("#save-project").on("click", function() {
-	
+
 	$("#project-name").hide();
 	defaultname.hide();
 	newprojectname.show();
-	
+
 	});
-	
+
 	$("#cancel-rename").on("click", function() {
 	projectname.hide();
-	
-	
+
+
 		return false;
 
 	});
-	
+
 });
 
 
@@ -543,17 +514,17 @@ $(function(){
 
 
 
-// On pressing submit, give feedback the question is sent // 
+// On pressing submit, give feedback the question is sent //
 
 
 
-$(function(){ 
-	var questionform = $(".questionform"); 
-	var submitquestion = $("#submitquestion"); 
-	var qfeedback = $(".qfeedback"); 
-	var feedbackclose = $("#feedbackclose"); 
-	
-	qfeedback.hide(); 
+$(function(){
+	var questionform = $(".questionform");
+	var submitquestion = $("#submitquestion");
+	var qfeedback = $(".qfeedback");
+	var feedbackclose = $("#feedbackclose");
+
+	qfeedback.hide();
 
 	$("#submitquestion").on("click", function() {
 		questionform.hide()
@@ -568,7 +539,7 @@ $(function(){
 		return false;
 
 	});
-	
+
 
 });
 
@@ -577,61 +548,61 @@ $(function(){
 
 
 
-// Show extra questions // 
+// Show extra questions //
 
 
-$(function(){ 
-	var extraquestions = $("#extraquestions"); 
-	var viewextraqs = $("#viewextraqs"); 
+$(function(){
+	var extraquestions = $("#extraquestions");
+	var viewextraqs = $("#viewextraqs");
 
-	extraquestions.hide(); 
+	extraquestions.hide();
 
 
 	$("#viewextraqs").on("click", function() {
 		extraquestions.show()
 		viewextraqs.hide();
 
-		
+
 		return false;
 
 	});
-	
+
 
 });
-	
-	
-	
 
-$(function(){ 
-	var customWords = $(".customwords"); 
+
+
+
+$(function(){
+	var customWords = $(".customwords");
 	var addanother =$("#addanother");
-	
-	
+
+
 	$("#addanother").on("click", function() {
-	
+
 	console.log("hey")
-	
-	customWords.append(customWords.find(".adv-form-group").first().clone()); 
+
+	customWords.append(customWords.find(".adv-form-group").first().clone());
 
 	return false;
-		
+
 	});
-	
+
 });
 
 
-// Show answer 1 // 
+// Show answer 1 //
 
 
-$(function(){ 
-	var answerlink = $("a.show-answer1"); 
-	var answer = $("#answer1"); 
+$(function(){
+	var answerlink = $("a.show-answer1");
+	var answer = $("#answer1");
 
-	answer.hide(); 
+	answer.hide();
 	answerlink.on("click", function() {
-	
+
 	answerlink.hide();
-	answer.show();	
+	answer.show();
 
 	return false;
 
@@ -640,17 +611,17 @@ $(function(){
 });
 
 
-// Show answer 2 // 
+// Show answer 2 //
 
-$(function(){ 
-	var answerlink2 = $("a.show-answer2"); 
-	var answer2 = $("#answer2"); 
+$(function(){
+	var answerlink2 = $("a.show-answer2");
+	var answer2 = $("#answer2");
 
-	answer2.hide(); 
+	answer2.hide();
 	answerlink2.on("click", function() {
-	
+
 	answerlink2.hide();
-	answer2.show();	
+	answer2.show();
 
 	return false;
 
@@ -659,36 +630,36 @@ $(function(){
 });
 
 
-// Choose a shortlist // 
+// Choose a shortlist //
 
 
-$(function(){ 
+$(function(){
 	var shortlistadd = $("#shortlist-add");
-	var shortlistpicker = $(".shortlist-picker"); 
+	var shortlistpicker = $(".shortlist-picker");
 	var shortlistclose = $("#shortlist-close");
 	var addtoproj = $(".add-to-proj");
 	var shortlistcms = $("#shortlist-cms");
 	var onshortlist = $(".on-shortlist");
 
-	shortlistpicker.hide(); 
-	onshortlist.hide(); 
-	
+	shortlistpicker.hide();
+	onshortlist.hide();
+
 	shortlistadd.on("click", function() {
-	
-	shortlistpicker.show();	
+
+	shortlistpicker.show();
 	addtoproj.hide();
-	
+
 	});
-	
-	
+
+
 	shortlistclose.on("click", function() {
 	$(".shortlist-picker").hide();
 	$(".add-to-proj").show();
-	
-	
-	}); 
-	
-	shortlistcms.on("click", function() { 
+
+
+	});
+
+	shortlistcms.on("click", function() {
 	$(".shortlist-picker").hide();
 	console.log('HEY');
 	addtoproj.hide();
@@ -701,35 +672,50 @@ $(function(){
 });
 
 
-$(function(){ 
+$(function(){
 	$("#btnon").on("click",function(){window.location="add-project-with-compare.html";});
 });
 
-// Change project // 
+// Change project //
 
 
 
-$(function(){ 
+$(function(){
 	var changeproj = $("#changeproj");
 	var projectpicker = $(".project-picker");
-	var projectclose = $("#project-close"); 
+	var projectclose = $("#project-close");
 	var addtoproj = $(".add-to-proj");
 
 
-	projectpicker.hide(); 
+	projectpicker.hide();
 	changeproj.on("click", function() {
 
 	projectpicker.show();
-	addtoproj.hide();	
-	
+	addtoproj.hide();
+
 	});
-	
+
 	projectclose.on("click", function() {
 	$(".project-picker").hide();
 	$(".add-to-proj").show();
-	
+
 	return false;
 
+	});
+
+});
+
+
+
+
+// Search builder stuff //
+
+
+$(function() {
+
+	$(".searchbuilder-container-bit p").on("click", function () {
+		console.log('cleek');
+		$(this).parents(".searchbuilder-container-bit").toggleClass("open");
 	});
 
 });
