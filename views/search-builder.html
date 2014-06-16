@@ -1,0 +1,306 @@
+<html>
+<style type="text/css">
+
+input[type=text] {
+  margin: 0 0 15px 0 !important;
+  padding-left: 5px !important;
+}
+
+#suggestions {
+  padding: 0;
+  margin: -15px 0 20px 0;
+  height: 0;
+  width: 600px;
+  position: relative;
+  z-index: 100;
+}
+
+#suggestions li {
+  background: white;
+  border: 1px solid #bfc1c3;
+  border-top: none;
+  list-style: none;
+  padding: 15px 5px;
+  cursor: pointer;
+}
+
+#suggestions li:first-child {
+  background: #fff2d3;
+}
+
+#suggestions:hover li:first-child {
+  background: #fff;
+}
+
+#suggestions:hover li:hover {
+  background: #fff2d3;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin-right: 5px;
+}
+
+.options {
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+.options li,
+.chunk {
+  display: inline-block;
+  list-style: none;
+  cursor: pointer;
+  padding: 15px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  background: #dee0e2;
+  border: 1px solid #dee0e2;
+}
+
+.options li:hover,
+.chunk:hover {
+  border: 1px solid #0b0c0c;
+}
+
+#picked li,
+.options li.optionSelected,
+.chunk.optionSelected {
+  background: white;
+  border: 1px solid #0b0c0c;
+}
+
+#picked li:after {
+  content: "×";
+  border-radius: 50%;
+  border: 1px solid white;
+  background: #dee0e2;
+  color: #888;
+  width: 1.1em;
+  height: 1.1em;
+  text-align: center;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+#picked li:hover:after {
+  background: #df3034;
+  color: white;
+}
+
+.hierarchy {
+  color: #a2a2a2;
+  text-align: center;
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 12px;
+}
+
+#resultCount {
+  font-size: 27px;
+}
+
+#resultCount span {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+#submitButton {
+  font-size: 24px;
+  float: right;
+  position: relative;
+}
+
+form {
+  overflow: hidden;
+}
+
+input[type=checkbox]:focus {
+  outline: none;
+}
+
+</style>
+  <body>
+    <main id="content" role="main" class="group search ancillary">
+      <div id="outer-wrapper">
+        <div id="inner-wrapper">
+
+          <div class="alphadisclaimer">
+            <p>Please note that for procurement you will still need to use the <a href="http://govstore.service.gov.uk/cloudstore/">CloudStore</a>.</p>
+          </div>
+
+          <h1 class="heading-48">Digital Marketplace</h1>
+
+
+          <div class="strapline">
+            <h3>Find and compare cloud-based services for your next technology project</h3>
+          </div>
+
+<h2>Set your service requirements</h2>
+<div id="searchbuilder">
+
+  <div class="searchbuilder-container">
+
+        <div class="searchbuilder-container-bit open">
+          <p>What are you looking for?</p>
+         
+          <label class="chunk"><input type="checkbox" name="category-type"/> Cloud support</label>
+          <label class="chunk"><input type="checkbox" name="category-type"/> Cloud technology</label>
+       <div class="exp">  
+        <p><a href="#">Next</a></p>
+        </div> 
+      </div>
+
+
+          <div class="searchbuilder-container-bit">
+            <p>Add your keywords</p>
+              <div class="exp">  
+        <p><a href="#">Next</a></p>
+        </div>
+
+            <form action="search_results.html" id="searchBuilder" role="search">
+              <ul id="picked" class="options">
+              </ul>
+              <input type="text" id="keywords" autocomplete="off" placeholder="eg Email" />
+              <ul id="suggestions">
+              </ul>
+ 
+            </div>
+<!--
+            <div class="searchbuilder-container-bit">
+
+
+              <p>Add your security requirements</p>
+              <legend>Cloud deployment model</legend>
+              <label class="chunk"><input type="checkbox" /> Public cloud</label>
+              <label class="chunk"><input type="checkbox" /> Community cloud</label>
+              <label class="chunk"><input type="checkbox" /> Private cloud</label>
+              <label class="chunk"><input type="checkbox" /> Hybrid cloud</label>
+
+
+              <legend>Service availability</legend>
+              <input type="text" id="sa" autocomplete="off" placeholder="eg 99.99%"/>
+
+              <legend>Datacentre location</legend>
+              <label class="chunk"><input type="checkbox" /> United Kingdom</label>
+              <label class="chunk"><input type="checkbox" /> European Union</label>
+              <label class="chunk"><input type="checkbox" /> United States – Safe Harbour</label>
+              <label class="chunk"><input type="checkbox" /> Other countries with data protection treaties</label>
+              <label class="chunk"><input type="checkbox" /> Other</label>
+  <div class="exp">  
+        <p><a href="#">Next</a></p>
+        </div> 
+</div>
+
+<div class="searchbuilder-container-bit">
+
+              <p>Add your service management requirements</p>
+                <div class="exp">  
+        <p><a href="#">Next</a></p>
+        </div> 
+              <label class="chunk"><input type="checkbox" /> Third-party access to service desk</label>
+
+</div>
+
+<div class="searchbuilder-container-bit">
+
+              <p>Add your payment requirements</p>
+                <div class="exp">  
+        <p><a href="#">Next</a></p>
+        </div> 
+
+              <legend>Payment type</legend>
+              <label class="chunk"><input type="checkbox" /> BACS</label>
+              <label class="chunk"><input type="checkbox" /> Credit card</label>
+              <label class="chunk"><input type="checkbox" /> Paypal</label>
+              <label class="chunk"><input type="checkbox" /> Purchase order</label>
+
+              <legend>Minimum contract period</legend>
+              <label class="chunk"><input type="checkbox" /> Year</label>
+              <label class="chunk"><input type="checkbox" /> Month</label>
+              <label class="chunk"><input type="checkbox" /> Day</label>
+              <label class="chunk"><input type="checkbox" /> Hour</label>
+            </form>
+
+</div>
+ -->
+ 
+
+<div class="searchbuilder-container-add">
+<p>Add another requirement</p>
+<div class="searchbuilder-container-box">
+<p>Security</p>
+<p>Service management</p>
+<p>Pricing and commercial</p>
+
+</div>
+
+</div>
+ 
+
+ 
+<div class="searchbuilder-count">
+
+  <button type="submit" class="button" id="searchbuilderbutton">Show services</button>
+  <h2 class="count-results">303 <span class="copy-19">results</span></h2>
+  <p><a href="#">Reset search</a></p>
+
+</div>
+</div>
+
+
+</div>
+
+
+
+          <div id="holder">
+
+            <h2>Browse services</h2>
+            <div id="category">
+
+              <h3><a href="saas.html">Business software</a></h3>
+              <p>Find business applications that can be run over the internet or in the cloud. Web-based email services, customer relationship management (CRM) software and analytics technology are all examples of the Software as a Service (SaaS) tools you can find here.
+              </p>
+              <p><a href="#">Forms</a>, <a href="#">Analytics</a>, <a href="#">Collaboration</a>, <a href="search_results.html">Content Management Systems</a>, <a href="#">Management (CRM)</a>, <a href="saas.html">more&hellip;</a>
+              </p>
+
+            </div>
+
+            <div id="category">
+
+              <h3><a href="#">Development tools</a></h3>
+<p>Access software platforms for building services and applications. With Platform as a Service (PaaS), you can set up, order, pay for and manage platforms - all in the cloud. Examples of PaaS include SQL databases and operating systems.
+              </p>
+              <p><a href="#">Application Deployment</a>, <a href="#">Components</a>, <a href="#">Unlisted</a>, <a href="#">more&hellip;</a>
+              </p>
+            </div>
+
+            <div id="category">
+
+              <h3><a href="#">Infrastructure resources</a></h3>
+<p>Order and run Infrastructure as a Service (IaaS) entirely over the internet, without having to pay for expensive hardware. IaaS includes the networks, the hosting facilities and the servers that platforms and software depend on.
+              </p>
+              <p><a href="#">Compute</a>, <a href="#">Storage</a>, <a href="#">Content Delivery Network</a>, <a href="#">Other</a>, <a href="#">more&hellip;</a>
+              </p>
+
+            </div>
+
+            <div id="category">
+
+              <h3><a href="#">Support services</a></h3>
+<p>Get help with cloud strategy, data transfer between providers or day-to-day management. These Specialist Cloud Services (SCS) can support your transition to SaaS, PaaS and IaaS.
+</p>
+              <p><a href="#">Specialist cloud services</a>, <a href="#">service integration and management services</a>
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
