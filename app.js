@@ -336,6 +336,15 @@ app.get('/searchbuilder', function (req, res) {
 });
 
 
+app.get('/search_results_3.html', function (req, res) {
+
+  var head = commonHead;
+
+  res.render('search_results_3.html', {
+            'pageTitle': 'Search results',
+            'head' : head
+            });
+});
 
 
 // start the app
