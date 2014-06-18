@@ -533,11 +533,9 @@ categories = {
 				popped = false;
 				getMatchingCategories(keywords, fieldValue, "");
 
-				if (false && allowKeywords) {
-					$suggestionHolder.append(
-						"<li>" + fieldValue + "</li>"
-					);
-				}
+				$suggestionHolder.append(
+					"<li>" + fieldValue + "</li>"
+				);
 
 				matches = matches.filter(function(elem, pos) {
 					console.log(elem);

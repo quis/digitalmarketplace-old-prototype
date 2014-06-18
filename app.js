@@ -334,6 +334,15 @@ app.get('/searchbuilder', function (req, res) {
             'head' : head
             });
 });
+app.get('/sb2', function (req, res) {
+
+  var head = commonHead;
+
+  res.render('search-builder-2.html', {
+            'pageTitle': 'Buy and supply digital services',
+            'head' : head
+            });
+});
 
 
 app.get('/search_results_3.html', function (req, res) {
