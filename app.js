@@ -347,6 +347,17 @@ app.get('/search_results_3.html', function (req, res) {
 });
 
 
+app.get('/404', function (req, res) {
+
+  var head = commonHead;
+
+  res.render('404.html', {
+            'pageTitle': 'Page not found - 404',
+            'head' : head
+            });
+});
+
+
 // start the app
 
 app.listen(port);

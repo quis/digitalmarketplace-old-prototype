@@ -121,6 +121,25 @@ margin-bottom: 20px;
 margin-bottom: 20px;
 }
 
+
+.page-header group {
+  width: 100%;
+  height: 134px;
+}
+
+.page-header div h1 {
+  padding-top: 7px;
+padding-bottom: 13px;
+}
+
+.article-container {
+  max-width: 38em;
+}
+
+.para-24 {
+  font-size: 24px;
+}
+
 /*Buttons*/
 
 .button {
@@ -824,10 +843,10 @@ border-radius: 5px;
 /* search builder */
 
 
-.strapline { 
+.strapline {
 margin-top: -25px;}
 
-.set-service-reqs { 
+.set-service-reqs {
 margin-top: 20px;}
 
 .set-service-reqs h3 {
@@ -835,7 +854,6 @@ margin-top: 20px;}
 
 #searchbuilder {
 width: 90%;
-  background: $grey-4;
   padding: 10px;
 }
 
@@ -857,22 +875,25 @@ width: 100%;
   padding: 8px;
   margin-top: 5px;
   }
-  
+
   .searchbuilder-container-add p {
   margin: 0;
 }
-  
+
   .searchbuilder-container-add-button {
   padding: 15px;
   border: 1px solid $grey-3;
-  margin: 5px; 
+  margin: 5px;
   display: inline-block;
   background: $grey-3;
+  width: 200px;
   }
-  
-  
+
+
  .searchbuilder-container-add-button p {
  margin: 0;
+ font-size: 16px;
+ font-weight: bold;
 }
 
 .searchbuilder-container-bit {
