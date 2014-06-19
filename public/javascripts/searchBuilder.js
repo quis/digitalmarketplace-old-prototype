@@ -5,17 +5,17 @@
 							"CRM": "CRM",
 							"IL3": "IL3",
 							"SIAM": "SIAM",
-							"agile": "agile",
-							"backup": "backup",
-							"big data": "big data",
+							"Agile": "Agile",
+							"Backup": "Backup",
+							"Big data": "Big data",
 							"business analysis": "business analysis",
 							"business intelligence": "business intelligence",
 							"case management": "case management",
 							"cloud": "cloud",
-							"cms": "cms",
+							"CMS": "cms",
 							"collaboration": "collaboration",
 							"consultancy": "consultancy",
-							"crm": "crm",
+							"CRM": "CRM",
 							"email": "email",
 							"hosting": "hosting",
 							"penetration testing": "penetration testing",
@@ -25,7 +25,7 @@
 							"risk management": "risk management",
 							"security": "security",
 							"service desk": "service desk",
-							"siam": "siam",
+							"SIAM": "SIAM",
 							"sms": "sms",
 							"social media": "social media",
 							"telephony": "telephony",
@@ -82,7 +82,7 @@ categories = {
 									},
 									"Collaboration": {
 											"Project Collaboration": "Project Collaboration",
-											"Content Management Systems": "Content Management Systems",
+											"Content Management Systems": "Content Management Systems CMS",
 											"CMS": "CMS",
 											"Content Storage and Sharing": "Content Storage and Sharing",
 											"File Sharing": "File Sharing",
@@ -109,7 +109,9 @@ categories = {
 									},
 									"Customer Relationship Management (CRM)": {
 											"Contact Management": "Contact Management",
-											"Contact Relationship Management": "Contact Relationship Management",
+											"Customer Relationship Management": "Customer Relationship Management CRM",
+											"CRM": "CRM",
+											"Contact Relationship Management": "Contact Relationship Management crm",
 											"Customer Helpdesks": "Customer Helpdesks",
 											"Client Management": "Client Management",
 											"Customer Service and Support": "Customer Service and Support",
@@ -157,8 +159,8 @@ categories = {
 											"Public Relations": "Public Relations",
 											"PR": "PR",
 											"Search Marketing": "Search Marketing",
-											"Search Engine Optimisation (SEO)": "Search Engine Optimisation (SEO)",
-											"Search Engine Marketing (SEM)": "Search Engine Marketing (SEM)",
+											"Search Engine Optimisation": "Search Engine Optimisation SEO sem",
+											"Search Engine Marketing": "Search Engine Marketing SEM seo",
 											"Social Media Marketing": "Social Media Marketing",
 											"Social Networking": "Social Networking",
 											"Social Media": "Social Media",
@@ -415,7 +417,7 @@ categories = {
 											"Law Practice Management": "Law Practice Management",
 											"Law Enforcement": "Law Enforcement",
 											"Legal Billing": "Legal Billing",
-											"Legal Calendar	Legal Calendaring": "Legal Calendar	Legal Calendaring",
+											"Legal Calendar": "Legal Calendar",
 											"Legal Case Management": "Legal Case Management",
 											"Legal Document Management": "Legal Document Management",
 											"Trust Accounting": "Trust Accounting"
@@ -436,14 +438,14 @@ categories = {
 									}
 							},
 							"Other": {
-								"SCS": "SCS",
+								"Specialist Cloud Software": "Specialist Cloud Software SCS",
 								"Project management, programme management and governance": "Project management, programme management and governance",
 								"Onboarding services": "Onboarding services",
 								"Design authority": "Design authority",
 								"Business analysis": "Business analysis",
 								"Project specification and selection": "Project specification and selection",
 								"Enterprise architecture": "Enterprise architecture",
-								"Service integration and management services (SIAM)	": "Service integration and management services (SIAM)	",
+								"Service integration and management services": "Service integration and management services SIAM",
 								"Transition management": "Transition management",
 								"Deployment": "Deployment",
 								"User management": "User management",
@@ -451,15 +453,15 @@ categories = {
 								"Digital archiving": "Digital archiving",
 								"Risk management": "Risk management",
 								"Penetration testing": "Penetration testing",
-								"IT healthcheck	": "IT healthcheck	",
+								"IT healthcheck": "IT healthcheck health check",
 								"Helpdesk": "Helpdesk",
 								"Software support": "Software support",
 								"Training": "Training",
-								"IaaS": "IaaS",
+								"Infrastructure as a Service": "Infrastructure as a Service IaaS",
 								"Compute": "Compute",
 								"Storage": "Storage",
-								"Content Delivery Network (CDN)": "Content Delivery Network (CDN)",
-								"PaaS": "PaaS",
+								"Content Delivery Network": "Content Delivery Network (CDN)",
+								"Platform as a Service": "Platform as a Service PaaS",
 								"Application deployment": "Application deployment",
 								"Components": "Components"
 							}
@@ -485,15 +487,19 @@ categories = {
 
 				for (var name in categories) {
 
+					console.log(categories);
+
 					if ("object" === typeof categories[name]) {
 
 						getMatchingCategories(categories[name], searchTerm);
 
-					}
+					} else {
 
-					if (containsWords(name, searchTerm)) {
+						if (containsWords(categories[name], searchTerm)) {
 
-						matches.push(name);
+							matches.push(name);
+
+						}
 
 					}
 
@@ -720,9 +726,7 @@ categories = {
 
 				$(".hideable").addClass("hidden");
 
-				console.log($(this).find("input").data("target"));
-
-				$("#" + $(this).find("input").data("target")).removeClass("hidden");
+				$(".section-" + $(this).find("input").data("target")).removeClass("hidden");
 
 			}
 		);
