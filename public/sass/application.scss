@@ -901,6 +901,15 @@ width: 100%;
 }
 
 .searchbuilder-selected-chunk {
+  background: red;
+  padding: 10px;
+  border: 1px solid $grey-2;
+  display: inline-block;
+  margin: 5px;
+  font-size: 19px;
+}
+
+.searchbuilder-selected-text {
   background: white;
   padding: 10px;
   border: 1px solid $grey-2;
@@ -909,10 +918,6 @@ width: 100%;
   font-size: 19px;
 }
 
-.searchbuilder-selected-chunk-label {
-  float: left;
-  margin-right: 10px;
-}
 
 
 .searchbuilder-container {
