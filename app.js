@@ -366,6 +366,15 @@ app.get('/404', function (req, res) {
             });
 });
 
+app.get('/newsearchresults', function (req, res) {
+
+  var head = commonHead;
+
+  res.render('new-search-results.html', {
+            'pageTitle': 'Search results',
+            'head' : head
+            });
+});
 
 // start the app
 
