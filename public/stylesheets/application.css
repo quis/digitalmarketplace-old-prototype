@@ -1173,7 +1173,7 @@ input[type=checkbox], input[type=radio] {
 .searchbuilder-container-bit {
   background: #f8f8f8;
   border: 1px solid #dee0e2;
-  padding: 8px;
+  padding: 0 0 0 8px;
   margin: 0 0 10px 0;
   display: inline-block; }
   .searchbuilder-container-bit.hidden {
@@ -1210,7 +1210,8 @@ input[type=checkbox], input[type=radio] {
     display: inline-block; }
   .searchbuilder-container-bit.open {
     display: block;
-    background: #f8f8f8; }
+    background: #f8f8f8;
+    padding: 8px; }
     .searchbuilder-container-bit.open h3 {
       display: block; }
       .searchbuilder-container-bit.open h3:before {
@@ -1986,12 +1987,6 @@ input[type=text] {
 #suggestions:hover li:hover {
   background: #fff2d3; }
 
-input[type=checkbox], input[type=radio] {
-  display: inline-block;
-  width: auto;
-  height: auto;
-  margin-right: 5px; }
-
 .options {
   margin: 0 0 15px 0;
   padding: 0; }
@@ -2015,7 +2010,7 @@ input[type=checkbox], input[type=radio] {
   margin-top: 10px;
   margin-bottom: 0; }
 
-#picked li:after {
+.open #picked li:after {
   content: "×";
   border-radius: 50%;
   border: 1px solid white;
@@ -2026,32 +2021,14 @@ input[type=checkbox], input[type=radio] {
   text-align: center;
   display: inline-block;
   margin-left: 15px; }
-
-#picked li:hover:after {
+.open #picked li:hover:after {
   background: #df3034;
   color: white; }
-
-.hierarchy {
-  color: #a2a2a2;
-  text-align: center;
-  display: inline-block;
-  margin: 0 5px;
-  font-size: 12px; }
-
-#resultCount {
-  font-size: 27px; }
-
-#resultCount span {
-  font-weight: bold;
-  font-size: 36px; }
 
 #submitButton {
   font-size: 24px;
   float: right;
   position: relative; }
-
-form {
-  overflow: hidden; }
 
 input[type=checkbox]:focus, input[type=radio]:focus {
   outline: none; }

@@ -4,33 +4,31 @@
 //					"Popular keywords": {
 							"CRM": "CRM",
 							"IL3": "IL3",
-							"SIAM": "SIAM",
-							"agile": "agile",
-							"backup": "backup",
-							"big data": "big data",
-							"business analysis": "business analysis",
-							"business intelligence": "business intelligence",
-							"case management": "case management",
-							"cloud": "cloud",
-							"cms": "cms",
+							"Agile": "Agile",
+							"Backup": "Backup",
+							"Big data": "Big data",
+							"Business analysis": "business analysis",
+							"Business intelligence": "business intelligence",
+							"Case management": "case management",
+							"Cloud": "cloud",
+							"CMS": "cms",
 							"collaboration": "collaboration",
 							"consultancy": "consultancy",
-							"crm": "crm",
+							"CRM": "CRM",
 							"email": "email",
 							"hosting": "hosting",
 							"penetration testing": "penetration testing",
-							"procurement": "procurement",
-							"project management": "project management",
-							"recruitment": "recruitment",
-							"risk management": "risk management",
-							"security": "security",
-							"service desk": "service desk",
-							"siam": "siam",
-							"sms": "sms",
-							"social media": "social media",
-							"telephony": "telephony",
-							"testing": "testing",
-							"user experience": "user experience"
+							"Procurement": "procurement",
+							"Project management": "project management",
+							"Recruitment": "recruitment",
+							"Risk management": "risk management",
+							"Security": "security",
+							"Service desk": "service desk",
+							"SIAM": "SIAM",
+							"Social media": "social media",
+							"Telephony": "telephony",
+							"Testing": "testing",
+							"User experience": "user experience UX"
 					},
 //					"Categories": {
 categories = {
@@ -38,7 +36,7 @@ categories = {
 									"Accounting and Finance": {
 											"Banking": "Banking",
 											"Accounting": "Accounting",
-											"Bookkeeping/ Banking": "Bookkeeping/ Banking",
+											"Bookkeeping/Banking": "Bookkeeping/ Banking",
 											"Accounts Payable": "Accounts Payable",
 											"Accounts Receivable": "Accounts Receivable",
 											"Financial Asset Management": "Financial Asset Management",
@@ -65,7 +63,7 @@ categories = {
 											"Revenue Cycle Management": "Revenue Cycle Management",
 											"Financial Risk Management": "Financial Risk Management",
 											"Tax Management": "Tax Management",
-											"Enterprise Resource Planning (ERP)": "Enterprise Resource Planning (ERP)"
+											"Enterprise Resource Planning": "Enterprise Resource Planning (ERP)"
 									},
 									"Business Intelligence and Analytics": {
 											"Big Data": "Big Data",
@@ -82,8 +80,7 @@ categories = {
 									},
 									"Collaboration": {
 											"Project Collaboration": "Project Collaboration",
-											"Content Management Systems": "Content Management Systems",
-											"CMS": "CMS",
+											"Content Management Systems": "Content Management Systems CMS",
 											"Content Storage and Sharing": "Content Storage and Sharing",
 											"File Sharing": "File Sharing",
 											"Meeting Managment": "Meeting Managment",
@@ -109,7 +106,8 @@ categories = {
 									},
 									"Customer Relationship Management (CRM)": {
 											"Contact Management": "Contact Management",
-											"Contact Relationship Management": "Contact Relationship Management",
+											"Customer Relationship Management": "Customer Relationship Management CRM",
+											"Contact Relationship Management": "Contact Relationship Management crm",
 											"Customer Helpdesks": "Customer Helpdesks",
 											"Client Management": "Client Management",
 											"Customer Service and Support": "Customer Service and Support",
@@ -123,9 +121,9 @@ categories = {
 
 									},
 									"Creative and Design": {
-											"Diagram and Wireframe": "Diagram and Wireframe",
+											"Diagram and Wireframe": "Diagram and Wireframe wireframing",
 											"Usability Tools": "Usability Tools",
-											"Accessibility": "Accessibility"
+											"Accessibility": "Accessibility Accessibile"
 
 									},
 									"Sales": {
@@ -154,11 +152,10 @@ categories = {
 											"Market Research": "Market Research",
 											"Census": "Census",
 											"Personalisation and Behavioral Targeting": "Personalisation and Behavioral Targeting",
-											"Public Relations": "Public Relations",
-											"PR": "PR",
+											"Public Relations": "Public Relations PR",
 											"Search Marketing": "Search Marketing",
-											"Search Engine Optimisation (SEO)": "Search Engine Optimisation (SEO)",
-											"Search Engine Marketing (SEM)": "Search Engine Marketing (SEM)",
+											"Search Engine Optimisation": "Search Engine Optimisation SEO sem",
+											"Search Engine Marketing": "Search Engine Marketing SEM seo",
 											"Social Media Marketing": "Social Media Marketing",
 											"Social Networking": "Social Networking",
 											"Social Media": "Social Media",
@@ -170,15 +167,15 @@ categories = {
 											"Applications": "Applications",
 											"Business Management": "Business Management",
 											"Business Performance Management": "Business Performance Management",
-											"Business Process Management (BPM)": "Business Process Management (BPM)",
+											"Business Process Management": "Business Process Management (BPM)",
 											"Carbon, Energy and Sustainability Management": "Carbon, Energy and Sustainability Management",
-											"Green IT": "Green IT",
+											"Green IT": "Green IT enviromental",
 											"Environmental Management": "Environmental Management",
 											"Energy monitoring systems": "Energy monitoring systems",
 											"Contract Management": "Contract Management",
 											"Digital Asset Management": "Digital Asset Management",
 											"Digital Signatures": "Digital Signatures",
-											"Enterprise Resource Planning (ERP)": "Enterprise Resource Planning (ERP)",
+											"Enterprise Resource Planning": "Enterprise Resource Planning (ERP)",
 											"Facility Management": "Facility Management",
 											"Building Management": "Building Management",
 											"Field Service Management": "Field Service Management",
@@ -191,13 +188,13 @@ categories = {
 											"Scheduling and Appointments": "Scheduling and Appointments",
 											"Supply Chain Management": "Supply Chain Management",
 											"Visitor Management": "Visitor Management",
-											"Governance Risk Compliance (GRC)": "Governance Risk Compliance (GRC)",
+											"Governance Risk Compliance": "Governance Risk Compliance (GRC)",
 											"Business Workflow": "Business Workflow"
 
 									},
 									"Project Management and Planning": {
 											"Agile Project Management": "Agile Project Management",
-											"Professional Services Automation (PSA)": "Professional Services Automation (PSA)",
+											"Professional Services Automation": "Professional Services Automation (PSA)",
 											"Project Portfolio Management": "Project Portfolio Management",
 											"Task Management": "Task Management",
 											"Time Tracking": "Time Tracking",
@@ -235,10 +232,9 @@ categories = {
 											"Contact Centre": "Contact Centre",
 											"Email": "Email",
 											"Fax Server": "Fax Server",
-											"Interactive Voice Response (IVR)": "Interactive Voice Response (IVR)",
+											"Interactive Voice Response": "Interactive Voice Response (IVR)",
 											"Mobile": "Mobile",
-											"SMS": "SMS",
-											"Texting": "Texting",
+											"SMS": "SMS texting text message",
 											"Telecoms Expense Management": "Telecoms Expense Management",
 											"Telephony": "Telephony",
 											"Phone": "Phone",
@@ -268,7 +264,7 @@ categories = {
 											"Data Analytics": "Data Analytics",
 											"Database Management": "Database Management",
 											"Data Storage": "Data Storage",
-											"Electronic Data Interchange (EDI)": "Electronic Data Interchange (EDI)",
+											"Electronic Data Interchange": "Electronic Data Interchange (EDI)",
 											"Backup, Recovery and Archival": "Backup, Recovery and Archival"
 
 									},
@@ -281,7 +277,7 @@ categories = {
 											"Bug Tracking": "Bug Tracking",
 											"Build Tools": "Build Tools",
 											"Code Generators": "Code Generators",
-											"Electronic Data Interchange (EDI)": "Electronic Data Interchange (EDI)",
+											"Electronic Data Interchange": "Electronic Data Interchange (EDI)",
 											"Form Builder Software": "Form Builder Software",
 											"Source Code Management": "Source Code Management",
 											"Testing and Optimisation": "Testing and Optimisation",
@@ -295,6 +291,7 @@ categories = {
 											"Usability Tools": "Usability Tools"
 									},
 									"Electronic Document and Records Management (EDRM)": {
+											"Electronic Document and Records Management": "Electronic Document and Records Management (EDRM)",
 											"Content Management Systems": "Content Management Systems",
 											"Document Management": "Document Management",
 											"Electronic Signatures": "Electronic Signatures",
@@ -323,7 +320,7 @@ categories = {
 											"Presentations": "Presentations",
 											"Password Management": "Password Management",
 											"Patch Management": "Patch Management",
-											"Single Sign-On (SSO)": "Single Sign-On (SSO)",
+											"Single Sign-On": "Single Sign-On (SSO)",
 											"Security": "Security",
 											"Systems Management": "Systems Management",
 											"Systems Monitoring": "Systems Monitoring"
@@ -331,7 +328,7 @@ categories = {
 									},
 									"Security": {
 											"Anti-Intrusion": "Anti-Intrusion",
-											"Antispam / CAPTCHA": "Antispam / CAPTCHA",
+											"Antispam/CAPTCHA": "Antispam / CAPTCHA",
 											"Antivirus": "Antivirus",
 											"Audit": "Audit",
 											"Authentication and Identity Access": "Authentication and Identity Access",
@@ -347,7 +344,6 @@ categories = {
 											"Secure Content and Threat Management": "Secure Content and Threat Management",
 											"Security Risk Managment": "Security Risk Managment",
 											"Penetration Testing": "Penetration Testing"
-
 									}
 
 							},
@@ -415,7 +411,7 @@ categories = {
 											"Law Practice Management": "Law Practice Management",
 											"Law Enforcement": "Law Enforcement",
 											"Legal Billing": "Legal Billing",
-											"Legal Calendar	Legal Calendaring": "Legal Calendar	Legal Calendaring",
+											"Legal Calendar": "Legal Calendar",
 											"Legal Case Management": "Legal Case Management",
 											"Legal Document Management": "Legal Document Management",
 											"Trust Accounting": "Trust Accounting"
@@ -436,14 +432,14 @@ categories = {
 									}
 							},
 							"Other": {
-								"SCS": "SCS",
+								"Specialist Cloud Software": "Specialist Cloud Software SCS",
 								"Project management, programme management and governance": "Project management, programme management and governance",
 								"Onboarding services": "Onboarding services",
 								"Design authority": "Design authority",
 								"Business analysis": "Business analysis",
 								"Project specification and selection": "Project specification and selection",
 								"Enterprise architecture": "Enterprise architecture",
-								"Service integration and management services (SIAM)	": "Service integration and management services (SIAM)	",
+								"Service integration and management services": "Service integration and management services SIAM",
 								"Transition management": "Transition management",
 								"Deployment": "Deployment",
 								"User management": "User management",
@@ -451,15 +447,15 @@ categories = {
 								"Digital archiving": "Digital archiving",
 								"Risk management": "Risk management",
 								"Penetration testing": "Penetration testing",
-								"IT healthcheck	": "IT healthcheck	",
+								"IT healthcheck": "IT healthcheck health check",
 								"Helpdesk": "Helpdesk",
 								"Software support": "Software support",
 								"Training": "Training",
-								"IaaS": "IaaS",
+								"Infrastructure as a Service": "Infrastructure as a Service IaaS",
 								"Compute": "Compute",
 								"Storage": "Storage",
-								"Content Delivery Network (CDN)": "Content Delivery Network (CDN)",
-								"PaaS": "PaaS",
+								"Content Delivery Network": "Content Delivery Network (CDN)",
+								"Platform as a Service": "Platform as a Service PaaS",
 								"Application deployment": "Application deployment",
 								"Components": "Components"
 							}
@@ -485,15 +481,19 @@ categories = {
 
 				for (var name in categories) {
 
+					console.log(categories);
+
 					if ("object" === typeof categories[name]) {
 
 						getMatchingCategories(categories[name], searchTerm);
 
-					}
+					} else {
 
-					if (containsWords(name, searchTerm)) {
+						if (containsWords(categories[name], searchTerm)) {
 
-						matches.push(name);
+							matches.push(name);
+
+						}
 
 					}
 
@@ -720,9 +720,7 @@ categories = {
 
 				$(".hideable").addClass("hidden");
 
-				console.log($(this).find("input").data("target"));
-
-				$("#" + $(this).find("input").data("target")).removeClass("hidden");
+				$(".section-" + $(this).find("input").data("target")).removeClass("hidden");
 
 			}
 		);
