@@ -481,8 +481,6 @@ categories = {
 
 				for (var name in categories) {
 
-					console.log(categories);
-
 					if ("object" === typeof categories[name]) {
 
 						getMatchingCategories(categories[name], searchTerm);
@@ -551,12 +549,7 @@ categories = {
 				if ("" === $.trim(fieldValue)) return;
 
 				matches = [];
-				parents = [];
-				popped = false;
 				getMatchingCategories(categories, fieldValue, "");
-
-				parents = [];
-				popped = false;
 				getMatchingCategories(keywords, fieldValue, "");
 
 				matches = matches.filter(function(elem, pos) {
@@ -592,11 +585,7 @@ categories = {
 
 					event.preventDefault();
 
-					console.log($("#suggestions li.selected").length);
-
 					if ($("#suggestions li.selected").length) {
-
-						console.log("picking suggestion");
 
 						$("#keywords")
 							.val($("#suggestions li.selected").text());
@@ -605,15 +594,11 @@ categories = {
 
 					} else {
 
-						console.log("no suggestions");
-
 						$("#addKeyword").trigger("click");
 
 					}
 
 				} else if (code === 38) {
-
-					console.log("up");
 
 					event.preventDefault();
 
@@ -627,8 +612,6 @@ categories = {
 				} else if (code === 40) {
 
 					event.preventDefault();
-
-					console.log("down to", $("#suggestions li.selected").next("li").text());
 
 					if (!$("#suggestions li.selected").next("li").length) return;
 
@@ -706,8 +689,6 @@ categories = {
 			function(event){
 
 				event.preventDefault();
-
-				console.log();
 
 				$(this).next("div").show();
 
