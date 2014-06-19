@@ -1884,13 +1884,13 @@ input[type=text] {
   padding: 15px 5px;
   cursor: pointer;
 }
-#suggestions li: first-child {
+#suggestions li:first-child {
   background: #fff2d3;
 }
-#suggestions: hover li: first-child {
+#suggestions:hover li:first-child {
   background: #fff;
 }
-#suggestions: hover li: hover {
+#suggestions:hover li:hover {
   background: #fff2d3;
 }
 input[type=checkbox],
@@ -1924,7 +1924,7 @@ input[type=radio] {
   background: white;
   border: 1px solid #0b0c0c;
 }
-#picked li: after {
+#picked li:after {
   content: "×";
   border-radius: 50%;
   border: 1px solid white;
@@ -1936,7 +1936,7 @@ input[type=radio] {
   display: inline-block;
   margin-left: 15px;
 }
-#picked li: hover: after {
+#picked li:hover:after {
   background: #df3034;
   color: white;
 }
@@ -1962,6 +1962,6 @@ input[type=radio] {
 form {
   overflow: hidden;
 }
-input[type=checkbox]: focus {
+input[type=checkbox]:focus {
   outline: none;
 }
