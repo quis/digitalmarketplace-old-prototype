@@ -929,18 +929,23 @@ width: 100%;
 
 .searchbuilder-selected-chunk {
   background: white;
-  padding: 10px;
+  padding: 5px;
   border: 1px solid $grey-2;
   display: inline-block;
-  margin: 5px;
+  margin: 3px;
   font-size: 19px;
 }
 
-.searchbuilder-selected-chunk-label {
-  float: left;
-  margin-right: 10px;
+.searchbuilder-selected-label {
+  padding: 4px;
+  display: inline-block;
+  margin: 2px;
+  font-size: 16px;
 }
 
+.whole-search-tag {
+display: inline-block;
+}
 
 .searchbuilder-container {
 overflow: visible;
@@ -957,6 +962,10 @@ width: 100%;
   .searchbuilder-container-add p {
   margin: 0;
 }
+
+.butt-align {
+text-align: center;
+margin-top: -20px;}
 
   .searchbuilder-container-add-button {
   padding: 15px;

@@ -1125,15 +1125,20 @@ input[type=checkbox], input[type=radio] {
 
 .searchbuilder-selected-chunk {
   background: white;
-  padding: 10px;
+  padding: 5px;
   border: 1px solid #bfc1c3;
   display: inline-block;
-  margin: 5px;
+  margin: 3px;
   font-size: 19px; }
 
-.searchbuilder-selected-chunk-label {
-  float: left;
-  margin-right: 10px; }
+.searchbuilder-selected-label {
+  padding: 4px;
+  display: inline-block;
+  margin: 2px;
+  font-size: 16px; }
+
+.whole-search-tag {
+  display: inline-block; }
 
 .searchbuilder-container {
   overflow: visible;
@@ -1147,6 +1152,10 @@ input[type=checkbox], input[type=radio] {
 
 .searchbuilder-container-add p {
   margin: 0; }
+
+.butt-align {
+  text-align: center;
+  margin-top: -20px; }
 
 .searchbuilder-container-add-button {
   padding: 15px;
@@ -1977,6 +1986,12 @@ input[type=text] {
 #suggestions:hover li:hover {
   background: #fff2d3; }
 
+input[type=checkbox], input[type=radio] {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin-right: 5px; }
+
 .options {
   margin: 0 0 15px 0;
   padding: 0; }
@@ -2023,10 +2038,20 @@ input[type=text] {
   margin: 0 5px;
   font-size: 12px; }
 
+#resultCount {
+  font-size: 27px; }
+
+#resultCount span {
+  font-weight: bold;
+  font-size: 36px; }
+
 #submitButton {
   font-size: 24px;
   float: right;
   position: relative; }
+
+form {
+  overflow: hidden; }
 
 input[type=checkbox]:focus, input[type=radio]:focus {
   outline: none; }
