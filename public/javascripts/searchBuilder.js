@@ -434,10 +434,38 @@ categories = {
 											"Warehouse Management": "Warehouse Management"
 
 									}
+							},
+							"Other": {
+								"SCS": "SCS",
+								"Project management, programme management and governance": "Project management, programme management and governance",
+								"Onboarding services": "Onboarding services",
+								"Design authority": "Design authority",
+								"Business analysis": "Business analysis",
+								"Project specification and selection": "Project specification and selection",
+								"Enterprise architecture": "Enterprise architecture",
+								"Service integration and management services (SIAM)	": "Service integration and management services (SIAM)	",
+								"Transition management": "Transition management",
+								"Deployment": "Deployment",
+								"User management": "User management",
+								"Data recovery, conversion and migration": "Data recovery, conversion and migration",
+								"Digital archiving": "Digital archiving",
+								"Risk management": "Risk management",
+								"Penetration testing": "Penetration testing",
+								"IT healthcheck	": "IT healthcheck	",
+								"Helpdesk": "Helpdesk",
+								"Software support": "Software support",
+								"Training": "Training",
+								"IaaS": "IaaS",
+								"Compute": "Compute",
+								"Storage": "Storage",
+								"Content Delivery Network (CDN)": "Content Delivery Network (CDN)",
+								"PaaS": "PaaS",
+								"Application deployment": "Application deployment",
+								"Components": "Components"
 							}
 //					}
 			},
-			matches, parents, popped = true,
+			matches, parents,
 			containsWords = function(categoryName, searchTerm) {
 
 				var index,
@@ -455,44 +483,17 @@ categories = {
 			},
 			getMatchingCategories = function(categories, searchTerm) {
 
-				var count = "object" === typeof categories ? Object.keys(categories).length : 1;
-
 				for (var name in categories) {
 
 					if ("object" === typeof categories[name]) {
 
-						parents.push(name);
 						getMatchingCategories(categories[name], searchTerm);
 
-						popped = false;
-
 					}
 
-					if (
-						containsWords(name, searchTerm)
-					) {
-
-						if ("object" === typeof categories[name]) {
-							parents.pop();
-						}
-
-//						matches.push({
-//							"name": name,
-//							"parents": parents.join(" <span class='hierarchy'>▶</span> ")
-//						});
+					if (containsWords(name, searchTerm)) {
 
 						matches.push(name);
-
-						if ("object" === typeof categories[name]) {
-							parents.push(name);
-						}
-
-					}
-
-					if (!popped) {
-
-						parents.pop();
-						popped = true;
 
 					}
 
@@ -501,20 +502,45 @@ categories = {
 			},
 			tottResults = function() {
 
-				var count = $("#picked li").add(".optionSelected").length;
+				var count = $("#picked li").add(".optionSelected").not(".dontCount").length;
 
-				$("#resultCount span").text(
+				$("#resultCount").text(
 					Math.floor(
-						13516 / (1 + (count * count * count *  10))
+						17156 / (1 + (count * count * count *  (Math.random() + 1)))
 					)
 				);
+
+			};
+			var toggleSelection = function() {
+
+				$(this)
+					.toggleClass("optionSelected", $("input", this).is(":checked"));
+
+				if (
+					"radio" === $("input", this).attr("type") &&
+					$("input", this).is(":checked")
+				) {
+
+					$(this).siblings().removeClass("optionSelected");
+
+				}
+
+				tottResults();
 
 			};
 
 	$("#keywords")
 		.on(
 			"keyup",
-			function() {
+			function(event) {
+
+				var code = event.keyCode || event.which;
+
+				if (
+					code === 13 ||
+					code === 38 ||
+					code === 40
+				) return;
 
 				var fieldValue = $(this).val(),
 						$suggestionHolder = $("#suggestions").html(""),
@@ -533,35 +559,25 @@ categories = {
 				popped = false;
 				getMatchingCategories(keywords, fieldValue, "");
 
-				$suggestionHolder.append(
-					"<li>" + fieldValue + "</li>"
-				);
-
 				matches = matches.filter(function(elem, pos) {
-					console.log(elem);
-				    return matches.map(function(currentValue){
-							return currentValue.toLowerCase();
-						}).indexOf(elem.toLowerCase()) == pos;
+			    return matches.map(function(currentValue){
+						return currentValue.toLowerCase();
+					}).indexOf(elem.toLowerCase()) == pos;
 				});
 
 				i = (matches.length > 6) ? 7 : matches.length;
 
 				while (i--) {
 
-//					if (
-//						"" === matches[i].parents &&
-//						fieldValue === matches[i].name
-//					) continue;
-
 					$suggestionHolder.append(
 						"<li>" +
-//							matches[i].parents +
-//							(matches[i].parents.length ? "<span class='hierarchy'>▶</span>" : " ") +
 							matches[i] +
 						"</li>"
 					);
 
 				}
+
+				$suggestionHolder.find("li").eq(0).addClass("selected");
 
 		});
 
@@ -572,11 +588,54 @@ categories = {
 
 				var code = event.keyCode || event.which;
 
-				if (code == 13) {
+				if (code === 13) {
 
 					event.preventDefault();
 
-					$("#suggestions li").eq(0).trigger("click");
+					console.log($("#suggestions li.selected").length);
+
+					if ($("#suggestions li.selected").length) {
+
+						console.log("picking suggestion");
+
+						$("#keywords")
+							.val($("#suggestions li.selected").text());
+
+						$("#suggestions").html("");
+
+					} else {
+
+						console.log("no suggestions");
+
+						$("#addKeyword").trigger("click");
+
+					}
+
+				} else if (code === 38) {
+
+					console.log("up");
+
+					event.preventDefault();
+
+					if (!$("#suggestions li.selected").prev("li").length) return;
+
+					$("#suggestions li.selected")
+						.removeClass("selected")
+					.prev("li")
+						.addClass("selected");
+
+				} else if (code === 40) {
+
+					event.preventDefault();
+
+					console.log("down to", $("#suggestions li.selected").next("li").text());
+
+					if (!$("#suggestions li.selected").next("li").length) return;
+
+					$("#suggestions li.selected")
+						.removeClass("selected")
+					.next("li")
+						.addClass("selected");
 
 				}
 
@@ -588,13 +647,16 @@ categories = {
 			event.preventDefault();
 		});
 
-	$("#suggestions")
+	$("#addKeyword")
 		.on(
 			"click",
-			"li",
 			function() {
 
-				$("#picked").append(this);
+				var val = $("#keywords").val();
+
+				if ("" === $.trim(val)) return;
+
+				$("#picked").append("<li>" + val + "</li>");
 
 				$("#suggestions").html("");
 
@@ -604,6 +666,21 @@ categories = {
 
 			}
 		);
+
+	$("#suggestions")
+		.on(
+			"click",
+			"li",
+			function() {
+
+				$("#keywords")
+					.val($(this).text());
+
+				$("#suggestions").html("");
+
+			}
+		);
+
 
 	$("#picked")
 		.on(
@@ -620,15 +697,48 @@ categories = {
 
 
 	$(".chunk")
+		.on("click", toggleSelection)
+		.each(toggleSelection);
+
+	$("#requirementsToggle")
+		.on(
+			"click",
+			function(event){
+
+				event.preventDefault();
+
+				console.log();
+
+				$(this).next("div").show();
+
+			}
+		);
+
+	$(".toggleSections")
+		.click(
+			function() {
+
+				$(".hideable").addClass("hidden");
+
+				console.log($(this).find("input").data("target"));
+
+				$("#" + $(this).find("input").data("target")).removeClass("hidden");
+
+			}
+		);
+
+	$(".searchbuilder-container-bit h3")
 		.on("click", function() {
 
-			if ($("input", this).is(":checked")) {
-				$(this).addClass("optionSelected");
-			} else {
-				$(this).removeClass("optionSelected");
-			}
+			$(this).parents(".searchbuilder-container-bit").toggleClass("open");
 
-			tottResults();
+			if (
+				$(this).parents(".searchbuilder-container-bit").is(".keywords-section")
+			) {
+
+				$("#addKeyword").trigger("click");
+
+			}
 
 		});
 

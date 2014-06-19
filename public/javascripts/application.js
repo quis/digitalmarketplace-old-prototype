@@ -704,17 +704,3 @@ $(function(){
 	});
 
 });
-
-
-
-
-// Search builder stuff //
-
-
-$(function() {
-
-	$(".searchbuilder-container-bit p").on("click", function () {
-		$(this).parents(".searchbuilder-container-bit").toggleClass("open");
-	});
-
-});

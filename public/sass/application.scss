@@ -867,6 +867,13 @@ border-radius: 5px;
 
 /* search builder */
 
+input[type=checkbox],
+input[type=radio] {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin-right: 5px;
+}
 
 .strapline {
 margin-top: -25px;}
@@ -883,9 +890,29 @@ width: 90%;
 }
 
 #searchbuilderbutton {
-padding: 12px;
-font-size: 24px;
-margin-top: 10px;
+
+  margin-top: 15px;
+  @include button;
+  font-size: 24px;
+  font-weight: bold;
+
+  &:hover {
+
+    span {
+      background: darken($green, 4%);
+    }
+
+  }
+
+  span {
+    font-size: 27px;
+    background: rgba($green, 0.5);
+    color: $white;
+    padding: 15px 10px;
+    border-radius: 50%;
+    letter-spacing: 0.05em;
+  }
+
 }
 
 #searchbuilder-results {
@@ -916,7 +943,7 @@ width: 100%;
 
 
 .searchbuilder-container {
-overflow: auto;
+overflow: visible;
 width: 100%;
 }
 
@@ -950,10 +977,14 @@ width: 100%;
 .searchbuilder-container-bit {
 
   background: $grey-4;
-  border: 1px solid $grey-2;
+  border: 1px solid $grey-3;
   padding: 8px;
-  margin-top: 5px;
-  display: block;
+  margin: 0 0 10px 0;
+  display: inline-block;
+
+  &.hidden {
+    display: none;
+  }
 
   p {
   margin:0;
@@ -961,22 +992,61 @@ width: 100%;
   }
 
   h3 {
-  display: inline-block;
+
+    display: inline-block;
+    @include core-19;
+    font-weight: bold;
+    cursor: pointer;
+
+    .openCopy {
+      display: none;
+    }
+
+    .closedCopy {
+      display: inline;
+    }
+
+    &:before {
+      content: "▼";
+      font-size: 11px;
+      color: $grey-1;
+      position: relative;
+      top: -4px;
+    }
+
   }
+
   .chunk, input, legend, .exp, .searchbuilder-container-add-button {
     display: none;
   }
 
 
-.optionSelected {
-display: inline-block;}
+  .optionSelected {
+    display: inline-block;
+  }
 
   &.open {
-    background: white;
-    border: 1px solid $grey-2;
+
+    display: block;
+    background: $grey-4;
 
     h3 {
+
       display: block;
+
+      &:before {
+        content: "▲";
+        top: -3px;
+      }
+
+      .openCopy {
+        display: inline;
+      }
+
+      .closedCopy {
+        display: none;
+      }
+
     }
 
   .chunk, input, legend, .exp, .searchbuilder-container-add-button {
@@ -986,6 +1056,14 @@ display: inline-block;}
     }
 
   }
+}
+
+.searchbuilder-requirements-finder {
+
+  background: $white;
+  border: 1px solid $grey-3;
+  display: none;
+
 }
 
 
@@ -1341,10 +1419,15 @@ margin-top: 20px;
 border: 5px solid #dee0e2;}
 
 #keywords {
-margin: 0 auto;
+margin: 0 auto 5px auto;
 overflow: auto;
+width: 400px;
 }
 
+#addKeyword {
+margin: -30px 0 0 -5px;
+width: 80px;
+}
 
 #keyword {
 background: #dee0e2;
@@ -1865,17 +1948,25 @@ main.search .search-header button:hover {
 // Horrible inline search builder stuff
 
 input[type=text] {
-  margin: 0 0 15px 0 !important;
-  padding-left: 5px !important;
+  margin: 0 0 15px 0;
+  padding-left: 5px;
 }
+
 #suggestions {
+
   padding: 0;
-  margin: -15px 0 20px 0;
+  margin: -5px 0 20px 0;
   height: 0;
-  width: 600px;
+  width: auto;
   position: relative;
   z-index: 100;
+
+  .open & {
+    width: 478px;
+  }
+
 }
+
 #suggestions li {
   background: white;
   border: 1px solid #bfc1c3;
@@ -1884,7 +1975,7 @@ input[type=text] {
   padding: 15px 5px;
   cursor: pointer;
 }
-#suggestions li:first-child {
+#suggestions li.selected {
   background: #fff2d3;
 }
 #suggestions:hover li:first-child {
@@ -1893,13 +1984,7 @@ input[type=text] {
 #suggestions:hover li:hover {
   background: #fff2d3;
 }
-input[type=checkbox],
-input[type=radio] {
-  display: inline-block;
-  width: auto;
-  height: auto;
-  margin-right: 5px;
-}
+
 .options {
   margin: 0 0 15px 0;
   padding: 0;
@@ -1909,13 +1994,13 @@ input[type=radio] {
   display: inline-block;
   list-style: none;
   cursor: pointer;
-  padding: 15px;
-  margin-right: 20px;
-  margin-bottom: 15px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   background: #dee0e2;
   border: 1px solid #dee0e2;
 }
-.options li: hover, .chunk: hover {
+.options li:hover, .chunk:hover {
   border: 1px solid #0b0c0c;
 }
 #picked li,
@@ -1923,6 +2008,8 @@ input[type=radio] {
 .chunk.optionSelected {
   background: white;
   border: 1px solid #0b0c0c;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 #picked li:after {
   content: "×";
@@ -1947,21 +2034,14 @@ input[type=radio] {
   margin: 0 5px;
   font-size: 12px;
 }
-#resultCount {
-  font-size: 27px;
-}
-#resultCount span {
-  font-weight: bold;
-  font-size: 36px;
-}
+
 #submitButton {
   font-size: 24px;
   float: right;
   position: relative;
 }
-form {
-  overflow: hidden;
-}
-input[type=checkbox]:focus {
+
+input[type=checkbox]:focus,
+input[type=radio]:focus {
   outline: none;
 }
