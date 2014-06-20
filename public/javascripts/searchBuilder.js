@@ -537,6 +537,16 @@ categories = {
 
 				tottResults();
 
+			},
+			addButtons = function() {
+
+				$(".nextButton")
+					.remove();
+
+				$(".searchbuilder-container-bit")
+					.not(":last")
+					.append("<input type='button' class='nextButton' value='Next' />");
+
 			};
 
 	$("#keywords")
@@ -679,24 +689,19 @@ categories = {
 		.click(
 			function() {
 
-				$(".hideable").addClass("hidden");
+				$(".hideable").addClass("hidden").removeClass("open");
 
 				$(".section-" + $(this).find("input").data("target")).removeClass("hidden");
 
-				$(".nextButton")
-					.remove();
-
-				$(".searchbuilder-container-bit")
-					.not(":last")
-					.append("<input type='button' class='nextButton' value='Next' />");
+				addButtons();
 
 			}
 		);
 
-	$(".searchbuilder-container-bit")
+	$("body")
 		.on(
 			"click",
-			"h3, .nextButton",
+			".searchbuilder-container-bit h3, .searchbuilder-container-bit .nextButton",
 			function() {
 
 				$(this).parents(".searchbuilder-container-bit").toggleClass("open");
@@ -708,6 +713,24 @@ categories = {
 					makeAPick.apply($("#suggestions li.selected").get(0));
 
 				}
+
+			}
+		)
+		.on(
+			"click",
+			".searchbuilder-container-bit .nextButton",
+			function() {
+
+				$(this)
+				.parents(".searchbuilder-container-bit")
+				.nextAll(".searchbuilder-container-bit:not(.hidden)")
+				.eq(0)
+					.addClass("open");
+
+					console.log($(this)
+					.parents(".searchbuilder-container-bit")
+					.next(".searchbuilder-container-bit")
+						.addClass("open"));
 
 			}
 		);
@@ -724,5 +747,6 @@ categories = {
 		});
 
 	tottResults();
+	addButtons();
 
 }());
