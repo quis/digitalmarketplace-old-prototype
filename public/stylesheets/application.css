@@ -1237,6 +1237,7 @@ input[type=checkbox], input[type=radio] {
     padding: 8px;
     background: #f8f8f8;
     padding: 8px;
+    border: 3px solid #2b8cc4;
     -webkit-column-count: 2; }
     .searchbuilder-container-bit.open.hidden {
       display: none; }
