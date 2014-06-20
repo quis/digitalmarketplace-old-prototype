@@ -1173,7 +1173,7 @@ input[type=checkbox], input[type=radio] {
 .searchbuilder-container-bit {
   background: #f8f8f8;
   border: 1px solid #dee0e2;
-  padding: 8px;
+  padding: 0 0 0 8px;
   margin: 0 0 10px 0;
   display: inline-block; }
   .searchbuilder-container-bit.hidden {
@@ -1210,7 +1210,8 @@ input[type=checkbox], input[type=radio] {
     display: inline-block; }
   .searchbuilder-container-bit.open {
     display: block;
-    background: #f8f8f8; }
+    background: #f8f8f8;
+    padding: 8px; }
     .searchbuilder-container-bit.open h3 {
       display: block; }
       .searchbuilder-container-bit.open h3:before {
@@ -2012,7 +2013,7 @@ input[type=text] {
   margin-top: 10px;
   margin-bottom: 0; }
 
-#picked li:after {
+.open #picked li:after {
   content: "×";
   border-radius: 50%;
   border: 1px solid white;
@@ -2023,17 +2024,9 @@ input[type=text] {
   text-align: center;
   display: inline-block;
   margin-left: 15px; }
-
-#picked li:hover:after {
+.open #picked li:hover:after {
   background: #df3034;
   color: white; }
-
-.hierarchy {
-  color: #a2a2a2;
-  text-align: center;
-  display: inline-block;
-  margin: 0 5px;
-  font-size: 12px; }
 
 #submitButton {
   font-size: 24px;

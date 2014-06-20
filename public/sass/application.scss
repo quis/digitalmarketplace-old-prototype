@@ -987,7 +987,7 @@ margin-top: -20px;}
 
   background: $grey-4;
   border: 1px solid $grey-3;
-  padding: 8px;
+  padding: 0 0 0 8px;
   margin: 0 0 10px 0;
   display: inline-block;
 
@@ -1038,6 +1038,7 @@ margin-top: -20px;}
 
     display: block;
     background: $grey-4;
+    padding: 8px;
 
     h3 {
 
@@ -2023,28 +2024,23 @@ input[type=text] {
   margin-top: 10px;
   margin-bottom: 0;
 }
-#picked li:after {
-  content: "×";
-  border-radius: 50%;
-  border: 1px solid white;
-  background: #dee0e2;
-  color: #888;
-  width: 1.1em;
-  height: 1.1em;
-  text-align: center;
-  display: inline-block;
-  margin-left: 15px;
-}
-#picked li:hover:after {
-  background: #df3034;
-  color: white;
-}
-.hierarchy {
-  color: #a2a2a2;
-  text-align: center;
-  display: inline-block;
-  margin: 0 5px;
-  font-size: 12px;
+.open {
+  #picked li:after {
+    content: "×";
+    border-radius: 50%;
+    border: 1px solid white;
+    background: #dee0e2;
+    color: #888;
+    width: 1.1em;
+    height: 1.1em;
+    text-align: center;
+    display: inline-block;
+    margin-left: 15px;
+  }
+  #picked li:hover:after {
+    background: #df3034;
+    color: white;
+  }
 }
 
 #submitButton {
