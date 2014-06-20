@@ -478,8 +478,6 @@ categories = {
 
 				for (var name in categories) {
 
-					console.log(categories);
-
 					if ("object" === typeof categories[name]) {
 
 						getMatchingCategories(categories[name], searchTerm);
@@ -503,7 +501,7 @@ categories = {
 
 				$("#resultCount").text(
 					Math.floor(
-						17156 / (1 + (count * count * count *  (Math.random() + 1)))
+						17156 / (1 + (count * count * count * 2))
 					)
 				);
 
@@ -521,6 +519,21 @@ categories = {
 					$(this).siblings().removeClass("optionSelected");
 
 				}
+
+				tottResults();
+
+			},
+			makeAPick = function() {
+
+				var val = $(this).text();
+
+				if ("" === $.trim(val)) return;
+
+				$("#picked").append("<li>" + val.replace("”","").replace("“","") + "</li>");
+
+				$("#suggestions").html("");
+
+				$("#keywords").val("").focus();
 
 				tottResults();
 
@@ -550,6 +563,13 @@ categories = {
 				matches = [];
 				getMatchingCategories(categories, fieldValue, "");
 				getMatchingCategories(keywords, fieldValue, "");
+
+				$suggestionHolder.append(
+					$.trim(fieldValue).indexOf(" ") > -1 ?
+						"<li>&ldquo;" + $.trim(fieldValue) + "&rdquo;</li>"
+					:
+						"<li>" + fieldValue + "</li>"
+				);
 
 				matches = matches.filter(function(elem, pos) {
 			    return matches.map(function(currentValue){
@@ -584,18 +604,7 @@ categories = {
 
 					event.preventDefault();
 
-					if ($("#suggestions li.selected").length) {
-
-						$("#keywords")
-							.val($("#suggestions li.selected").text());
-
-						$("#suggestions").html("");
-
-					} else {
-
-						$("#addKeyword").trigger("click");
-
-					}
+					makeAPick.apply($("#suggestions li.selected").get(0));
 
 				} else if (code === 38) {
 
@@ -628,43 +637,13 @@ categories = {
 		.on("submit", function(event) {
 			event.preventDefault();
 		});
-console.log("honey");
-	$("#addKeyword")
-		.on(
-			"click",
-			function() {
-
-				var val = $("#keywords").val();
-
-				if ("" === $.trim(val)) return;
-
-				console.log("hi");
-
-				$(".keywords-section h3").after("<li>" + val + "</li>");
-
-				$("#suggestions").html("");
-
-				$("#keywords").val("").focus();
-
-				tottResults();
-
-			}
-		);
 
 	$("#suggestions")
 		.on(
 			"click",
 			"li",
-			function() {
-
-				$("#keywords")
-					.val($(this).text());
-
-				$("#suggestions").html("");
-
-			}
+			makeAPick
 		);
-
 
 	$("#picked")
 		.on(
@@ -704,23 +683,34 @@ console.log("honey");
 
 				$(".section-" + $(this).find("input").data("target")).removeClass("hidden");
 
+				$(".nextButton")
+					.remove();
+
+				$(".searchbuilder-container-bit")
+					.not(":last")
+					.append("<input type='button' class='nextButton' value='Next' />");
+
 			}
 		);
 
-	$(".searchbuilder-container-bit h3")
-		.on("click", function() {
+	$(".searchbuilder-container-bit")
+		.on(
+			"click",
+			"h3, .nextButton",
+			function() {
 
-			$(this).parents(".searchbuilder-container-bit").toggleClass("open");
+				$(this).parents(".searchbuilder-container-bit").toggleClass("open");
 
-			if (
-				$(this).parents(".searchbuilder-container-bit").is(".keywords-section")
-			) {
+				if (
+					$(this).parents(".searchbuilder-container-bit").is(".keywords-section")
+				) {
 
-				$("#addKeyword").trigger("click");
+					makeAPick.apply($("#suggestions li.selected").get(0));
+
+				}
 
 			}
-
-		});
+		);
 
 	$(".nextButton")
 		.on("click", function() {

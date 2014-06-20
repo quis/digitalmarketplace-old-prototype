@@ -899,6 +899,8 @@ margin-top: 20px;}
   @include button;
   font-size: 24px;
   font-weight: bold;
+  clear: left;
+  display: block;
 
   &:hover {
 
@@ -992,7 +994,9 @@ margin-top: -20px;}
   background: $grey-4;
   border: 1px solid $grey-3;
   margin: 0 10px 10px 0;
-  display: inline-block;
+  display: block;
+  float: left;
+  clear: left;
 
   &.hidden {
     display: none;
@@ -1052,6 +1056,7 @@ margin-top: -20px;}
   &.open {
 
     display: block;
+    float: none;
     padding: 8px;
     background: $grey-4;
     padding: 8px;
@@ -2085,8 +2090,8 @@ input[type=text] {
     border: 1px solid white;
     background: #dee0e2;
     color: #888;
-    width: 1.1em;
-    height: 1.1em;
+    width: 1.2em;
+    height: 1.2em;
     text-align: center;
     display: inline-block;
     margin-left: 15px;

@@ -1076,7 +1076,9 @@ input[type=checkbox], input[type=radio] {
   cursor: pointer;
   color: #fff;
   font-size: 24px;
-  font-weight: bold; }
+  font-weight: bold;
+  clear: left;
+  display: block; }
   #searchbuilderbutton:visited {
     background-color: #00823b; }
   #searchbuilderbutton:hover, #searchbuilderbutton:focus {
@@ -1188,7 +1190,9 @@ input[type=checkbox], input[type=radio] {
   background: #f8f8f8;
   border: 1px solid #dee0e2;
   margin: 0 10px 10px 0;
-  display: inline-block; }
+  display: block;
+  float: left;
+  clear: left; }
   .searchbuilder-container-bit.hidden {
     display: none; }
   .searchbuilder-container-bit:hover {
@@ -1229,6 +1233,7 @@ input[type=checkbox], input[type=radio] {
     display: inline-block; }
   .searchbuilder-container-bit.open {
     display: block;
+    float: none;
     padding: 8px;
     background: #f8f8f8;
     padding: 8px;
@@ -2173,8 +2178,8 @@ input[type=text] {
   border: 1px solid white;
   background: #dee0e2;
   color: #888;
-  width: 1.1em;
-  height: 1.1em;
+  width: 1.2em;
+  height: 1.2em;
   text-align: center;
   display: inline-block;
   margin-left: 15px; }
