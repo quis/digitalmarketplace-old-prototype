@@ -4,8 +4,6 @@
 <body>
 <div id="outer-wrapper">
 <div id="inner-wrapper">
-<p><a href="/">Home</a> > Search results</p>
-
 
 
 </div>
@@ -16,7 +14,9 @@
 <form action="https://www.gov.uk/search" method="get" accept-charset="utf-8" class="search-header search-header-2 js-search-hash" role="search">
   <div class="searchfield">
     <fieldset class="search-input">
-
+<label for="search-main">
+          <span class="visuallyhidden">Search</span>
+      </label>
       <input type="search" name="q" value="content management systems" id="search-main">
 </fieldset>
 <fieldset>
@@ -104,12 +104,19 @@
 
 </div>
 
-
+<!--
+<div class="nav-breadcrumb">
+<ul class="breadcrumb">
+	<li><a href="#"><span class="remove-filt"><strong>&times;</strong></span>Business</a></li>
+	<li><a href="#"><span class="remove-filt"><strong>&times;</strong></span>Content management systems</a></li>
+</ul>
+</div>
+-->
 
 <!--
-<div class="breadcrumb2-breakdown">
-<div class="breadcrumb2-filter"><a href="#"><span class="remove-filt"><strong>&times;</strong></span></a> SaaS </div>
-<div class="breadcrumb2-filter"><a href="#"><span class="remove-filt"><strong>&times;</strong></span></a> Content management systems</div>
+<div class="breadcrumb-breakdown">
+<div class="breadcrumb-filter"><a href="#"><span class="remove-filt"><strong>&times;</strong></span></a> SaaS </div>
+<div class="breadcrumb-filter"><a href="#"><span class="remove-filt"><strong>&times;</strong></span></a> Content management systems</div>
 </div>
 -->
 
@@ -120,6 +127,8 @@
 
 <div id="box-filter">
 <div id="filter-inner">
+
+
 
 <div class="filter-header">
 <p>Filtering your results</p>
@@ -153,35 +162,30 @@
 <div class="category-browse">
 
 
-<!--
+
+<p class="cat-filter">Filters <span class="exp"><a href="#" id="clear-all-filters">Clear filters</a></span></p>
+
 <div id="all-filters">
 <div class="filter-applied" id="filter-1">
 <div class="filter-remove"><p><a href="#" id="close-filter-1"><strong>&times;</strong></p></a></div>
-<p>Payment option</p>
+<p><strong>Payment option</strong></p>
 <p>BACs, Credit Card <span class="copy-16">(312)</span></p>
 </div>
 
 
 <div class="filter-applied" id="filter-2">
 <div class="filter-remove"><p><a href="#" id="close-filter-2"><strong>&times;</strong></p></a></div>
-<p>Minimum contract period</p>
+<p><strong>Minimum contract period</strong></p>
 <p>Year <span class="copy-16">(102)</span</p>
 </div>
 
 
 <div class="filter-applied" id="filter-2">
 <div class="filter-remove"><p><a href="#" id="close-filter-2"><strong>&times;</strong></p></a></div>
-<p>Open standards supported</p>
+<p><strong>Open standards supported</strong></p>
 <p>Yes <span class="copy-16">(618)</span</p>
 </div>
 
-
-<div class="filter-applied" id="filter-2">
-<div class="filter-remove"><p><a href="#" id="close-filter-2"><strong>&times;</strong></p></a></div>
-<p>Offline working support</p>
-<p>Yes <span class="copy-16">(313)</span</p>
-</div>
--->
 
 
 
@@ -194,9 +198,8 @@
 
 <p class="cat-filter">Security <span class="exp"><a href="#">Show</a></span></p>
 
-<p class="cat-filter">Technical <span class="exp"><a href="#">Show</a></span></p>
+<p class="cat-filter">Technical <span class="exp"><a href="#">Hide</a></span></p>
 
-<!--
 
 <div class="checkboxes">
 <label for="x"><input type="checkbox"> <span> API access</span></label>
@@ -206,7 +209,7 @@
 <label for="x"><input type="checkbox"> <span> Open source</span></label>
 </div>
 
--->
+<p><button class="button">Filter</button></p>
 
 </div>
 </div>
@@ -218,18 +221,8 @@
 
   <div class="results-summary">
 
-<!--
-
-<div class="addbtn"><p><button class="button">Add 583 to list</button></p></div>
-
--->
-
-<div class="exp">
- <p><a href="#" id="addresults"><img src="../public/images/add_shortlist.png" width="16" class="addimg"/><strong>Add 583 services to list</strong></a></p>
+  <p><span class="count">583</span> <strong>results</strong>
 </div>
-
-<p><span class="count">583</span> services  </div>
-
   </div>
 
 
@@ -251,14 +244,16 @@
 
  <div class="search-container">
  <div class="search-result">
+ <div class="supplier-logo"><img src="../public/images/firmsteplogo.png" alt="firmsteplogo" width="100"/></div>
  <p class="product"><a href="#">Achieve CMS</a></p>
  <p class="supplier">by Business Web Software t/a Firmstep</p>
- <span class="copy-16">AchieveCMS: is a fully-featured <span class="searchterm">Content Management System</span> (CMS) for local government. It provides a whole range of functionality...
- </span>
+ <span class="copy-16">AchieveCMS: is a fully-featured <span class="searchterm">Content Management System</span> (CMS) for local government. It provides a whole range of functionality...</span>
+ <br>
 
 </div>
 
 <div class="search-result">
+<div class="supplier-logo"><img src="../public/images/contensis.jpg" alt="contensis" width="100" /></div>
  <p class="product"><a href="#">Contensis - core Web CMS (Enterprise Licence)</a></p>
  <p class="supplier">by Zengenti Limited</p>
  <span class="copy-16">Contensis is a fully-featured .NET Web <span class="searchterm">Content Management System</span> used by a large number of public service organisations, including...
@@ -267,6 +262,7 @@
 </div>
 
   <div class="search-result">
+  <div class="supplier-logo"><img src="../public/images/umbraco.png" alt="umbraco" width="100" /></div>
  <p class="product"><a href="listing.html">Umbraco</a></p>
   <p class="supplier">by Umbraco Ltd</p>
  <span class="copy-16">Our Cloud Umbraco CMS service provides a flexible, end-to-end, access-from-anywhere solution for website <span class="searchterm">content management</span>...</span>
@@ -275,6 +271,7 @@
 </div>
 
   <div class="search-result">
+   <div class="supplier-logo"><img src="/public/images/Excelsior.png" alt="wp" width="100" /></div>
 
  <p class="product"><a href="listing.html">Excelsior CMS</a></p>
   <p class="supplier">by Excelsior Ltd</p>
@@ -283,6 +280,7 @@
 </div>
 
 <div class="search-result">
+  <div class="supplier-logo"><img src="../public/images/wp.png" alt="wp" width="100" /></div>
 <p class="product"><a href="#">Cloud Open Source CMS(Wordpress)</a></p>
 <p class="supplier">by Connect Internet Solutions Ltd</p>
 

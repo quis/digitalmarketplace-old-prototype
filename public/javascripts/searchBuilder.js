@@ -103,6 +103,7 @@ categories = {
 									"Customer Relationship Management (CRM)": {
 											"Contact Management": "Contact Management",
 											"Customer Relationship Management": "Customer Relationship Management CRM",
+											"CRM": "CRM",
 											"Contact Relationship Management": "Contact Relationship Management crm",
 											"Customer Helpdesks": "Customer Helpdesks",
 											"Client Management": "Client Management",
@@ -476,6 +477,8 @@ categories = {
 			getMatchingCategories = function(categories, searchTerm) {
 
 				for (var name in categories) {
+
+					console.log(categories);
 
 					if ("object" === typeof categories[name]) {
 
