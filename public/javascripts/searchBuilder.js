@@ -14,7 +14,6 @@
 							"CMS": "cms",
 							"collaboration": "collaboration",
 							"consultancy": "consultancy",
-							"CRM": "CRM",
 							"email": "email",
 							"hosting": "hosting",
 							"penetration testing": "penetration testing",
@@ -45,7 +44,6 @@ categories = {
 											"Costing": "Costing",
 											"Funding": "Funding",
 											"Money Management": "Money Management",
-											"Banking": "Banking",
 											"Financial Compliance": "Financial Compliance",
 											"Debt Collection": "Debt Collection",
 											"Procurement": "Procurement",
@@ -71,8 +69,6 @@ categories = {
 											"Business Analysis": "Business Analysis",
 											"Analytics": "Analytics",
 											"Data Analytics": "Data Analytics",
-											"Data Analysis": "Data Analysis",
-											"Business Analysis": "Business Analysis",
 											"Data Mining": "Data Mining",
 											"Data Visualisation": "Data Visualisation",
 											"Reporting and Dashboard": "Reporting and Dashboard"
@@ -629,7 +625,7 @@ categories = {
 		.on("submit", function(event) {
 			event.preventDefault();
 		});
-
+console.log("honey");
 	$("#addKeyword")
 		.on(
 			"click",
@@ -639,7 +635,9 @@ categories = {
 
 				if ("" === $.trim(val)) return;
 
-				$("#picked").append("<li>" + val + "</li>");
+				console.log("hi");
+
+				$(".keywords-section h3").after("<li>" + val + "</li>");
 
 				$("#suggestions").html("");
 
@@ -718,6 +716,17 @@ categories = {
 				$("#addKeyword").trigger("click");
 
 			}
+
+		});
+
+	$(".nextButton")
+		.on("click", function() {
+
+				$(this)
+				.parents(".searchbuilder-container-bit")
+					.removeClass("open")
+				.next(".searchbuilder-container-bit")
+					.addClass("open");
 
 		});
 

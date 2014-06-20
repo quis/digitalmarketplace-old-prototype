@@ -29,20 +29,19 @@
 
 
               <div class="searchbuilder-container-bit keywords-section open">
-                <h3>
-                  Add your keywords
-                </h3>
-
-                  <ul id="picked" class="options">
-                  </ul>
-                  <input type="text" id="keywords" autocomplete="off" placeholder="eg Email" />
-                  <input type="button" id="addKeyword" value="Add" />
-                  <ul id="suggestions">
-                  </ul>
+                <div id="picked" class="options">
+                  <h3>
+                    Add your keywords
+                  </h3>
+                </div>
+                <input type="text" id="keywords" autocomplete="off" placeholder="eg Email" />
+                <input type="button" id="addKeyword" value="Add" />
+                <ul id="suggestions">
+                </ul>
 
               </div>
 
-              <div class="searchbuilder-container-bit open">
+              <div class="searchbuilder-container-bit servicetype-section open">
 
                 <h3>
                   <span class="closedCopy">
@@ -66,10 +65,8 @@
                   Cloud technology
                 </label>
 
+                <input type="button" class="nextButton" value="Next" />
               </div>
-
-
-
 
               <div class="searchbuilder-container-bit">
                 <h3>
@@ -88,6 +85,7 @@
                 <label class="chunk"><input type="checkbox" /> Termination Costs</label>
                 <label class="chunk"><input type="checkbox" /> Payment Options</label>
                 <label class="chunk"><input type="checkbox" /> Education Pricing</label>
+                <input type="button" class="nextButton" value="Next" />
               </div>
               <div class="searchbuilder-container-bit hidden hideable section-PAAS">
                 <h3>
@@ -98,82 +96,75 @@
                     Set your service management options
                   </span>
                 </h3>
-
-<label class="chunk"><input type="checkbox" /> On-boarding process e.g. moving on to the service</label>
-<label class="chunk"><input type="checkbox" /> Off-boarding process e.g. moving off the service</label>
-<label class="chunk"><input type="checkbox" /> Data extraction / removal criteria met</label>
-<label class="chunk"><input type="checkbox" /> Data location option can be defined by user</label>
-<label class="chunk"><input type="checkbox" /> Data centres adhere to EU Code of Conduct for Operations</label>
-<label class="chunk"><input type="checkbox" /> Data centre tier</label>
-<label class="chunk"><input type="checkbox" /> Support boundaries / interfaces documented</label>
-<label class="chunk"><input type="checkbox" /> Service roadmap provided</label>
-<label class="chunk"><input type="checkbox" /> Performance attributes defined and documented</label>
-<label class="chunk"><input type="checkbox" /> Backup &amp; Disaster Recovery</label>
-<label class="chunk"><input type="checkbox" /> Support service provided and documented</label>
-<label class="chunk"><input type="checkbox" /> 'Real time' management information available</label>
-<label class="chunk"><input type="checkbox" /> Self service provisioning/de-provisioning</label>
-<label class="chunk"><input type="checkbox" /> Time for provisioning/de-provisioning documented</label>
-<label class="chunk"><input type="checkbox" /> Service Desk can be used by 3rd party suppliers</label>
-</div>
-<div class="searchbuilder-container-bit hideable hidden section-PAAS">
-  <h3>
-    <span class="closedCopy">
-      Cloud technology options
-    </span>
-    <span class="openCopy">
-      Set your cloud technology options
-    </span>
-  </h3>
-  <label class="chunk"><input type="checkbox" /> Has elastic/burstable resources defined? </label>
-  <label class="chunk"><input type="checkbox" /> Guaranteed/non-guaranteed resources defined</label>
-  <label class="chunk"><input type="checkbox" /> Persistence/non-persistence of storage defined</label>
-  <label class="chunk"><input type="checkbox" /> Application libraries are defined and documented</label>
-</div>
-<div class="searchbuilder-container-bit hideable hidden section-SCS">
-  <h3>
-    <span class="closedCopy">
-      Cloud support options
-    </span>
-    <span class="openCopy">
-      Set your cloud support options
-    </span>
-  </h3>
-<label class="chunk"><input type="checkbox" /> Do you provide vendor specific services</label>
-<label class="chunk"><input type="checkbox" /> If the vendor(s) have accreditation, are you accredited</label>
-<label class="chunk"><input type="checkbox" /> Onboarding services</label>
-<label class="chunk"><input type="checkbox" /> Design Authority</label>
-<label class="chunk"><input type="checkbox" /> Business Analysis</label>
-<label class="chunk"><input type="checkbox" /> Design and Development</label>
-<label class="chunk"><input type="checkbox" /> Project Specification and Selection</label>
-<label class="chunk"><input type="checkbox" /> Deployment</label>
-<label class="chunk"><input type="checkbox" /> Transition Management</label>
-<label class="chunk"><input type="checkbox" /> User Management</label>
-<label class="chunk"><input type="checkbox" /> Agile: development and management</label>
-<label class="chunk"><input type="checkbox" /> Enterprise Architecture</label>
-<label class="chunk"><input type="checkbox" /> Project Management, Programme Management and Governance</label>
-<label class="chunk"><input type="checkbox" /> Service and Systems Integration</label>
-<label class="chunk"><input type="checkbox" /> Service Management</label>
-<label class="chunk"><input type="checkbox" /> Software Support</label>
-<label class="chunk"><input type="checkbox" /> Helpdesk</label>
-<label class="chunk"><input type="checkbox" /> Testing</label>
-<label class="chunk"><input type="checkbox" /> Training</label>
-<label class="chunk"><input type="checkbox" /> Editorial</label>
-<label class="chunk"><input type="checkbox" /> Application management and support</label>
-<label class="chunk"><input type="checkbox" /> Strategy and implementation services</label>
-<label class="chunk"><input type="checkbox" /> End user device support services</label>
-<label class="chunk"><input type="checkbox" /> Application Lifecycle Services</label>
-
-
+                <label class="chunk"><input type="checkbox" /> On-boarding process e.g. moving on to the service</label>
+                <label class="chunk"><input type="checkbox" /> Off-boarding process e.g. moving off the service</label>
+                <label class="chunk"><input type="checkbox" /> Data extraction / removal criteria met</label>
+                <label class="chunk"><input type="checkbox" /> Data location option can be defined by user</label>
+                <label class="chunk"><input type="checkbox" /> Data centres adhere to EU Code of Conduct for Operations</label>
+                <label class="chunk"><input type="checkbox" /> Data centre tier</label>
+                <label class="chunk"><input type="checkbox" /> Support boundaries / interfaces documented</label>
+                <label class="chunk"><input type="checkbox" /> Service roadmap provided</label>
+                <label class="chunk"><input type="checkbox" /> Performance attributes defined and documented</label>
+                <label class="chunk"><input type="checkbox" /> Backup &amp; Disaster Recovery</label>
+                <label class="chunk"><input type="checkbox" /> Support service provided and documented</label>
+                <label class="chunk"><input type="checkbox" /> 'Real time' management information available</label>
+                <label class="chunk"><input type="checkbox" /> Self service provisioning/de-provisioning</label>
+                <label class="chunk"><input type="checkbox" /> Time for provisioning/de-provisioning documented</label>
+                <label class="chunk"><input type="checkbox" /> Service Desk can be used by 3rd party suppliers</label>
+                <input type="button" class="nextButton" value="Next" />
               </div>
-
+              <div class="searchbuilder-container-bit hideable hidden section-PAAS">
+                <h3>
+                  <span class="closedCopy">
+                    Cloud technology options
+                  </span>
+                  <span class="openCopy">
+                    Set your cloud technology options
+                  </span>
+                </h3>
+                <label class="chunk"><input type="checkbox" /> Has elastic/burstable resources defined? </label>
+                <label class="chunk"><input type="checkbox" /> Guaranteed/non-guaranteed resources defined</label>
+                <label class="chunk"><input type="checkbox" /> Persistence/non-persistence of storage defined</label>
+                <label class="chunk"><input type="checkbox" /> Application libraries are defined and documented</label>
+                <input type="button" class="nextButton" value="Next" />
+              </div>
+              <div class="searchbuilder-container-bit hideable hidden section-SCS">
+                <h3>
+                  <span class="closedCopy">
+                    Cloud support options
+                  </span>
+                  <span class="openCopy">
+                    Set your cloud support options
+                  </span>
+                </h3>
+                <label class="chunk"><input type="checkbox" /> Vendor specific services</label>
+                <label class="chunk"><input type="checkbox" /> Accredited by vendor</label>
+                <label class="chunk"><input type="checkbox" /> Onboarding services</label>
+                <label class="chunk"><input type="checkbox" /> Design Authority</label>
+                <label class="chunk"><input type="checkbox" /> Business Analysis</label>
+                <label class="chunk"><input type="checkbox" /> Design and Development</label>
+                <label class="chunk"><input type="checkbox" /> Project Specification and Selection</label>
+                <label class="chunk"><input type="checkbox" /> Deployment</label>
+                <label class="chunk"><input type="checkbox" /> Transition Management</label>
+                <label class="chunk"><input type="checkbox" /> User Management</label>
+                <label class="chunk"><input type="checkbox" /> Agile: development and management</label>
+                <label class="chunk"><input type="checkbox" /> Enterprise Architecture</label>
+                <label class="chunk"><input type="checkbox" /> Project Management, Programme Management and Governance</label>
+                <label class="chunk"><input type="checkbox" /> Service and Systems Integration</label>
+                <label class="chunk"><input type="checkbox" /> Service Management</label>
+                <label class="chunk"><input type="checkbox" /> Software Support</label>
+                <label class="chunk"><input type="checkbox" /> Helpdesk</label>
+                <label class="chunk"><input type="checkbox" /> Testing</label>
+                <label class="chunk"><input type="checkbox" /> Training</label>
+                <label class="chunk"><input type="checkbox" /> Editorial</label>
+                <label class="chunk"><input type="checkbox" /> Application management and support</label>
+                <label class="chunk"><input type="checkbox" /> Strategy and implementation services</label>
+                <label class="chunk"><input type="checkbox" /> End user device support services</label>
+                <label class="chunk"><input type="checkbox" /> Application Lifecycle Services</label>
+              </div>
             </div>
-
-
-
             <div class="searchbuilder-count">
-
               <button type="submit" class="button" id="searchbuilderbutton">Show <span id="resultCount">XXXXX</span> services</button>
-
             </div>
           </div>
         </div>
