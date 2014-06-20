@@ -1644,11 +1644,14 @@ border-left: 5px solid $red;
 
 /*New filters and categories*/
 
+.filter-header p {
+font-size: 24px;}
+
 .filter-applied {
 background: $grey-4;
 color: black;
 padding: 3px 3px 3px 3px;
-margin-bottom: px;
+margin-bottom: 4px;
 overflow: auto;
 border-bottom: 1px solid $grey-3;
 }

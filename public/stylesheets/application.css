@@ -1719,11 +1719,14 @@ ul li {
   border-left: 5px solid #b10e1e; }
 
 /*New filters and categories*/
+.filter-header p {
+  font-size: 24px; }
+
 .filter-applied {
   background: #f8f8f8;
   color: black;
   padding: 3px 3px 3px 3px;
-  margin-bottom: px;
+  margin-bottom: 4px;
   overflow: auto;
   border-bottom: 1px solid #dee0e2; }
 
@@ -1986,12 +1989,6 @@ input[type=text] {
 #suggestions:hover li:hover {
   background: #fff2d3; }
 
-input[type=checkbox], input[type=radio] {
-  display: inline-block;
-  width: auto;
-  height: auto;
-  margin-right: 5px; }
-
 .options {
   margin: 0 0 15px 0;
   padding: 0; }
@@ -2038,20 +2035,10 @@ input[type=checkbox], input[type=radio] {
   margin: 0 5px;
   font-size: 12px; }
 
-#resultCount {
-  font-size: 27px; }
-
-#resultCount span {
-  font-weight: bold;
-  font-size: 36px; }
-
 #submitButton {
   font-size: 24px;
   float: right;
   position: relative; }
-
-form {
-  overflow: hidden; }
 
 input[type=checkbox]:focus, input[type=radio]:focus {
   outline: none; }
