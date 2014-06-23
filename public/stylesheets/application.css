@@ -1170,9 +1170,7 @@ input[type=checkbox], input[type=radio] {
   background: #f8f8f8;
   border: 1px solid #dee0e2;
   margin: 0 10px 10px 0;
-  display: block;
-  float: left;
-  clear: left; }
+  display: block; }
   .summarised .searchbuilder-container-bit {
     display: inline-block;
     float: none;
@@ -1237,7 +1235,6 @@ input[type=checkbox], input[type=radio] {
     .searchbuilder-container-bit.open.hidden {
       display: none; }
     .searchbuilder-container-bit.open h3 {
-      font-size: 24px;
       display: block;
       -webkit-column-span: all;
       padding: 0 0 10px 0; }
