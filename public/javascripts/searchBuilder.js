@@ -550,7 +550,7 @@ categories = {
 
 				$(".searchbuilder-container-bit")
 					.not(":last")
-					.append("<input type='button' class='nextButton' value='Next' />");
+					.append("<button class='nextButton'>Next</button>");
 
 			};
 

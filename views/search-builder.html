@@ -38,7 +38,7 @@
                 </h3>
 
                 <label class="chunk dontCount toggleSections">
-                  <input type="radio" name="category-type" checked="checked" />
+                  <input type="radio" name="category-type" />
                   All services
                 </label>
                 <p>&nbsp;</p>
@@ -47,14 +47,17 @@
                   <input type="radio" name="category-type" data-target="SCS" />
                   Cloud support
                 </label>
-                <p>Help with planning, implementation, testing and ongoing support.</p>
+                <p>
+                  Help with planning, implementation, testing and ongoing support.
+                </p>
 
                 <label class="chunk toggleSections">
                   <input type="radio" name="category-type" data-target="PAAS"  />
                   Cloud technology
                 </label>
-                <p>Technology including business software, development tools and infrastructure resources.
-</p>
+                <p>
+                  Technology including business software, development tools and infrastructure resources.
+                </p>
 
               </div>
 
@@ -62,32 +65,50 @@
                 <h3>
                   Choose your pricing options
                 </h3>
-                <label class="chunk"><input type="checkbox" /> Has a resource element</label>
-                <label class="chunk"><input type="checkbox" /> Aggregated billing options</label>
-                <label class="chunk"><input type="checkbox" /> Minimum Contract Period</label>
-                <label class="chunk"><input type="checkbox" /> Free Option</label>
-                <label class="chunk"><input type="checkbox" /> Trial Option</label>
-                <label class="chunk"><input type="checkbox" /> Termination Costs</label>
-                <label class="chunk"><input type="checkbox" /> Payment Options</label>
-                <label class="chunk"><input type="checkbox" /> Education Pricing</label>
+                <label class="chunk">
+                  <input type="checkbox" />Free option available
+                </label>
+                <label class="chunk">
+                  <input type="checkbox" />Trial option available
+                </label>
+                <label class="chunk">
+                  <input type="checkbox" />Exclude services with termination costs
+                </label>
+                <label class="chunk">
+                  <input type="checkbox" />Education pricing available
+                </label>
               </div>
               <div class="searchbuilder-container-bit hidden hideable section-PAAS">
                 <h3>
                   Choose your service-management options
                 </h3>
-                <label class="chunk"><input type="checkbox" /> On-boarding process e.g. moving on to the service</label>
-                <label class="chunk"><input type="checkbox" /> Off-boarding process e.g. moving off the service</label>
-                <label class="chunk"><input type="checkbox" /> Data extraction / removal criteria met</label>
-                <label class="chunk"><input type="checkbox" /> Data location option can be defined by user</label>
-                <label class="chunk"><input type="checkbox" /> Data centres adhere to EU Code of Conduct for Operations</label>
-                <label class="chunk"><input type="checkbox" /> Data centre tier</label>
-                <label class="chunk"><input type="checkbox" /> Performance attributes defined and documented</label>
-                <label class="chunk"><input type="checkbox" /> Backup &amp; Disaster Recovery</label>
-                <label class="chunk"><input type="checkbox" /> Support boundaries / interfaces documented</label>
-                <label class="chunk"><input type="checkbox" /> 'Real time' management information available</label>
-                <label class="chunk"><input type="checkbox" /> Self service provisioning/de-provisioning</label>
-                <label class="chunk"><input type="checkbox" /> Time for provisioning/de-provisioning documented</label>
-                <label class="chunk"><input type="checkbox" /> Service roadmap provided</label>
+                <label class="chunk">
+                  <input type="checkbox" />Service meets data extraction or removal criteria
+                </label>
+                <label class="chunk">
+                  <input type="checkbox" />Datacentres adhere to EU Code of Conduct for Operations
+                </label>
+                <label class="chunk">
+                  <input type="checkbox" />Documented support interfaces
+                </label>
+                <label class="chunk">
+                  <input type="checkbox" />Service roadmap provided
+                </label>
+                <label class="chunk">
+                  <input type="checkbox" />Backup and disaster recovery provided
+                </label>
+                <label class="chunk">
+                  <input type="checkbox" />Support service provided and documented
+                </label>
+                <label class="chunk">
+                  <input type="checkbox" />Real-time management information provided
+                </label>
+                <label class="chunk">
+                  <input type="checkbox" />Self-service provisioning included
+                </label>
+                <label class="chunk">
+                  <input type="checkbox" />Service desk open to third-party use
+                </label>
               </div>
 
               <div class="searchbuilder-container-bit hideable hidden section-PAAS">
@@ -101,8 +122,10 @@
               </div>
               <div class="searchbuilder-container-bit hideable hidden section-SCS">
                 <h3>
-                  Choose your support options
+                  Choose your cloud-support options
                 </h3>
+                <label class="chunk"><input type="checkbox" /> Service includes support or management</label>
+                ===OR===
                 <label class="chunk"><input type="checkbox" /> Vendor specific services</label>
                 <label class="chunk"><input type="checkbox" /> Accredited by vendor</label>
                 <label class="chunk"><input type="checkbox" /> Onboarding services</label>

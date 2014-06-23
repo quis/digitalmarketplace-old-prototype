@@ -1010,7 +1010,7 @@ margin-top: -20px;}
     @include core-19;
     font-weight: bold;
     cursor: pointer;
-    padding: 8px;
+    padding: 8px 8px 8px 13px;
     margin: 0;
 
     .openCopy {
@@ -1027,6 +1027,7 @@ margin-top: -20px;}
       color: $grey-1;
       position: relative;
       top: -4px;
+      left: -1px;
     }
 
     .summarised & {
@@ -1043,7 +1044,7 @@ margin-top: -20px;}
 
   p {
     height: 5em;
-    margin: 0;
+    margin: 10px 0 2px 0;
   }
 
   .chunk, input, legend, .exp, .searchbuilder-container-add-button, p {
@@ -1084,7 +1085,7 @@ margin-top: -20px;}
     float: none;
     padding: 8px;
     background: $highlight-colour;
-    padding: 15px;
+    padding: 10px;
     border: 1px dotted $grey-1;
     -webkit-column-count: 2;
 
@@ -1118,7 +1119,7 @@ margin-top: -20px;}
     }
 
     .nextButton {
-      @include button($grey-2);
+      @include button($grey-1);
       display: block;
       width: 100px;
       -webkit-column-span: all;
@@ -1146,6 +1147,11 @@ margin-top: -20px;}
 
     &.servicetype-section {
       -webkit-column-count: 3;
+
+      .chunk {
+        margin-top: 1px;
+      }
+
     }
 
   }
@@ -2157,4 +2163,27 @@ input[type=radio]:focus {
 #editSearchBuilder {
   @include button($grey-1);
   @include core-24;
+}
+
+
+#global-breadcrumb{
+  padding: 0.75em 0;
+  margin: 0;
+  nav ol li{
+    background-image: url(https://assets.digital.cabinet-office.gov.uk/static/separator-73822610794bc3a64871f144d93d6526.png);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    float: left;
+    list-style: none;
+    margin-left: 0;
+    margin-right: 0.5em;
+    padding-right: 1em;
+  }
+  nav ol {
+    margin: 0;
+    padding: 0;
+  }
+  nav ol li:last-child{
+    background: none;
+  }
 }

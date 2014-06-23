@@ -1184,7 +1184,7 @@ input[type=checkbox], input[type=radio] {
     text-transform: none;
     font-weight: bold;
     cursor: pointer;
-    padding: 8px;
+    padding: 8px 8px 8px 13px;
     margin: 0; }
     @media (max-width: 640px) {
       .searchbuilder-container-bit h3 {
@@ -1199,14 +1199,16 @@ input[type=checkbox], input[type=radio] {
       font-size: 11px;
       color: #6f777b;
       position: relative;
-      top: -4px; }
-      .summarised .searchbuilder-container-bit h3 {
+      top: -4px;
+      left: -1px; }
+    .summarised .searchbuilder-container-bit h3 {
       cursor: default; }
-
-    height: 5em;
       .summarised .searchbuilder-container-bit h3:before {
         display: none; }
-  .searchbuilder-container-bit .chunk, .searchbuilder-container-bit input, .searchbuilder-container-bit legend, .searchbuilder-container-bit .exp, .searchbuilder-container-bit .searchbuilder-container-add-button {
+  .searchbuilder-container-bit p {
+    height: 5em;
+    margin: 10px 0 2px 0; }
+  .searchbuilder-container-bit .chunk, .searchbuilder-container-bit input, .searchbuilder-container-bit legend, .searchbuilder-container-bit .exp, .searchbuilder-container-bit .searchbuilder-container-add-button, .searchbuilder-container-bit p {
     display: none; }
   .searchbuilder-container-bit .nextButton {
     display: none; }
@@ -1225,7 +1227,7 @@ input[type=checkbox], input[type=radio] {
     float: none;
     padding: 8px;
     background: #f8f8f8;
-    padding: 15px;
+    padding: 10px;
     border: 1px dotted #6f777b;
     -webkit-column-count: 2; }
     .searchbuilder-container-bit.open.hidden {
@@ -1245,7 +1247,7 @@ input[type=checkbox], input[type=radio] {
       margin-left: 1px;
       display: inline-block; }
     .searchbuilder-container-bit.open .nextButton {
-      background-color: #bfc1c3;
+      background-color: #6f777b;
       position: relative;
       display: -moz-inline-stack;
       display: inline-block;
@@ -1255,43 +1257,43 @@ input[type=checkbox], input[type=radio] {
       -moz-border-radius: 0;
       border-radius: 0;
       -webkit-appearance: none;
-      -webkit-box-shadow: 0 2px 0 #989b9e;
-      -moz-box-shadow: 0 2px 0 #989b9e;
-      box-shadow: 0 2px 0 #989b9e;
+      -webkit-box-shadow: 0 2px 0 #4b5053;
+      -moz-box-shadow: 0 2px 0 #4b5053;
+      box-shadow: 0 2px 0 #4b5053;
       font-size: 1em;
       line-height: 1.25;
       text-decoration: none;
       -webkit-font-smoothing: antialiased;
       cursor: pointer;
-      color: #0b0c0c;
+      color: #fff;
       display: block;
       width: 100px;
       -webkit-column-span: all;
       font-size: 24px;
       padding-top: 4px; }
       .searchbuilder-container-bit.open .nextButton:visited {
-        background-color: #bfc1c3; }
+        background-color: #6f777b; }
       .searchbuilder-container-bit.open .nextButton:hover, .searchbuilder-container-bit.open .nextButton:focus {
-        background-color: #b2b4b7; }
+        background-color: #636a6e; }
       .searchbuilder-container-bit.open .nextButton:active {
         top: 2px;
-        -webkit-box-shadow: 0 0 0 #bfc1c3;
-        -moz-box-shadow: 0 0 0 #bfc1c3;
-        box-shadow: 0 0 0 #bfc1c3; }
+        -webkit-box-shadow: 0 0 0 #6f777b;
+        -moz-box-shadow: 0 0 0 #6f777b;
+        box-shadow: 0 0 0 #6f777b; }
       .searchbuilder-container-bit.open .nextButton.disabled, .searchbuilder-container-bit.open .nextButton[disabled="disabled"], .searchbuilder-container-bit.open .nextButton[disabled] {
         zoom: 1;
         filter: alpha(opacity=#{$trans * 100});
         opacity: 0.5; }
         .searchbuilder-container-bit.open .nextButton.disabled:hover, .searchbuilder-container-bit.open .nextButton[disabled="disabled"]:hover, .searchbuilder-container-bit.open .nextButton[disabled]:hover {
           cursor: default;
-          background-color: #bfc1c3; }
+          background-color: #6f777b; }
         .searchbuilder-container-bit.open .nextButton.disabled:active, .searchbuilder-container-bit.open .nextButton[disabled="disabled"]:active, .searchbuilder-container-bit.open .nextButton[disabled]:active {
           top: 0;
-          -webkit-box-shadow: 0 2px 0 #989b9e;
-          -moz-box-shadow: 0 2px 0 #989b9e;
-          box-shadow: 0 2px 0 #989b9e; }
+          -webkit-box-shadow: 0 2px 0 #4b5053;
+          -moz-box-shadow: 0 2px 0 #4b5053;
+          box-shadow: 0 2px 0 #4b5053; }
       .searchbuilder-container-bit.open .nextButton:hover, .searchbuilder-container-bit.open .nextButton:focus, .searchbuilder-container-bit.open .nextButton:visited {
-        color: #0b0c0c; }
+        color: #fff; }
       .searchbuilder-container-bit.open .nextButton:before {
         content: "";
         height: 110%;
@@ -1381,6 +1383,8 @@ input[type=checkbox], input[type=radio] {
       -webkit-column-count: auto; }
     .searchbuilder-container-bit.open.servicetype-section {
       -webkit-column-count: 3; }
+      .searchbuilder-container-bit.open.servicetype-section .chunk {
+        margin-top: 1px; }
 
 .searchbuilder-requirements-finder {
   background: #fff;
@@ -2261,3 +2265,21 @@ input[type=checkbox]:focus, input[type=radio]:focus {
     #editSearchBuilder {
       font-size: 20px;
       line-height: 1.2; } }
+
+#global-breadcrumb {
+  padding: 0.75em 0;
+  margin: 0; }
+  #global-breadcrumb nav ol li {
+    background-image: url(https://assets.digital.cabinet-office.gov.uk/static/separator-73822610794bc3a64871f144d93d6526.png);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    float: left;
+    list-style: none;
+    margin-left: 0;
+    margin-right: 0.5em;
+    padding-right: 1em; }
+  #global-breadcrumb nav ol {
+    margin: 0;
+    padding: 0; }
+  #global-breadcrumb nav ol li:last-child {
+    background: none; }

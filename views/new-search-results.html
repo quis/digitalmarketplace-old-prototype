@@ -1,235 +1,243 @@
 <html>
+  <body>
+    <main id="content" role="main">
 
-<main id="content" role="main">
-<body>
-<div id="outer-wrapper">
-<div id="inner-wrapper">
+      <div id="outer-wrapper">
+        <div id="inner-wrapper">
 
-<p><a href="index.html">Home</a></p>
+          <div id="global-breadcrumb" class="header-context">
+            <nav>
+              <ol class="group" role="breadcrumbs">
+                <li>
+                  <a href="/searchbuilder">Home</a>
+                </li>
+                <li>
+                  Search results
+                </li>
+              </ol>
+            </nav>
+          </div>
 
+          <div class="set-service-reqs">
+            <h2>
+              Your service requirements
+            </h2>
+            <div id="searchbuilder">
 
-<div class="set-service-reqs">
-  <div id="searchbuilder">
-    <h2>Results</h2>
+              <div class="searchbuilder-container summarised">
 
-    <div class="searchbuilder-container summarised">
+                <div class="searchbuilder-container-bit keywords-section">
+                  <div id="picked" class="options">
+                    <h3>
+                      <span class="closedCopy">
+                        Your keywords
+                      </span>
+                      <span class="openCopy">
+                        Choose your keywords
+                      </span>
+                    </h3>
+                    <li>Content management systems</li>
+                    <li>Collaborative</li>
+                  </div>
+                  <input type="text" id="keywords" autocomplete="off" placeholder="eg Email" />
+                  <ul id="suggestions">
+                  </ul>
+                </div>
 
-      <div class="searchbuilder-container-bit keywords-section">
-        <div id="picked" class="options">
-          <h3>
-            <span class="closedCopy">
-              Keywords
-            </span>
-            <span class="openCopy">
-              Add your keywords
-            </span>
-          </h3>
-          <li>Content management systems</li>
-          <li>Collaborative</li>
+                <div class="searchbuilder-container-bit servicetype-section">
+
+                  <h3>
+                    <span class="closedCopy">
+                      Your service type
+                    </span>
+                    <span class="openCopy">
+                      Choose your service type
+                    </span>
+                  </h3>
+
+                  <label class="chunk dontCount toggleSections">
+                    <input type="radio" name="category-type" />All services
+                  </label>
+                  <label class="chunk toggleSections">
+                    <input type="radio" name="category-type" data-target="SCS" />Cloud support
+                  </label>
+                  <label class="chunk toggleSections">
+                    <input type="radio" name="category-type" data-target="PAAS" checked="checked" />Cloud technology
+                  </label>
+                </div>
+
+                <div class="searchbuilder-container-bit">
+                  <h3>
+                    <span class="closedCopy">
+                      Your pricing options
+                    </span>
+                    <span class="openCopy">
+                      Choose your pricing options
+                    </span>
+                  </h3>
+                  <label class="chunk">
+                    <input type="checkbox" />Free option available
+                  </label>
+                  <label class="chunk">
+                    <input type="checkbox" checked="checked" />Trial option available
+                  </label>
+                  <label class="chunk">
+                    <input type="checkbox" />Exclude services with termination costs
+                  </label>
+                  <label class="chunk">
+                    <input type="checkbox" />Education pricing available
+                  </label>
+                </div>
+                <div class="searchbuilder-container-bit hidden hideable section-PAAS">
+                  <h3>
+                    <span class="closedCopy">
+                      Your service management options
+                    </span>
+                    <span class="openCopy">
+                      Choose your service-management options
+                    </span>
+                  </h3>
+                  <label class="chunk">
+                    <input type="checkbox" />Service meets data extraction or removal criteria
+                  </label>
+                  <label class="chunk">
+                    <input type="checkbox" />Datacentres adhere to EU Code of Conduct for Operations
+                  </label>
+                  <label class="chunk">
+                    <input type="checkbox" />Documented support interfaces
+                  </label>
+                  <label class="chunk">
+                    <input type="checkbox" />Service roadmap provided
+                  </label>
+                  <label class="chunk">
+                    <input type="checkbox" />Backup and disaster recovery provided
+                  </label>
+                  <label class="chunk">
+                    <input type="checkbox" />Support service provided and documented
+                  </label>
+                  <label class="chunk">
+                    <input type="checkbox" />Real-time management information provided
+                  </label>
+                  <label class="chunk">
+                    <input type="checkbox" />Self-service provisioning included
+                  </label>
+                  <label class="chunk">
+                    <input type="checkbox" />Service desk open to third-party use
+                  </label>
+                </div>
+
+                <div class="searchbuilder-container-bit hideable hidden section-PAAS">
+                  <h3>
+                    <span class="closedCopy">
+                      Your cloud features
+                    </span>
+                    <span class="openCopy">
+                      Choose your cloud features
+                    </span>
+                  </h3>
+                  <label class="chunk"><input type="checkbox" /> Has elastic/burstable resources defined? </label>
+                  <label class="chunk"><input type="checkbox" /> Guaranteed/non-guaranteed resources defined</label>
+                  <label class="chunk"><input type="checkbox" /> Persistence/non-persistence of storage defined</label>
+                  <label class="chunk"><input type="checkbox" /> Application libraries are defined and documented</label>
+                </div>
+                <div class="searchbuilder-container-bit hideable hidden section-SCS">
+                  <h3>
+                    <span class="closedCopy">
+                      Cloud support options
+                    </span>
+                    <span class="openCopy">
+                      Choose your cloud-support options
+                    </span>
+                  </h3>
+                  <label class="chunk"><input type="checkbox" /> Service includes support or management</label>
+                  ===OR===
+                  <label class="chunk"><input type="checkbox" /> Vendor specific services</label>
+                  <label class="chunk"><input type="checkbox" /> Accredited by vendor</label>
+                  <label class="chunk"><input type="checkbox" /> Onboarding services</label>
+                  <label class="chunk"><input type="checkbox" /> Design Authority</label>
+                  <label class="chunk"><input type="checkbox" /> Business Analysis</label>
+                  <label class="chunk"><input type="checkbox" /> Design and Development</label>
+                  <label class="chunk"><input type="checkbox" /> Project Specification and Selection</label>
+                  <label class="chunk"><input type="checkbox" /> Deployment</label>
+                  <label class="chunk"><input type="checkbox" /> Transition Management</label>
+                  <label class="chunk"><input type="checkbox" /> User Management</label>
+                  <label class="chunk"><input type="checkbox" /> Agile: development and management</label>
+                  <label class="chunk"><input type="checkbox" /> Enterprise Architecture</label>
+                  <label class="chunk"><input type="checkbox" /> Project Management, Programme Management and Governance</label>
+                  <label class="chunk"><input type="checkbox" /> Service and Systems Integration</label>
+                  <label class="chunk"><input type="checkbox" /> Service Management</label>
+                  <label class="chunk"><input type="checkbox" /> Software Support</label>
+                  <label class="chunk"><input type="checkbox" /> Helpdesk</label>
+                  <label class="chunk"><input type="checkbox" /> Testing</label>
+                  <label class="chunk"><input type="checkbox" /> Training</label>
+                  <label class="chunk"><input type="checkbox" /> Editorial</label>
+                  <label class="chunk"><input type="checkbox" /> Application management and support</label>
+                  <label class="chunk"><input type="checkbox" /> Strategy and implementation services</label>
+                  <label class="chunk"><input type="checkbox" /> End user device support services</label>
+                  <label class="chunk"><input type="checkbox" /> Application Lifecycle Services</label>
+                </div>
+                <br style="clear: left;" />
+              </div>
+
+              <button type="submit" class="button" id="editSearchBuilder">Edit</button>
+            </div>
+          </div>
+          <div id="start-shortlisting">
+            <p class="copy-24">
+              <button class="button">Save this search</button>
+            </p>
+            <p class="butt-align"><a href="/searchbuilder">Start a new search</a>
+            </p>
+          </div>
+
+          <div id="builder-search-results">
+            <h2 class="heading-48">6 <span class="copy-19">results</span></h2>
+
+            <div class="builder-search-result">
+              <p class="copy-24"><a href="#">Achieve CMS</a>
+              </p>
+              <p class="text-secondary">by Business Web Software t/a Firmstep</p>
+              <p>AchieveCMS is a fully-featured Content Management System (CMS) for local government. It provides a whole range of functionality to meet the unique demands of a council website.</p>
+            </div>
+
+            <div class="builder-search-result">
+              <p class="copy-24"><a href="#">Contensis - core Web CMS (Enterprise Licence)</a>
+              </p>
+              <p class="text-secondary">by Zengenti Limited</p>
+              <p>Contensis is a fully-featured .NET Web Content Management System used by a large number of public service organisations, including...</p>
+            </div>
+
+            <div class="builder-search-result">
+              <p class="copy-24"><a href="#">Umbraco CMS</a>
+              </p>
+              <p class="text-secondary">by Umbraco Ltd</p>
+              <p>Our Cloud Umbraco CMS service provides a flexible, end-to-end, access-from-anywhere solution for website content management.</p>
+            </div>
+
+            <div class="builder-search-result">
+              <p class="copy-24"><a href="#">Excelsior CMS</a>
+              </p>
+              <p class="text-secondary">by Excelsior Ltd</p>
+              <p>Excelsior CMS provides a flexible, end-to-end, access-from-anywhere solution for website content management.</p>
+            </div>
+
+            <div class="builder-search-result">
+              <p class="copy-24"><a href="#">Snap CMS</a>
+              </p>
+              <p class="text-secondary">by SnapSoftware Ltd</p>
+              <p>SnapCMS is a content management system designed for complete control over the UI and powerful options for collaboration.</p>
+            </div>
+
+            <div class="builder-search-result">
+              <p class="copy-24"><a href="#">Flex Collaboration Software</a>
+              </p>
+              <p class="text-secondary">by Flex Ltd</p>
+              <p>Flex offers a tool for powerful collaboration and customisation in a content management system.</p>
+            </div>
+
+          </div>
         </div>
-        <input type="text" id="keywords" autocomplete="off" placeholder="eg Email" />
-        <ul id="suggestions">
-        </ul>
       </div>
-
-      <div class="searchbuilder-container-bit servicetype-section">
-
-        <h3>
-          <span class="closedCopy">
-            Service type
-          </span>
-          <span class="openCopy">
-            Set your service type
-          </span>
-        </h3>
-
-        <label class="chunk dontCount toggleSections">
-          <input type="radio" name="category-type" />
-          All services
-        </label>
-        <label class="chunk toggleSections">
-          <input type="radio" name="category-type" data-target="SCS" />
-          Cloud support
-        </label>
-        <label class="chunk toggleSections">
-          <input type="radio" name="category-type" data-target="PAAS" checked="checked" />
-          Cloud technology
-        </label>
-      </div>
-
-      <div class="searchbuilder-container-bit">
-        <h3>
-          <span class="closedCopy">
-            Pricing options
-          </span>
-          <span class="openCopy">
-            Set your pricing options
-          </span>
-        </h3>
-        <label class="chunk"><input type="checkbox" /> Has a resource element</label>
-        <label class="chunk"><input type="checkbox" /> Aggregated billing options</label>
-        <label class="chunk"><input type="checkbox" /> Minimum Contract Period</label>
-        <label class="chunk"><input type="checkbox" /> Free Option</label>
-        <label class="chunk"><input type="checkbox" checked="checked" /> Trial option offered</label>
-        <label class="chunk"><input type="checkbox" /> Termination Costs</label>
-        <label class="chunk"><input type="checkbox" /> Payment Options</label>
-        <label class="chunk"><input type="checkbox" /> Education Pricing</label>
-      </div>
-      <div class="searchbuilder-container-bit hidden hideable section-PAAS">
-        <h3>
-          <span class="closedCopy">
-            Service management options
-          </span>
-          <span class="openCopy">
-            Set your service management options
-          </span>
-        </h3>
-        <label class="chunk"><input type="checkbox" /> On-boarding process e.g. moving on to the service</label>
-        <label class="chunk"><input type="checkbox" /> Off-boarding process e.g. moving off the service</label>
-        <label class="chunk"><input type="checkbox" /> Data extraction / removal criteria met</label>
-        <label class="chunk"><input type="checkbox" /> Data location option can be defined by user</label>
-        <label class="chunk"><input type="checkbox" /> Data centres adhere to EU Code of Conduct for Operations</label>
-        <label class="chunk"><input type="checkbox" /> Data centre tier</label>
-        <label class="chunk"><input type="checkbox" /> Performance attributes defined and documented</label>
-        <label class="chunk"><input type="checkbox" /> Backup &amp; Disaster Recovery</label>
-        <label class="chunk"><input type="checkbox" /> Support boundaries / interfaces documented</label>
-        <label class="chunk"><input type="checkbox" /> 'Real time' management information available</label>
-        <label class="chunk"><input type="checkbox" /> Self service provisioning/de-provisioning</label>
-        <label class="chunk"><input type="checkbox" /> Time for provisioning/de-provisioning documented</label>
-        <label class="chunk"><input type="checkbox" /> Service roadmap provided</label>
-      </div>
-
-      <div class="searchbuilder-container-bit hideable hidden section-PAAS">
-        <h3>
-          <span class="closedCopy">
-            Cloud technology options
-          </span>
-          <span class="openCopy">
-            Set your cloud technology options
-          </span>
-        </h3>
-        <label class="chunk"><input type="checkbox" /> Has elastic/burstable resources defined? </label>
-        <label class="chunk"><input type="checkbox" /> Guaranteed/non-guaranteed resources defined</label>
-        <label class="chunk"><input type="checkbox" /> Persistence/non-persistence of storage defined</label>
-        <label class="chunk"><input type="checkbox" /> Application libraries are defined and documented</label>
-      </div>
-      <div class="searchbuilder-container-bit hideable hidden section-SCS">
-        <h3>
-          <span class="closedCopy">
-            Cloud support options
-          </span>
-          <span class="openCopy">
-            Set your cloud support options
-          </span>
-        </h3>
-        <label class="chunk"><input type="checkbox" /> Vendor specific services</label>
-        <label class="chunk"><input type="checkbox" /> Accredited by vendor</label>
-        <label class="chunk"><input type="checkbox" /> Onboarding services</label>
-        <label class="chunk"><input type="checkbox" /> Design Authority</label>
-        <label class="chunk"><input type="checkbox" /> Business Analysis</label>
-        <label class="chunk"><input type="checkbox" /> Design and Development</label>
-        <label class="chunk"><input type="checkbox" /> Project Specification and Selection</label>
-        <label class="chunk"><input type="checkbox" /> Deployment</label>
-        <label class="chunk"><input type="checkbox" /> Transition Management</label>
-        <label class="chunk"><input type="checkbox" /> User Management</label>
-        <label class="chunk"><input type="checkbox" /> Agile: development and management</label>
-        <label class="chunk"><input type="checkbox" /> Enterprise Architecture</label>
-        <label class="chunk"><input type="checkbox" /> Project Management, Programme Management and Governance</label>
-        <label class="chunk"><input type="checkbox" /> Service and Systems Integration</label>
-        <label class="chunk"><input type="checkbox" /> Service Management</label>
-        <label class="chunk"><input type="checkbox" /> Software Support</label>
-        <label class="chunk"><input type="checkbox" /> Helpdesk</label>
-        <label class="chunk"><input type="checkbox" /> Testing</label>
-        <label class="chunk"><input type="checkbox" /> Training</label>
-        <label class="chunk"><input type="checkbox" /> Editorial</label>
-        <label class="chunk"><input type="checkbox" /> Application management and support</label>
-        <label class="chunk"><input type="checkbox" /> Strategy and implementation services</label>
-        <label class="chunk"><input type="checkbox" /> End user device support services</label>
-        <label class="chunk"><input type="checkbox" /> Application Lifecycle Services</label>
-      </div>
-      <br style="clear: left;" />
-    </div>
-
-    <button type="submit" class="button" id="editSearchBuilder">Edit</button>
-
-  </div>
-
-
-<!--
-<div class="set-service-reqs">
-
-<div id="searchbuilder-results">
-
-<h2>Your service requirements</h2>
-
-
-<div class="searchbuilder-results-inner">
-
-<div class="whole-search-tag"><div class="searchbuilder-selected-label">Looking for: </div><div class="searchbuilder-selected-chunk">Cloud technology</div></div>
-<div class="whole-search-tag"><div class="searchbuilder-selected-label">Keywords: </div><div class="searchbuilder-selected-chunk">CMS, Collaboration</div></div>
-<div class="whole-search-tag"><div class="searchbuilder-selected-label">Cloud deployment model: </div><div class="searchbuilder-selected-chunk">Private cloud</div></div>
-<div class="whole-search-tag"><div class="searchbuilder-selected-label">Service availability: </div><div class="searchbuilder-selected-chunk">99.99999%</div></div>
-<div class="whole-search-tag"><div class="searchbuilder-selected-label">Datacentre location: </div><div class="searchbuilder-selected-chunk">United Kingdom</div></div>
-
-<p class="copy-24"><button class="button-secondary">Edit</button></p>
-
--->
-
-</div>
-</div>
-<div id="start-shortlisting">
-<p class="copy-24"><button class="button">Save this search</button></p>
-<p class="butt-align"><a href="/searchbuilder">Start a new search</a></p>
-</div>
-
-<div id="builder-search-results">
-<h2 class="heading-48">6 <span class="copy-19">results</span></h2>
-
-<div class="builder-search-result">
-<p class="copy-24"><a href="#">Achieve CMS</a></p>
-<p class="text-secondary">by Business Web Software t/a Firmstep</p>
-<p>AchieveCMS is a fully-featured Content Management System (CMS) for local government.
-  It provides a whole range of functionality to meet the unique demands of a council website.</p>
-</div>
-
-<div class="builder-search-result">
-<p class="copy-24"><a href="#">Contensis - core Web CMS (Enterprise Licence)</a></p>
-<p class="text-secondary">by Zengenti Limited</p>
-<p>Contensis is a fully-featured .NET Web Content Management System used by a large number
-  of public service organisations, including... </p>
-</div>
-
-<div class="builder-search-result">
-<p class="copy-24"><a href="#">Umbraco CMS</a></p>
-<p class="text-secondary">by Umbraco Ltd</p>
-<p>Our Cloud Umbraco CMS service provides a flexible, end-to-end, access-from-anywhere solution for website content management.</p>
-</div>
-
-<div class="builder-search-result">
-<p class="copy-24"><a href="#">Excelsior CMS</a></p>
-<p class="text-secondary">by Excelsior Ltd</p>
-<p>Excelsior CMS provides a flexible, end-to-end, access-from-anywhere solution for website content management.</p>
-</div>
-
-<div class="builder-search-result">
-<p class="copy-24"><a href="#">Snap CMS</a></p>
-<p class="text-secondary">by SnapSoftware Ltd</p>
-<p>SnapCMS is a content management system designed for complete control over the UI and powerful options for collaboration.</p>
-</div>
-
-<div class="builder-search-result">
-<p class="copy-24"><a href="#">Flex Collaboration Software</a></p>
-<p class="text-secondary">by Flex Ltd</p>
-<p>Flex offers a tool for powerful collaboration and customisation in a content management system.</p>
-</div>
-
-
-</div>
-</div>
-</div>
-
-
-
-</div>
+    </main>
+    </body>
 </html>
-</head>
