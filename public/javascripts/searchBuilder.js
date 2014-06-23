@@ -704,8 +704,6 @@ categories = {
 			".searchbuilder-container-bit h3, .searchbuilder-container-bit .nextButton",
 			function() {
 
-				$(this).parents(".searchbuilder-container-bit").toggleClass("open");
-
 				if (
 					$(this).parents(".searchbuilder-container-bit").is(".keywords-section")
 				) {
@@ -727,13 +725,23 @@ categories = {
 				.eq(0)
 					.addClass("open");
 
-					console.log($(this)
-					.parents(".searchbuilder-container-bit")
-					.next(".searchbuilder-container-bit")
-						.addClass("open"));
+			}
+		)
+		.on(
+			"click",
+			".searchbuilder-container-bit h3",
+			function() {
+
+				$(this)
+				.parents(".searchbuilder-container-bit")
+					.toggleClass("open")
+				.siblings(".searchbuilder-container-bit:not(.hidden)")
+					.removeClass("open");
 
 			}
 		);
+
+		$(this).parents(".searchbuilder-container-bit").toggleClass("open");
 
 	$(".nextButton")
 		.on("click", function() {
