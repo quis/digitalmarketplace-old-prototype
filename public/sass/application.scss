@@ -876,8 +876,19 @@ input[type=radio] {
 }
 
 .strapline {
-margin-top: -25px;}
+margin-top: -25px;
+margin-bottom: 20px;
+}
 
+.strapline-description {
+  width: 70%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.strapline p {
+  font-size: 24px;
+}
 .set-service-reqs {
 margin-top: 20px;}
 
@@ -887,7 +898,6 @@ margin-top: 20px;}
 #searchbuilder {
 
   h2 {
-    @include heading-27;
     font-weight: bold;
     margin-bottom: 10px;
   }
@@ -1032,7 +1042,12 @@ margin-top: -20px;}
 
   }
 
-  .chunk, input, legend, .exp, .searchbuilder-container-add-button {
+  p {
+    height: 5em;
+    margin: 0;
+  }
+
+  .chunk, input, legend, .exp, .searchbuilder-container-add-button, p {
     display: none;
   }
 
@@ -1088,7 +1103,7 @@ margin-top: -20px;}
 
     }
 
-    .chunk, input, legend, .exp, .searchbuilder-container-add-button {
+    .chunk, input, legend, .exp, .searchbuilder-container-add-button, p {
       margin-left: 1px;
       display: inline-block;
     }

@@ -1030,30 +1030,24 @@ input[type=checkbox], input[type=radio] {
   margin-right: 5px; }
 
 .strapline {
-  margin-top: -25px; }
+  margin-top: -25px;
+  margin-bottom: 20px; }
+
+.strapline-description {
+  width: 70%;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+.strapline p {
+  font-size: 24px; }
 
 .set-service-reqs {
   margin-top: 20px; }
 
 
 #searchbuilder h2 {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 27px;
-  line-height: 1.11111;
-  font-weight: 400;
-  text-transform: none;
-  padding-top: 8px;
-  padding-bottom: 7px;
   font-weight: bold;
   margin-bottom: 10px; }
-  @media (max-width: 640px) {
-    #searchbuilder h2 {
-      font-size: 18px;
-      line-height: 1.11111; } }
-  @media (min-width: 641px) {
-    #searchbuilder h2 {
-      padding-top: 4px;
-      padding-bottom: 6px; } }
 
 #searchbuilderbutton {
   background-color: #00823b;
@@ -1221,7 +1215,10 @@ input[type=checkbox], input[type=radio] {
       color: #6f777b;
       position: relative;
       top: -4px; }
-  .searchbuilder-container-bit .chunk, .searchbuilder-container-bit input, .searchbuilder-container-bit legend, .searchbuilder-container-bit .exp, .searchbuilder-container-bit .searchbuilder-container-add-button {
+  .searchbuilder-container-bit p {
+    height: 5em;
+    margin: 0; }
+  .searchbuilder-container-bit .chunk, .searchbuilder-container-bit input, .searchbuilder-container-bit legend, .searchbuilder-container-bit .exp, .searchbuilder-container-bit .searchbuilder-container-add-button, .searchbuilder-container-bit p {
     display: none; }
   .searchbuilder-container-bit .nextButton {
     display: none; }
@@ -1253,7 +1250,7 @@ input[type=checkbox], input[type=radio] {
         display: inline; }
       .searchbuilder-container-bit.open h3 .closedCopy {
         display: none; }
-    .searchbuilder-container-bit.open .chunk, .searchbuilder-container-bit.open input, .searchbuilder-container-bit.open legend, .searchbuilder-container-bit.open .exp, .searchbuilder-container-bit.open .searchbuilder-container-add-button {
+    .searchbuilder-container-bit.open .chunk, .searchbuilder-container-bit.open input, .searchbuilder-container-bit.open legend, .searchbuilder-container-bit.open .exp, .searchbuilder-container-bit.open .searchbuilder-container-add-button, .searchbuilder-container-bit.open p {
       margin-left: 1px;
       display: inline-block; }
     .searchbuilder-container-bit.open .nextButton {
