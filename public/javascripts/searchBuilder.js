@@ -788,6 +788,10 @@ categories = {
 			}
 		);
 
+	$(".summarised .hideable")
+	.not(":has(:checked)")
+		.addClass("hidden");
+
 	$("#searchbuilderbutton")
 		.on(
 			"click",
