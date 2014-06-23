@@ -885,16 +885,22 @@ margin-top: 20px;}
 }
 
 #searchbuilder {
-width: 90%;
-  padding: 10px;
+
+  h2 {
+    @include heading-27;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
 }
 
 #searchbuilderbutton {
 
-  margin-top: 15px;
   @include button;
   font-size: 24px;
   font-weight: bold;
+  clear: left;
+  display: block;
 
   &:hover {
 
@@ -908,8 +914,8 @@ width: 90%;
     font-size: 27px;
     background: rgba($green, 0.5);
     color: $white;
-    padding: 15px 10px;
-    border-radius: 50%;
+    padding: 15px 7px;
+    margin: 0 3px;
     letter-spacing: 0.05em;
   }
 
@@ -987,17 +993,17 @@ margin-top: -20px;}
 
   background: $grey-4;
   border: 1px solid $grey-3;
-  padding: 0 0 0 8px;
-  margin: 0 0 10px 0;
-  display: inline-block;
+  margin: 0 10px 10px 0;
+  display: block;
+  float: left;
+  clear: left;
 
   &.hidden {
     display: none;
   }
 
-  p {
-  margin:0;
-  cursor: pointer;
+  &:hover {
+    border: 1px solid $grey-2;
   }
 
   h3 {
@@ -1006,6 +1012,7 @@ margin-top: -20px;}
     @include core-19;
     font-weight: bold;
     cursor: pointer;
+    padding: 8px;
 
     .openCopy {
       display: none;
@@ -1029,6 +1036,18 @@ margin-top: -20px;}
     display: none;
   }
 
+  .nextButton {
+    display: none;
+  }
+
+  input[type=radio],
+  input[type=checkbox] {
+    display: inline-block;
+  }
+
+  .chunk {
+    margin: 0 0 0 10px;
+  }
 
   .optionSelected {
     display: inline-block;
@@ -1037,12 +1056,22 @@ margin-top: -20px;}
   &.open {
 
     display: block;
+    float: none;
+    padding: 8px;
     background: $grey-4;
     padding: 8px;
+    border: 3px solid $light-blue;
+    -webkit-column-count: 2;
+
+    &.hidden {
+      display: none;
+    }
 
     h3 {
 
       display: block;
+      -webkit-column-span: all;
+      padding: 0 0 10px 0;
 
       &:before {
         content: "▲";
@@ -1059,13 +1088,42 @@ margin-top: -20px;}
 
     }
 
-  .chunk, input, legend, .exp, .searchbuilder-container-add-button {
-    margin-left: 5px;
-    display: inline-block;
+    .chunk, input, legend, .exp, .searchbuilder-container-add-button {
+      margin-left: 1px;
+      display: inline-block;
+    }
 
+    .nextButton {
+      @include button($grey-2);
+      display: block;
+      width: 100px;
+      -webkit-column-span: all;
+    }
+
+    #addKeyword {
+      width: 80px;
+      @include button($grey-2);
+      margin: 0 0 0 -5px;
+      padding-top: 0.25em;
+      top: 1px;
+      height: 49px;
+    }
+
+    .chunk {
+      display: block;
+      margin: 0 0 10px 0;
+    }
+
+    &.keywords-section {
+      -webkit-column-count: auto;
+    }
+
+    &.servicetype-section {
+      -webkit-column-count: 3;
     }
 
   }
+
 }
 
 .searchbuilder-requirements-finder {
@@ -1434,10 +1492,6 @@ overflow: auto;
 width: 400px;
 }
 
-#addKeyword {
-margin: -30px 0 0 -5px;
-width: 80px;
-}
 
 #keyword {
 background: #dee0e2;
@@ -1973,8 +2027,10 @@ input[type=text] {
   width: auto;
   position: relative;
   z-index: 100;
+  display: none;
 
   .open & {
+    display: block;
     width: 478px;
   }
 
@@ -1998,41 +2054,45 @@ input[type=text] {
   background: #fff2d3;
 }
 
-.options {
-  margin: 0 0 15px 0;
-  padding: 0;
-}
 .options li,
 .chunk {
   display: inline-block;
   list-style: none;
   cursor: pointer;
   padding: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin: 0 0 0 10px;
   background: #dee0e2;
   border: 1px solid #dee0e2;
 }
+
+.open {
+
+  .options li {
+    margin: 0 10px 10px 0;
+  }
+
+}
+
 .options li:hover, .chunk:hover {
   border: 1px solid #0b0c0c;
 }
+
 #picked li,
 .options li.optionSelected,
 .chunk.optionSelected {
   background: white;
   border: 1px solid #0b0c0c;
-  margin-top: 10px;
-  margin-bottom: 0;
 }
-.open {
+
+
   #picked li:after {
     content: "×";
     border-radius: 50%;
     border: 1px solid white;
     background: #dee0e2;
     color: #888;
-    width: 1.1em;
-    height: 1.1em;
+    width: 1.2em;
+    height: 1.2em;
     text-align: center;
     display: inline-block;
     margin-left: 15px;
@@ -2041,7 +2101,7 @@ input[type=text] {
     background: #df3034;
     color: white;
   }
-}
+
 
 #submitButton {
   font-size: 24px;

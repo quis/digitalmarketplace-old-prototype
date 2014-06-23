@@ -4,33 +4,30 @@
 //					"Popular keywords": {
 							"CRM": "CRM",
 							"IL3": "IL3",
-							"SIAM": "SIAM",
 							"Agile": "Agile",
 							"Backup": "Backup",
 							"Big data": "Big data",
-							"business analysis": "business analysis",
-							"business intelligence": "business intelligence",
-							"case management": "case management",
-							"cloud": "cloud",
+							"Business analysis": "business analysis",
+							"Business intelligence": "business intelligence",
+							"Case management": "case management",
+							"Cloud": "cloud",
 							"CMS": "cms",
 							"collaboration": "collaboration",
 							"consultancy": "consultancy",
-							"CRM": "CRM",
 							"email": "email",
 							"hosting": "hosting",
 							"penetration testing": "penetration testing",
-							"procurement": "procurement",
-							"project management": "project management",
-							"recruitment": "recruitment",
-							"risk management": "risk management",
-							"security": "security",
-							"service desk": "service desk",
+							"Procurement": "procurement",
+							"Project management": "project management",
+							"Recruitment": "recruitment",
+							"Risk management": "risk management",
+							"Security": "security",
+							"Service desk": "service desk",
 							"SIAM": "SIAM",
-							"sms": "sms",
-							"social media": "social media",
-							"telephony": "telephony",
-							"testing": "testing",
-							"user experience": "user experience"
+							"Social media": "social media",
+							"Telephony": "telephony",
+							"Testing": "testing",
+							"User experience": "user experience UX"
 					},
 //					"Categories": {
 categories = {
@@ -38,7 +35,7 @@ categories = {
 									"Accounting and Finance": {
 											"Banking": "Banking",
 											"Accounting": "Accounting",
-											"Bookkeeping/ Banking": "Bookkeeping/ Banking",
+											"Bookkeeping/Banking": "Bookkeeping/ Banking",
 											"Accounts Payable": "Accounts Payable",
 											"Accounts Receivable": "Accounts Receivable",
 											"Financial Asset Management": "Financial Asset Management",
@@ -47,7 +44,6 @@ categories = {
 											"Costing": "Costing",
 											"Funding": "Funding",
 											"Money Management": "Money Management",
-											"Banking": "Banking",
 											"Financial Compliance": "Financial Compliance",
 											"Debt Collection": "Debt Collection",
 											"Procurement": "Procurement",
@@ -65,7 +61,7 @@ categories = {
 											"Revenue Cycle Management": "Revenue Cycle Management",
 											"Financial Risk Management": "Financial Risk Management",
 											"Tax Management": "Tax Management",
-											"Enterprise Resource Planning (ERP)": "Enterprise Resource Planning (ERP)"
+											"Enterprise Resource Planning": "Enterprise Resource Planning (ERP)"
 									},
 									"Business Intelligence and Analytics": {
 											"Big Data": "Big Data",
@@ -73,8 +69,6 @@ categories = {
 											"Business Analysis": "Business Analysis",
 											"Analytics": "Analytics",
 											"Data Analytics": "Data Analytics",
-											"Data Analysis": "Data Analysis",
-											"Business Analysis": "Business Analysis",
 											"Data Mining": "Data Mining",
 											"Data Visualisation": "Data Visualisation",
 											"Reporting and Dashboard": "Reporting and Dashboard"
@@ -83,7 +77,6 @@ categories = {
 									"Collaboration": {
 											"Project Collaboration": "Project Collaboration",
 											"Content Management Systems": "Content Management Systems CMS",
-											"CMS": "CMS",
 											"Content Storage and Sharing": "Content Storage and Sharing",
 											"File Sharing": "File Sharing",
 											"Meeting Managment": "Meeting Managment",
@@ -125,9 +118,9 @@ categories = {
 
 									},
 									"Creative and Design": {
-											"Diagram and Wireframe": "Diagram and Wireframe",
+											"Diagram and Wireframe": "Diagram and Wireframe wireframing",
 											"Usability Tools": "Usability Tools",
-											"Accessibility": "Accessibility"
+											"Accessibility": "Accessibility Accessibile"
 
 									},
 									"Sales": {
@@ -156,8 +149,7 @@ categories = {
 											"Market Research": "Market Research",
 											"Census": "Census",
 											"Personalisation and Behavioral Targeting": "Personalisation and Behavioral Targeting",
-											"Public Relations": "Public Relations",
-											"PR": "PR",
+											"Public Relations": "Public Relations PR",
 											"Search Marketing": "Search Marketing",
 											"Search Engine Optimisation": "Search Engine Optimisation SEO sem",
 											"Search Engine Marketing": "Search Engine Marketing SEM seo",
@@ -172,15 +164,15 @@ categories = {
 											"Applications": "Applications",
 											"Business Management": "Business Management",
 											"Business Performance Management": "Business Performance Management",
-											"Business Process Management (BPM)": "Business Process Management (BPM)",
+											"Business Process Management": "Business Process Management (BPM)",
 											"Carbon, Energy and Sustainability Management": "Carbon, Energy and Sustainability Management",
-											"Green IT": "Green IT",
+											"Green IT": "Green IT enviromental",
 											"Environmental Management": "Environmental Management",
 											"Energy monitoring systems": "Energy monitoring systems",
 											"Contract Management": "Contract Management",
 											"Digital Asset Management": "Digital Asset Management",
 											"Digital Signatures": "Digital Signatures",
-											"Enterprise Resource Planning (ERP)": "Enterprise Resource Planning (ERP)",
+											"Enterprise Resource Planning": "Enterprise Resource Planning (ERP)",
 											"Facility Management": "Facility Management",
 											"Building Management": "Building Management",
 											"Field Service Management": "Field Service Management",
@@ -193,13 +185,13 @@ categories = {
 											"Scheduling and Appointments": "Scheduling and Appointments",
 											"Supply Chain Management": "Supply Chain Management",
 											"Visitor Management": "Visitor Management",
-											"Governance Risk Compliance (GRC)": "Governance Risk Compliance (GRC)",
+											"Governance Risk Compliance": "Governance Risk Compliance (GRC)",
 											"Business Workflow": "Business Workflow"
 
 									},
 									"Project Management and Planning": {
 											"Agile Project Management": "Agile Project Management",
-											"Professional Services Automation (PSA)": "Professional Services Automation (PSA)",
+											"Professional Services Automation": "Professional Services Automation (PSA)",
 											"Project Portfolio Management": "Project Portfolio Management",
 											"Task Management": "Task Management",
 											"Time Tracking": "Time Tracking",
@@ -237,10 +229,9 @@ categories = {
 											"Contact Centre": "Contact Centre",
 											"Email": "Email",
 											"Fax Server": "Fax Server",
-											"Interactive Voice Response (IVR)": "Interactive Voice Response (IVR)",
+											"Interactive Voice Response": "Interactive Voice Response (IVR)",
 											"Mobile": "Mobile",
-											"SMS": "SMS",
-											"Texting": "Texting",
+											"SMS": "SMS texting text message",
 											"Telecoms Expense Management": "Telecoms Expense Management",
 											"Telephony": "Telephony",
 											"Phone": "Phone",
@@ -270,7 +261,7 @@ categories = {
 											"Data Analytics": "Data Analytics",
 											"Database Management": "Database Management",
 											"Data Storage": "Data Storage",
-											"Electronic Data Interchange (EDI)": "Electronic Data Interchange (EDI)",
+											"Electronic Data Interchange": "Electronic Data Interchange (EDI)",
 											"Backup, Recovery and Archival": "Backup, Recovery and Archival"
 
 									},
@@ -283,7 +274,7 @@ categories = {
 											"Bug Tracking": "Bug Tracking",
 											"Build Tools": "Build Tools",
 											"Code Generators": "Code Generators",
-											"Electronic Data Interchange (EDI)": "Electronic Data Interchange (EDI)",
+											"Electronic Data Interchange": "Electronic Data Interchange (EDI)",
 											"Form Builder Software": "Form Builder Software",
 											"Source Code Management": "Source Code Management",
 											"Testing and Optimisation": "Testing and Optimisation",
@@ -297,6 +288,7 @@ categories = {
 											"Usability Tools": "Usability Tools"
 									},
 									"Electronic Document and Records Management (EDRM)": {
+											"Electronic Document and Records Management": "Electronic Document and Records Management (EDRM)",
 											"Content Management Systems": "Content Management Systems",
 											"Document Management": "Document Management",
 											"Electronic Signatures": "Electronic Signatures",
@@ -325,7 +317,7 @@ categories = {
 											"Presentations": "Presentations",
 											"Password Management": "Password Management",
 											"Patch Management": "Patch Management",
-											"Single Sign-On (SSO)": "Single Sign-On (SSO)",
+											"Single Sign-On": "Single Sign-On (SSO)",
 											"Security": "Security",
 											"Systems Management": "Systems Management",
 											"Systems Monitoring": "Systems Monitoring"
@@ -333,7 +325,7 @@ categories = {
 									},
 									"Security": {
 											"Anti-Intrusion": "Anti-Intrusion",
-											"Antispam / CAPTCHA": "Antispam / CAPTCHA",
+											"Antispam/CAPTCHA": "Antispam / CAPTCHA",
 											"Antivirus": "Antivirus",
 											"Audit": "Audit",
 											"Authentication and Identity Access": "Authentication and Identity Access",
@@ -349,7 +341,6 @@ categories = {
 											"Secure Content and Threat Management": "Secure Content and Threat Management",
 											"Security Risk Managment": "Security Risk Managment",
 											"Penetration Testing": "Penetration Testing"
-
 									}
 
 							},
@@ -487,8 +478,6 @@ categories = {
 
 				for (var name in categories) {
 
-					console.log(categories);
-
 					if ("object" === typeof categories[name]) {
 
 						getMatchingCategories(categories[name], searchTerm);
@@ -512,7 +501,7 @@ categories = {
 
 				$("#resultCount").text(
 					Math.floor(
-						17156 / (1 + (count * count * count *  (Math.random() + 1)))
+						17156 / (1 + (count * count * count * 2))
 					)
 				);
 
@@ -532,6 +521,31 @@ categories = {
 				}
 
 				tottResults();
+
+			},
+			makeAPick = function() {
+
+				var val = $(this).text();
+
+				if ("" === $.trim(val)) return;
+
+				$("#picked").append("<li>" + val.replace("”","").replace("“","") + "</li>");
+
+				$("#suggestions").html("");
+
+				$("#keywords").val("").focus();
+
+				tottResults();
+
+			},
+			addButtons = function() {
+
+				$(".nextButton")
+					.remove();
+
+				$(".searchbuilder-container-bit")
+					.not(":last")
+					.append("<input type='button' class='nextButton' value='Next' />");
 
 			};
 
@@ -557,13 +571,15 @@ categories = {
 				if ("" === $.trim(fieldValue)) return;
 
 				matches = [];
-				parents = [];
-				popped = false;
 				getMatchingCategories(categories, fieldValue, "");
-
-				parents = [];
-				popped = false;
 				getMatchingCategories(keywords, fieldValue, "");
+
+				$suggestionHolder.append(
+					$.trim(fieldValue).indexOf(" ") > -1 ?
+						"<li>&ldquo;" + $.trim(fieldValue) + "&rdquo;</li>"
+					:
+						"<li>" + fieldValue + "</li>"
+				);
 
 				matches = matches.filter(function(elem, pos) {
 			    return matches.map(function(currentValue){
@@ -598,28 +614,9 @@ categories = {
 
 					event.preventDefault();
 
-					console.log($("#suggestions li.selected").length);
-
-					if ($("#suggestions li.selected").length) {
-
-						console.log("picking suggestion");
-
-						$("#keywords")
-							.val($("#suggestions li.selected").text());
-
-						$("#suggestions").html("");
-
-					} else {
-
-						console.log("no suggestions");
-
-						$("#addKeyword").trigger("click");
-
-					}
+					makeAPick.apply($("#suggestions li.selected").get(0));
 
 				} else if (code === 38) {
-
-					console.log("up");
 
 					event.preventDefault();
 
@@ -633,8 +630,6 @@ categories = {
 				} else if (code === 40) {
 
 					event.preventDefault();
-
-					console.log("down to", $("#suggestions li.selected").next("li").text());
 
 					if (!$("#suggestions li.selected").next("li").length) return;
 
@@ -653,40 +648,12 @@ categories = {
 			event.preventDefault();
 		});
 
-	$("#addKeyword")
-		.on(
-			"click",
-			function() {
-
-				var val = $("#keywords").val();
-
-				if ("" === $.trim(val)) return;
-
-				$("#picked").append("<li>" + val + "</li>");
-
-				$("#suggestions").html("");
-
-				$("#keywords").val("").focus();
-
-				tottResults();
-
-			}
-		);
-
 	$("#suggestions")
 		.on(
 			"click",
 			"li",
-			function() {
-
-				$("#keywords")
-					.val($(this).text());
-
-				$("#suggestions").html("");
-
-			}
+			makeAPick
 		);
-
 
 	$("#picked")
 		.on(
@@ -713,8 +680,6 @@ categories = {
 
 				event.preventDefault();
 
-				console.log();
-
 				$(this).next("div").show();
 
 			}
@@ -724,28 +689,64 @@ categories = {
 		.click(
 			function() {
 
-				$(".hideable").addClass("hidden");
+				$(".hideable").addClass("hidden").removeClass("open");
 
 				$(".section-" + $(this).find("input").data("target")).removeClass("hidden");
+
+				addButtons();
 
 			}
 		);
 
-	$(".searchbuilder-container-bit h3")
-		.on("click", function() {
+	$("body")
+		.on(
+			"click",
+			".searchbuilder-container-bit h3, .searchbuilder-container-bit .nextButton",
+			function() {
 
-			$(this).parents(".searchbuilder-container-bit").toggleClass("open");
+				$(this).parents(".searchbuilder-container-bit").toggleClass("open");
 
-			if (
-				$(this).parents(".searchbuilder-container-bit").is(".keywords-section")
-			) {
+				if (
+					$(this).parents(".searchbuilder-container-bit").is(".keywords-section")
+				) {
 
-				$("#addKeyword").trigger("click");
+					makeAPick.apply($("#suggestions li.selected").get(0));
+
+				}
 
 			}
+		)
+		.on(
+			"click",
+			".searchbuilder-container-bit .nextButton",
+			function() {
+
+				$(this)
+				.parents(".searchbuilder-container-bit")
+				.nextAll(".searchbuilder-container-bit:not(.hidden)")
+				.eq(0)
+					.addClass("open");
+
+					console.log($(this)
+					.parents(".searchbuilder-container-bit")
+					.next(".searchbuilder-container-bit")
+						.addClass("open"));
+
+			}
+		);
+
+	$(".nextButton")
+		.on("click", function() {
+
+				$(this)
+				.parents(".searchbuilder-container-bit")
+					.removeClass("open")
+				.next(".searchbuilder-container-bit")
+					.addClass("open");
 
 		});
 
 	tottResults();
+	addButtons();
 
 }());
