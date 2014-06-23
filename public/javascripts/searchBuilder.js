@@ -777,17 +777,25 @@ categories = {
 
 				$(".searchbuilder-container").toggleClass("summarised");
 
+				$(".toggleSections")
+					.has(":checked")
+					.trigger("click");
+
+				$(".summarised .hideable")
+				.not(":has(:checked)")
+					.addClass("hidden");
+
 			}
 		);
 
-		$("#searchbuilderbutton")
-			.on(
-				"click",
-				function() {
+	$("#searchbuilderbutton")
+		.on(
+			"click",
+			function() {
 
-					window.location.href = "/newsearchresults";
+				window.location.href = "/newsearchresults";
 
-				}
-			);
+			}
+		);
 
 }());
