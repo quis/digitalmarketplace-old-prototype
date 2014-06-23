@@ -1058,9 +1058,9 @@ margin-top: -20px;}
     display: block;
     float: none;
     padding: 8px;
-    background: $grey-4;
-    padding: 8px;
-    border: 3px solid $light-blue;
+    background: $highlight-colour;
+    padding: 15px;
+    border: 1px dotted $grey-1;
     -webkit-column-count: 2;
 
     &.hidden {
@@ -1068,7 +1068,7 @@ margin-top: -20px;}
     }
 
     h3 {
-
+      font-size: 24px;
       display: block;
       -webkit-column-span: all;
       padding: 0 0 10px 0;
@@ -1098,6 +1098,8 @@ margin-top: -20px;}
       display: block;
       width: 100px;
       -webkit-column-span: all;
+      font-size: 24px;
+      padding-top: 4px;
     }
 
     #addKeyword {

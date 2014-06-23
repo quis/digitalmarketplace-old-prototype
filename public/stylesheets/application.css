@@ -1236,12 +1236,13 @@ input[type=checkbox], input[type=radio] {
     float: none;
     padding: 8px;
     background: #f8f8f8;
-    padding: 8px;
-    border: 3px solid #2b8cc4;
+    padding: 15px;
+    border: 1px dotted #6f777b;
     -webkit-column-count: 2; }
     .searchbuilder-container-bit.open.hidden {
       display: none; }
     .searchbuilder-container-bit.open h3 {
+      font-size: 24px;
       display: block;
       -webkit-column-span: all;
       padding: 0 0 10px 0; }
@@ -1277,7 +1278,9 @@ input[type=checkbox], input[type=radio] {
       color: #0b0c0c;
       display: block;
       width: 100px;
-      -webkit-column-span: all; }
+      -webkit-column-span: all;
+      font-size: 24px;
+      padding-top: 4px; }
       .searchbuilder-container-bit.open .nextButton:visited {
         background-color: #bfc1c3; }
       .searchbuilder-container-bit.open .nextButton:hover, .searchbuilder-container-bit.open .nextButton:focus {
