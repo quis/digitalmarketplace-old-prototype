@@ -506,7 +506,12 @@ categories = {
 				);
 
 			};
-			var toggleSelection = function() {
+			var toggleSelection = function(event) {
+
+				if (
+					$(this).parents(".searchbuilder-container").is(".summarised") &&
+					"number" !== typeof event
+				) return;
 
 				$(this)
 					.toggleClass("optionSelected", $("input", this).is(":checked"));
@@ -655,11 +660,13 @@ categories = {
 			makeAPick
 		);
 
-	$("#picked")
+	$(".searchbuilder-container")
 		.on(
 			"click",
 			"li",
 			function() {
+
+				if ($(this).parents(".searchbuilder-container").is(".summarised")) return;
 
 				$(this).remove();
 
@@ -669,9 +676,11 @@ categories = {
 		);
 
 
-	$(".chunk")
-		.on("click", toggleSelection)
+	$(".searchbuilder-container")
+		.on("click", ".chunk", toggleSelection)
+	.find(".chunk")
 		.each(toggleSelection);
+
 
 	$("#requirementsToggle")
 		.on(
@@ -698,13 +707,13 @@ categories = {
 			}
 		);
 
-	$("body")
+	$(".searchbuilder-container")
 		.on(
 			"click",
 			".searchbuilder-container-bit h3, .searchbuilder-container-bit .nextButton",
 			function() {
 
-				$(this).parents(".searchbuilder-container-bit").toggleClass("open");
+				if ($(this).parents(".searchbuilder-container").is(".summarised")) return;
 
 				if (
 					$(this).parents(".searchbuilder-container-bit").is(".keywords-section")
@@ -721,32 +730,64 @@ categories = {
 			".searchbuilder-container-bit .nextButton",
 			function() {
 
-				$(this)
-				.parents(".searchbuilder-container-bit")
-				.nextAll(".searchbuilder-container-bit:not(.hidden)")
-				.eq(0)
-					.addClass("open");
-
-					console.log($(this)
-					.parents(".searchbuilder-container-bit")
-					.next(".searchbuilder-container-bit")
-						.addClass("open"));
-
-			}
-		);
-
-	$(".nextButton")
-		.on("click", function() {
+				if ($(this).parents(".searchbuilder-container").is(".summarised")) return;
 
 				$(this)
 				.parents(".searchbuilder-container-bit")
 					.removeClass("open")
-				.next(".searchbuilder-container-bit")
+				.nextAll(".searchbuilder-container-bit:not(.hidden)")
+				.eq(0)
 					.addClass("open");
 
-		});
+			}
+		)
+		.on(
+			"click",
+			".searchbuilder-container-bit h3",
+			function() {
+
+				if ($(this).parents(".searchbuilder-container").is(".summarised")) return;
+
+				$(this)
+				.parents(".searchbuilder-container-bit")
+					.toggleClass("open")
+				.siblings(".searchbuilder-container-bit:not(.hidden)")
+					.removeClass("open");
+
+			}
+		);
+
+		$(this).parents(".searchbuilder-container-bit").toggleClass("open");
 
 	tottResults();
 	addButtons();
+
+	$(".toggleSections").has(":checked").trigger("click");
+
+	$("#editSearchBuilder")
+		.on(
+			"click",
+			function() {
+
+				$(".searchbuilder-container-bit").removeClass("open");
+
+				$(this).text(
+					"Edit" === $(this).text() ? "Update" : "Edit"
+				);
+
+				$(".searchbuilder-container").toggleClass("summarised");
+
+			}
+		);
+
+		$("#searchbuilderbutton")
+			.on(
+				"click",
+				function() {
+
+					window.location.href = "/newsearchresults";
+
+				}
+			);
 
 }());

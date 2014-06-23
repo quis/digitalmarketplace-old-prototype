@@ -455,27 +455,6 @@ p {
     margin-left: 0;
     margin-right: 0; }
 
-/*
-background: $red;
-color: white;
-position: relative;
-display: -moz-inline-stack;
-display: inline-block;
-padding: 0.35em 0.5em 0.15em 0.5em;
-margin: 0 0 1em 0;
-border: none;
--webkit-border-radius: 0;
--moz-border-radius: 0;
-border-radius: 0;
--webkit-appearance: none;
--webkit-box-shadow: 0 2px 0 #b5babe;
--moz-box-shadow: 0 2px 0 #b5babe;
-box-shadow: 0 2px 0 #b5babe;
-font-size: 1em;
-line-height: 1.25;
-text-decoration: none;
--webkit-font-smoothing: antialiased;
-cursor: pointer;*/
 .button-secondary {
   background-color: #dee0e2;
   position: relative;
@@ -1152,7 +1131,8 @@ input[type=checkbox], input[type=radio] {
 
 .searchbuilder-container {
   overflow: visible;
-  width: 100%; }
+  width: 100%;
+  clear: both; }
 
 .searchbuilder-container-add {
   background: white;
@@ -1184,13 +1164,17 @@ input[type=checkbox], input[type=radio] {
   background: #f8f8f8;
   border: 1px solid #dee0e2;
   margin: 0 10px 10px 0;
-  display: block;
-  float: left;
-  clear: left; }
+  display: block; }
+  .summarised .searchbuilder-container-bit {
+    display: inline-block;
+    float: none;
+    clear: none; }
   .searchbuilder-container-bit.hidden {
     display: none; }
   .searchbuilder-container-bit:hover {
     border: 1px solid #bfc1c3; }
+    .summarised .searchbuilder-container-bit:hover {
+      border: 1px solid #dee0e2; }
   .searchbuilder-container-bit h3 {
     display: inline-block;
     font-family: "nta", Arial, sans-serif;
@@ -1200,7 +1184,8 @@ input[type=checkbox], input[type=radio] {
     text-transform: none;
     font-weight: bold;
     cursor: pointer;
-    padding: 8px; }
+    padding: 8px;
+    margin: 0; }
     @media (max-width: 640px) {
       .searchbuilder-container-bit h3 {
         font-size: 16px;
@@ -1208,26 +1193,33 @@ input[type=checkbox], input[type=radio] {
     .searchbuilder-container-bit h3 .openCopy {
       display: none; }
     .searchbuilder-container-bit h3 .closedCopy {
-      display: inline; }
+      display: inline-block; }
     .searchbuilder-container-bit h3:before {
       content: "▼";
       font-size: 11px;
       color: #6f777b;
       position: relative;
       top: -4px; }
-  .searchbuilder-container-bit p {
+      .summarised .searchbuilder-container-bit h3 {
+      cursor: default; }
+
     height: 5em;
-    margin: 0; }
-  .searchbuilder-container-bit .chunk, .searchbuilder-container-bit input, .searchbuilder-container-bit legend, .searchbuilder-container-bit .exp, .searchbuilder-container-bit .searchbuilder-container-add-button, .searchbuilder-container-bit p {
+      .summarised .searchbuilder-container-bit h3:before {
+        display: none; }
+  .searchbuilder-container-bit .chunk, .searchbuilder-container-bit input, .searchbuilder-container-bit legend, .searchbuilder-container-bit .exp, .searchbuilder-container-bit .searchbuilder-container-add-button {
     display: none; }
   .searchbuilder-container-bit .nextButton {
     display: none; }
   .searchbuilder-container-bit input[type=radio], .searchbuilder-container-bit input[type=checkbox] {
     display: inline-block; }
+    .summarised .searchbuilder-container-bit input[type=radio], .summarised .searchbuilder-container-bit input[type=checkbox] {
+      display: none; }
   .searchbuilder-container-bit .chunk {
     margin: 0 0 0 10px; }
   .searchbuilder-container-bit .optionSelected {
     display: inline-block; }
+    .summarised .searchbuilder-container-bit .optionSelected {
+      cursor: default; }
   .searchbuilder-container-bit.open {
     display: block;
     float: none;
@@ -1239,7 +1231,6 @@ input[type=checkbox], input[type=radio] {
     .searchbuilder-container-bit.open.hidden {
       display: none; }
     .searchbuilder-container-bit.open h3 {
-      font-size: 24px;
       display: block;
       -webkit-column-span: all;
       padding: 0 0 10px 0; }
@@ -2162,6 +2153,8 @@ input[type=text] {
   margin: 0 0 0 10px;
   background: #dee0e2;
   border: 1px solid #dee0e2; }
+  .summarised .options li, .summarised .chunk {
+    cursor: default; }
 
 .open .options li {
   margin: 0 10px 10px 0; }
@@ -2184,6 +2177,8 @@ input[type=text] {
   text-align: center;
   display: inline-block;
   margin-left: 15px; }
+  .summarised #picked li:after {
+    display: none; }
 
 #picked li:hover:after {
   background: #df3034;
@@ -2196,3 +2191,73 @@ input[type=text] {
 
 input[type=checkbox]:focus, input[type=radio]:focus {
   outline: none; }
+
+#editSearchBuilder {
+  background-color: #6f777b;
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  padding: 0.35em 0.5em 0.15em 0.5em;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 2px 0 #4b5053;
+  -moz-box-shadow: 0 2px 0 #4b5053;
+  box-shadow: 0 2px 0 #4b5053;
+  font-size: 1em;
+  line-height: 1.25;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  color: #fff;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none; }
+  #editSearchBuilder:visited {
+    background-color: #6f777b; }
+  #editSearchBuilder:hover, #editSearchBuilder:focus {
+    background-color: #636a6e; }
+  #editSearchBuilder:active {
+    top: 2px;
+    -webkit-box-shadow: 0 0 0 #6f777b;
+    -moz-box-shadow: 0 0 0 #6f777b;
+    box-shadow: 0 0 0 #6f777b; }
+  #editSearchBuilder.disabled, #editSearchBuilder[disabled="disabled"], #editSearchBuilder[disabled] {
+    zoom: 1;
+    filter: alpha(opacity=#{$trans * 100});
+    opacity: 0.5; }
+    #editSearchBuilder.disabled:hover, #editSearchBuilder[disabled="disabled"]:hover, #editSearchBuilder[disabled]:hover {
+      cursor: default;
+      background-color: #6f777b; }
+    #editSearchBuilder.disabled:active, #editSearchBuilder[disabled="disabled"]:active, #editSearchBuilder[disabled]:active {
+      top: 0;
+      -webkit-box-shadow: 0 2px 0 #4b5053;
+      -moz-box-shadow: 0 2px 0 #4b5053;
+      box-shadow: 0 2px 0 #4b5053; }
+  #editSearchBuilder:hover, #editSearchBuilder:focus, #editSearchBuilder:visited {
+    color: #fff; }
+  #editSearchBuilder:before {
+    content: "";
+    height: 110%;
+    width: 100%;
+    display: block;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  #editSearchBuilder:active:before {
+    top: -10%;
+    height: 120%; }
+  #editSearchBuilder[rel="external"]:after {
+    display: none;
+    content: none;
+    margin-left: 0;
+    margin-right: 0; }
+  @media (max-width: 640px) {
+    #editSearchBuilder {
+      font-size: 20px;
+      line-height: 1.2; } }

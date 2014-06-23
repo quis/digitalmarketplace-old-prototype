@@ -10,15 +10,22 @@
 
 <div class="set-service-reqs">
   <div id="searchbuilder">
-    <h2>Set your service requirements</h2>
+    <h2>Results</h2>
 
-    <div class="searchbuilder-container">
+    <div class="searchbuilder-container summarised">
 
-      <div class="searchbuilder-container-bit keywords-section open">
+      <div class="searchbuilder-container-bit keywords-section">
         <div id="picked" class="options">
           <h3>
-            Add your keywords
+            <span class="closedCopy">
+              Keywords
+            </span>
+            <span class="openCopy">
+              Add your keywords
+            </span>
           </h3>
+          <li>Content management systems</li>
+          <li>Collaborative</li>
         </div>
         <input type="text" id="keywords" autocomplete="off" placeholder="eg Email" />
         <ul id="suggestions">
@@ -37,7 +44,7 @@
         </h3>
 
         <label class="chunk dontCount toggleSections">
-          <input type="radio" name="category-type" checked="checked" />
+          <input type="radio" name="category-type" />
           All services
         </label>
         <label class="chunk toggleSections">
@@ -45,7 +52,7 @@
           Cloud support
         </label>
         <label class="chunk toggleSections">
-          <input type="radio" name="category-type" data-target="PAAS"  />
+          <input type="radio" name="category-type" data-target="PAAS" checked="checked" />
           Cloud technology
         </label>
       </div>
@@ -63,7 +70,7 @@
         <label class="chunk"><input type="checkbox" /> Aggregated billing options</label>
         <label class="chunk"><input type="checkbox" /> Minimum Contract Period</label>
         <label class="chunk"><input type="checkbox" /> Free Option</label>
-        <label class="chunk"><input type="checkbox" /> Trial Option</label>
+        <label class="chunk"><input type="checkbox" checked="checked" /> Trial option offered</label>
         <label class="chunk"><input type="checkbox" /> Termination Costs</label>
         <label class="chunk"><input type="checkbox" /> Payment Options</label>
         <label class="chunk"><input type="checkbox" /> Education Pricing</label>
@@ -140,9 +147,10 @@
         <label class="chunk"><input type="checkbox" /> End user device support services</label>
         <label class="chunk"><input type="checkbox" /> Application Lifecycle Services</label>
       </div>
+      <br style="clear: left;" />
     </div>
 
-    <button type="submit" class="button" id="searchbuilderbutton">Show <span id="resultCount">XXXXX</span> services</button>
+    <button type="submit" class="button" id="editSearchBuilder">Edit</button>
 
   </div>
 
@@ -171,11 +179,11 @@
 </div>
 <div id="start-shortlisting">
 <p class="copy-24"><button class="button">Save this search</button></p>
-<p class="butt-align"><a href="#">Start a new search</a></p>
+<p class="butt-align"><a href="/searchbuilder">Start a new search</a></p>
 </div>
 
 <div id="builder-search-results">
-<h2 class="heading-48">24 <span class="copy-19">results</span></h2>
+<h2 class="heading-48">6 <span class="copy-19">results</span></h2>
 
 <div class="builder-search-result">
 <p class="copy-24"><a href="#">Achieve CMS</a></p>
