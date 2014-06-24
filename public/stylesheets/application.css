@@ -1164,15 +1164,38 @@ input[type=checkbox], input[type=radio] {
   background: #f8f8f8;
   border: 1px solid #dee0e2;
   margin: 0 10px 10px 0;
-  display: block; }
+  display: block;
+  position: relative;
+  min-height: 46px; }
+  .searchbuilder-container-bit:after {
+    content: "Edit";
+    font-family: "nta", Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.31579;
+    font-weight: 400;
+    text-transform: none;
+    color: #2e3191;
+    text-decoration: underline;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    cursor: pointer; }
+    @media (max-width: 640px) {
+      .searchbuilder-container-bit:after {
+        font-size: 16px;
+        line-height: 1.25; } }
   .summarised .searchbuilder-container-bit {
     display: inline-block;
     float: none;
     clear: none; }
+    .summarised .searchbuilder-container-bit:after {
+      display: none; }
   .searchbuilder-container-bit.hidden {
     display: none; }
   .searchbuilder-container-bit:hover {
     border: 1px solid #bfc1c3; }
+    .searchbuilder-container-bit:hover:after {
+      color: #2e8aca; }
     .summarised .searchbuilder-container-bit:hover {
       border: 1px solid #dee0e2; }
   .searchbuilder-container-bit h3 {
@@ -1185,15 +1208,12 @@ input[type=checkbox], input[type=radio] {
     font-weight: bold;
     cursor: pointer;
     padding: 8px 8px 8px 13px;
-    margin: 0; }
+    margin: 0;
+    position: relative; }
     @media (max-width: 640px) {
       .searchbuilder-container-bit h3 {
         font-size: 16px;
         line-height: 1.25; } }
-    .searchbuilder-container-bit h3 .openCopy {
-      display: none; }
-    .searchbuilder-container-bit h3 .closedCopy {
-      display: inline-block; }
     .searchbuilder-container-bit h3:before {
       content: "▼";
       font-size: 11px;
@@ -1202,9 +1222,16 @@ input[type=checkbox], input[type=radio] {
       top: -4px;
       left: -1px; }
     .summarised .searchbuilder-container-bit h3 {
-      cursor: default; }
+      cursor: default;
+      display: inline-block; }
       .summarised .searchbuilder-container-bit h3:before {
         display: none; }
+      .summarised .searchbuilder-container-bit h3:after {
+        display: none; }
+    .searchbuilder-container-bit h3 .openCopy {
+      display: none; }
+    .searchbuilder-container-bit h3 .closedCopy {
+      display: inline-block; }
   .searchbuilder-container-bit p {
     height: 5em;
     margin: 10px 0 2px 0; }
@@ -1232,6 +1259,8 @@ input[type=checkbox], input[type=radio] {
     -webkit-column-count: 2; }
     .searchbuilder-container-bit.open.hidden {
       display: none; }
+    .searchbuilder-container-bit.open:after {
+      display: none; }
     .searchbuilder-container-bit.open h3 {
       display: block;
       -webkit-column-span: all;
@@ -1239,6 +1268,8 @@ input[type=checkbox], input[type=radio] {
       .searchbuilder-container-bit.open h3:before {
         content: "▲";
         top: -3px; }
+      .searchbuilder-container-bit.open h3:after {
+        content: ""; }
       .searchbuilder-container-bit.open h3 .openCopy {
         display: inline; }
       .searchbuilder-container-bit.open h3 .closedCopy {
@@ -1247,70 +1278,26 @@ input[type=checkbox], input[type=radio] {
       margin-left: 1px;
       display: inline-block; }
     .searchbuilder-container-bit.open .nextButton {
-      background-color: #6f777b;
-      position: relative;
-      display: -moz-inline-stack;
-      display: inline-block;
-      padding: 0.35em 0.5em 0.15em 0.5em;
-      border: none;
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-      border-radius: 0;
-      -webkit-appearance: none;
-      -webkit-box-shadow: 0 2px 0 #4b5053;
-      -moz-box-shadow: 0 2px 0 #4b5053;
-      box-shadow: 0 2px 0 #4b5053;
-      font-size: 1em;
-      line-height: 1.25;
-      text-decoration: none;
-      -webkit-font-smoothing: antialiased;
-      cursor: pointer;
-      color: #fff;
       display: block;
+      background: none;
+      border: none;
       width: 100px;
       -webkit-column-span: all;
-      font-size: 24px;
-      padding-top: 4px; }
-      .searchbuilder-container-bit.open .nextButton:visited {
-        background-color: #6f777b; }
-      .searchbuilder-container-bit.open .nextButton:hover, .searchbuilder-container-bit.open .nextButton:focus {
-        background-color: #636a6e; }
-      .searchbuilder-container-bit.open .nextButton:active {
-        top: 2px;
-        -webkit-box-shadow: 0 0 0 #6f777b;
-        -moz-box-shadow: 0 0 0 #6f777b;
-        box-shadow: 0 0 0 #6f777b; }
-      .searchbuilder-container-bit.open .nextButton.disabled, .searchbuilder-container-bit.open .nextButton[disabled="disabled"], .searchbuilder-container-bit.open .nextButton[disabled] {
-        zoom: 1;
-        filter: alpha(opacity=#{$trans * 100});
-        opacity: 0.5; }
-        .searchbuilder-container-bit.open .nextButton.disabled:hover, .searchbuilder-container-bit.open .nextButton[disabled="disabled"]:hover, .searchbuilder-container-bit.open .nextButton[disabled]:hover {
-          cursor: default;
-          background-color: #6f777b; }
-        .searchbuilder-container-bit.open .nextButton.disabled:active, .searchbuilder-container-bit.open .nextButton[disabled="disabled"]:active, .searchbuilder-container-bit.open .nextButton[disabled]:active {
-          top: 0;
-          -webkit-box-shadow: 0 2px 0 #4b5053;
-          -moz-box-shadow: 0 2px 0 #4b5053;
-          box-shadow: 0 2px 0 #4b5053; }
-      .searchbuilder-container-bit.open .nextButton:hover, .searchbuilder-container-bit.open .nextButton:focus, .searchbuilder-container-bit.open .nextButton:visited {
-        color: #fff; }
-      .searchbuilder-container-bit.open .nextButton:before {
-        content: "";
-        height: 110%;
-        width: 100%;
-        display: block;
-        background: transparent;
-        position: absolute;
-        top: 0;
-        left: 0; }
-      .searchbuilder-container-bit.open .nextButton:active:before {
-        top: -10%;
-        height: 120%; }
-      .searchbuilder-container-bit.open .nextButton[rel="external"]:after {
-        display: none;
-        content: none;
-        margin-left: 0;
-        margin-right: 0; }
+      font-family: "nta", Arial, sans-serif;
+      font-size: 19px;
+      line-height: 1.31579;
+      font-weight: 400;
+      text-transform: none;
+      color: #2e3191;
+      text-align: left;
+      text-decoration: underline; }
+      @media (max-width: 640px) {
+        .searchbuilder-container-bit.open .nextButton {
+          font-size: 16px;
+          line-height: 1.25; } }
+      .searchbuilder-container-bit.open .nextButton:hover {
+        color: #2e8aca;
+        cursor: pointer; }
     .searchbuilder-container-bit.open #addKeyword {
       width: 80px;
       background-color: #bfc1c3;

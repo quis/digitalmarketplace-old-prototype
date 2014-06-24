@@ -505,8 +505,8 @@ categories = {
 					)
 				);
 
-			};
-			var toggleSelection = function(event) {
+			},
+			toggleSelection = function(event) {
 
 				if (
 					$(this).parents(".searchbuilder-container").is(".summarised") &&
@@ -528,7 +528,9 @@ categories = {
 				tottResults();
 
 			},
-			makeAPick = function() {
+			makeAPick = function(event) {
+
+				if (event) event.stopPropagation();
 
 				var val = $(this).text();
 
@@ -606,6 +608,11 @@ categories = {
 
 				$suggestionHolder.find("li").eq(0).addClass("selected");
 
+		})
+		.on("click", function(event){
+
+			event.stopPropagation();
+
 		});
 
 	$("#keywords")
@@ -664,7 +671,9 @@ categories = {
 		.on(
 			"click",
 			"li",
-			function() {
+			function(event) {
+
+				if (event) event.stopPropagation();
 
 				if ($(this).parents(".searchbuilder-container").is(".summarised")) return;
 
@@ -696,7 +705,9 @@ categories = {
 
 	$(".toggleSections")
 		.click(
-			function() {
+			function(event) {
+
+				if (event) event.stopPropagation();
 
 				$(".hideable").addClass("hidden").removeClass("open");
 
@@ -704,14 +715,16 @@ categories = {
 
 				addButtons();
 
+				toggleSelection.apply(this, [event]);
+
 			}
 		);
 
 	$(".searchbuilder-container")
 		.on(
 			"click",
-			".searchbuilder-container-bit h3, .searchbuilder-container-bit .nextButton",
-			function() {
+			".searchbuilder-container-bit, .searchbuilder-container-bit .nextButton",
+			function(event) {
 
 				if ($(this).parents(".searchbuilder-container").is(".summarised")) return;
 
@@ -728,7 +741,9 @@ categories = {
 		.on(
 			"click",
 			".searchbuilder-container-bit .nextButton",
-			function() {
+			function(event) {
+
+				event.stopPropagation();
 
 				if ($(this).parents(".searchbuilder-container").is(".summarised")) return;
 
@@ -743,21 +758,18 @@ categories = {
 		)
 		.on(
 			"click",
-			".searchbuilder-container-bit h3",
+			".searchbuilder-container-bit",
 			function() {
 
 				if ($(this).parents(".searchbuilder-container").is(".summarised")) return;
 
 				$(this)
-				.parents(".searchbuilder-container-bit")
 					.toggleClass("open")
 				.siblings(".searchbuilder-container-bit:not(.hidden)")
 					.removeClass("open");
 
 			}
 		);
-
-		$(this).parents(".searchbuilder-container-bit").toggleClass("open");
 
 	tottResults();
 	addButtons();

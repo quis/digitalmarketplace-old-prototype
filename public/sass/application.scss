@@ -983,11 +983,30 @@ margin-top: -20px;}
   border: 1px solid $grey-3;
   margin: 0 10px 10px 0;
   display: block;
+  position: relative;
+  min-height: 46px;
+
+  &:after {
+    content: "Edit";
+    @include core-19;
+    color: $link-colour;
+    text-decoration: underline;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    cursor: pointer;
+  }
 
   .summarised & {
+
     display: inline-block;
     float: none;
     clear: none;
+
+    &:after {
+      display: none;
+    }
+
   }
 
   &.hidden {
@@ -997,6 +1016,10 @@ margin-top: -20px;}
   &:hover {
 
     border: 1px solid $grey-2;
+
+    &:after {
+      color: $link-hover-colour;
+    }
 
     .summarised & {
       border: 1px solid $grey-3;
@@ -1012,14 +1035,7 @@ margin-top: -20px;}
     cursor: pointer;
     padding: 8px 8px 8px 13px;
     margin: 0;
-
-    .openCopy {
-      display: none;
-    }
-
-    .closedCopy {
-      display: inline-block;
-    }
+    position: relative;
 
     &:before {
       content: "▼";
@@ -1033,11 +1049,24 @@ margin-top: -20px;}
     .summarised & {
 
       cursor: default;
+      display: inline-block;
 
       &:before {
         display: none;
       }
 
+      &:after {
+        display: none;
+      }
+
+    }
+
+    .openCopy {
+      display: none;
+    }
+
+    .closedCopy {
+      display: inline-block;
     }
 
   }
@@ -1093,6 +1122,10 @@ margin-top: -20px;}
       display: none;
     }
 
+    &:after {
+      display: none;
+    }
+
     h3 {
       display: block;
       -webkit-column-span: all;
@@ -1101,6 +1134,10 @@ margin-top: -20px;}
       &:before {
         content: "▲";
         top: -3px;
+      }
+
+      &:after {
+        content: "";
       }
 
       .openCopy {
@@ -1119,12 +1156,22 @@ margin-top: -20px;}
     }
 
     .nextButton {
-      @include button($grey-1);
+
       display: block;
+      background: none;
+      border: none;
       width: 100px;
       -webkit-column-span: all;
-      font-size: 24px;
-      padding-top: 4px;
+      @include core-19;
+      color: $link-colour;
+      text-align: left;
+      text-decoration: underline;
+
+      &:hover {
+        color: $link-hover-colour;
+        cursor: pointer;
+      }
+
     }
 
     #addKeyword {
