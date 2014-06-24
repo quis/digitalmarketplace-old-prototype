@@ -1200,13 +1200,14 @@ input[type=checkbox], input[type=radio] {
       color: #6f777b;
       position: relative;
       top: -4px; }
-      .summarised .searchbuilder-container-bit h3 {
+    .summarised .searchbuilder-container-bit h3 {
       cursor: default; }
-
-    height: 5em;
       .summarised .searchbuilder-container-bit h3:before {
         display: none; }
-  .searchbuilder-container-bit .chunk, .searchbuilder-container-bit input, .searchbuilder-container-bit legend, .searchbuilder-container-bit .exp, .searchbuilder-container-bit .searchbuilder-container-add-button {
+  .searchbuilder-container-bit p {
+    height: 5em;
+    margin: 0; }
+  .searchbuilder-container-bit .chunk, .searchbuilder-container-bit input, .searchbuilder-container-bit legend, .searchbuilder-container-bit .exp, .searchbuilder-container-bit .searchbuilder-container-add-button, .searchbuilder-container-bit p {
     display: none; }
   .searchbuilder-container-bit .nextButton {
     display: none; }
