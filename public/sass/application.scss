@@ -1087,10 +1087,10 @@ margin-top: -20px;}
   input[type=radio],
   input[type=checkbox] {
 
-    display: inline-block;
+    display: none;
 
-    .summarised & {
-      display: none;
+    .open & {
+      display: inline-block;
     }
 
   }
@@ -2172,19 +2172,17 @@ input[type=text] {
 
   #picked li:after {
 
-    content: "×";
-    border-radius: 50%;
-    border: 1px solid white;
-    background: #dee0e2;
-    color: #888;
-    width: 1.2em;
-    height: 1.2em;
-    text-align: center;
-    display: inline-block;
-    margin-left: 15px;
-
-    .summarised & {
-      display: none;
+    .open & {
+      content: "×";
+      border-radius: 50%;
+      border: 1px solid white;
+      background: #dee0e2;
+      color: #888;
+      width: 1.2em;
+      height: 1.2em;
+      text-align: center;
+      display: inline-block;
+      margin-left: 15px;
     }
 
   }

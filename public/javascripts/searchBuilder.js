@@ -510,7 +510,7 @@ categories = {
 
 				if (
 					$(this).parents(".searchbuilder-container").is(".summarised") &&
-					"number" !== typeof event
+					"object" === typeof event
 				) return;
 
 				$(this)
@@ -670,12 +670,10 @@ categories = {
 	$(".searchbuilder-container")
 		.on(
 			"click",
-			"li",
+			".open li",
 			function(event) {
 
 				if (event) event.stopPropagation();
-
-				if ($(this).parents(".searchbuilder-container").is(".summarised")) return;
 
 				$(this).remove();
 
@@ -707,6 +705,8 @@ categories = {
 		.click(
 			function(event) {
 
+				if (!$(this).parents(".searchbuilder-container-bit").is(".open")) return;
+
 				if (event) event.stopPropagation();
 
 				$(".hideable").addClass("hidden").removeClass("open");
@@ -729,7 +729,8 @@ categories = {
 				if ($(this).parents(".searchbuilder-container").is(".summarised")) return;
 
 				if (
-					$(this).parents(".searchbuilder-container-bit").is(".keywords-section")
+					$(this).parents(".searchbuilder-container-bit").is(".keywords-section") ||
+					$(this).is(".keywords-section")
 				) {
 
 					makeAPick.apply($("#suggestions li.selected").get(0));
