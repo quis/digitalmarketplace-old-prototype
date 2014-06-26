@@ -536,7 +536,7 @@ categories = {
 
 				if ("" === $.trim(val)) return;
 
-				$("#picked").append("<li>" + val.replace("”","").replace("“","") + "</li>");
+				$("#picked").append("<li>" + val.replace("”","").replace("“","").replace(",","") + "</li>");
 
 				$("#suggestions").html("");
 
@@ -622,7 +622,10 @@ categories = {
 
 				var code = event.keyCode || event.which;
 
-				if (code === 13) {
+				if (
+					code === 13 ||
+					code === 188
+				) {
 
 					event.preventDefault();
 
